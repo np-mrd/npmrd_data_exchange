@@ -1,0 +1,540 @@
+[
+  {
+    "compound_name": "Tinctorin",
+    "smiles": "CC=CCC=CC=CC/CC=CC=CCC\\CCC=CCC/CCCCCC=CCCC",
+    "inchikey": "NJPYVCPTFPPLNC-UHFFFAOYSA-N",
+    "npmrd_id": null,
+    "submission": {
+      "source": "deposition_system",
+      "type": "published_article",
+      "uuid": "6581eb36-b558-455d-8ede-d0504449b057",
+      "compound_uuid": "FduHi3Nmd6",
+      "submission_date": "2023-08-17T23:34:03.083182+00:00",
+      "embargo_status": "publish",
+      "embargo_date": null
+    },
+    "citation": {
+      "doi": "10.1080/14786419.2023.2245958",
+      "pmid": 37574817,
+      "pii": null
+    },
+    "origin": {
+      "species": "tinctorum",
+      "genus": "Parmotrema",
+      "private_collection": {
+        "compound_source_type": null,
+        "purified_in_house": {
+          "biological_material_source": null
+        },
+        "commercial": {
+          "supplier": null,
+          "cas_number": null,
+          "catalogue_number": null
+        },
+        "compound_library": {
+          "library_name": null,
+          "library_description": null,
+          "library_compound_code": null
+        },
+        "other": {
+          "user_specified_compound_source": null,
+          "biological_material_source": null
+        }
+      }
+    },
+    "depositor_info": {
+      "email": "test_email@test.com",
+      "account_id": 0,
+      "attribution_name": null,
+      "attribution_organization": "TEST",
+      "show_email_in_attribution": true,
+      "show_name_in_attribution": false,
+      "show_organization_in_attribution": true
+    },
+    "nmr_data": {
+      "peak_lists": [
+        {
+          "solvent": "C2D6OS",
+          "reference": "TMS",
+          "c_values": [
+            20,
+            20
+          ],
+          "h_values": [
+            10,
+            10
+          ],
+          "c_frequency": 125.753766827,
+          "h_frequency": 500.113791393,
+          "frequency_units": "MHz",
+          "c_temperature": 288,
+          "h_temperature": 288,
+          "temperature_units": "K"
+        }
+      ],
+      "experimental_data": {
+        "nmr_data_download_link": "https://article-pipeline-test-bucket.s3.amazonaws.com/db/6581eb36-b558-455d-8ede-d0504449b057/473/original_data/NJPYVCPTFPPLNC-UHFFFAOYSA-N/original_data_NJPYVCPTFPPLNC-UHFFFAOYSA-N.zip?AWSAccessKeyId=AKIATG5FM4URBBXHRLET&Signature=IKeM4cLm6PcpHmbRZJhmQIQ40W4%3D&Expires=1694718420",
+        "nmr_metadata": [
+          {
+            "vendor": "Varian",
+            "filetype": "Varian_native",
+            "solvent": "C2D6OS",
+            "frequency": [
+              125.753766827
+            ],
+            "frequency_units": "MHz",
+            "f1_nucleus": "13C",
+            "f2_nucleus": "",
+            "temperature": 288,
+            "temperature_units": "K",
+            "experiment_type": "1D",
+            "original_data_path": "Borrelidin_B_NMR_RAW/Borrelidin_B_13C.fid/procpar",
+            "extracted_experiment_folder": "13C_1D"
+          },
+          {
+            "vendor": "Varian",
+            "filetype": "Varian_native",
+            "solvent": "C2D6OS",
+            "frequency": [
+              500.113791393
+            ],
+            "frequency_units": "MHz",
+            "f1_nucleus": "1H",
+            "f2_nucleus": "",
+            "temperature": 288,
+            "temperature_units": "K",
+            "experiment_type": "1D",
+            "original_data_path": "Borrelidin_B_NMR_RAW/Borrelidin_B_1H.fid/procpar",
+            "extracted_experiment_folder": "1H_1D"
+          },
+          {
+            "vendor": "Varian",
+            "filetype": "Varian_native",
+            "solvent": "C2D6OS",
+            "frequency": [
+              500.113791393,
+              500.113791393
+            ],
+            "frequency_units": "MHz",
+            "f1_nucleus": "1H",
+            "f2_nucleus": "1H",
+            "temperature": 288,
+            "temperature_units": "K",
+            "experiment_type": "COSY",
+            "original_data_path": "Borrelidin_B_NMR_RAW/Borrelidin_B_gCOSY.fid/procpar",
+            "extracted_experiment_folder": "1H_1H_COSY"
+          },
+          {
+            "vendor": "Varian",
+            "filetype": "Varian_native",
+            "solvent": "C2D6OS",
+            "frequency": [
+              500.113791393,
+              125.753769879
+            ],
+            "frequency_units": "MHz",
+            "f1_nucleus": "1H",
+            "f2_nucleus": "13C",
+            "temperature": 288,
+            "temperature_units": "K",
+            "experiment_type": "HMBC",
+            "original_data_path": "Borrelidin_B_NMR_RAW/Borrelidin_B_gHMBC.fid/procpar",
+            "extracted_experiment_folder": "1H_13C_HMBC"
+          },
+          {
+            "vendor": "Varian",
+            "filetype": "Varian_native",
+            "solvent": "C2D6OS",
+            "frequency": [
+              500.113791393,
+              125.753768608
+            ],
+            "frequency_units": "MHz",
+            "f1_nucleus": "1H",
+            "f2_nucleus": "13C",
+            "temperature": 288,
+            "temperature_units": "K",
+            "experiment_type": "HSQC",
+            "original_data_path": "Borrelidin_B_NMR_RAW/Borrelidin_B_gHSQC.fid/procpar",
+            "extracted_experiment_folder": "1H_13C_HSQC"
+          },
+          {
+            "vendor": "Varian",
+            "filetype": "Varian_native",
+            "solvent": "C2D6OS",
+            "frequency": [
+              500.113791393,
+              125.753771183
+            ],
+            "frequency_units": "MHz",
+            "f1_nucleus": "1H",
+            "f2_nucleus": "13C",
+            "temperature": 288,
+            "temperature_units": "K",
+            "experiment_type": "HSQC",
+            "original_data_path": "Borrelidin_B_NMR_RAW/Borrelidin_B_gHSQCTOCSY.fid/procpar",
+            "extracted_experiment_folder": "1H_13C_HSQC-2"
+          }
+        ]
+      },
+      "assignment_data": {
+        "h_nmr": {
+          "solvent": null,
+          "temperature": null,
+          "temperature_units": null,
+          "reference": null,
+          "frequency": null,
+          "frequency_units": null,
+          "spectrum": [
+            {
+              "shift": null,
+              "integration": null,
+              "multiplicity": null,
+              "coupling": [],
+              "atom_index": null,
+              "rdkit_index": [],
+              "interchangeable_index": []
+            }
+          ]
+        },
+        "c_nmr": {
+          "solvent": null,
+          "temperature": null,
+          "temperature_units": null,
+          "reference": null,
+          "frequency": null,
+          "frequency_units": null,
+          "spectrum": [
+            {
+              "shift": null,
+              "atom_index": null,
+              "rdkit_index": null
+            }
+          ]
+        }
+      },
+      "predicted_data": {
+        "prediction_method": null,
+        "dft_protocol": {
+          "molecular_dynamics": {
+            "md_software": null,
+            "md_software_version": null,
+            "forcefield": null,
+            "energy_window": null,
+            "downselection": null
+          },
+          "quantum_mechanics": {
+            "qm_software": null,
+            "qm_software_version": null,
+            "tasks": [],
+            "functionals": [],
+            "basis_sets": [],
+            "solvent": null,
+            "conversion_factors": {
+              "H": {
+                "m": null,
+                "b": null
+              },
+              "C": {
+                "m": null,
+                "b": null
+              }
+            }
+          }
+        },
+        "ml_protocol": {
+          "ml_model": null,
+          "training_set": null,
+          "training_parameters": {
+            "parameter_1": null,
+            "parameter_2": null
+          },
+          "chemical_shifts": {
+            "solvent": null,
+            "temperature": null,
+            "temperature_units": null,
+            "h_nmr": {
+              "shift": null,
+              "shielding_tensor": null,
+              "rdkit_index": null
+            },
+            "c_nmr": {
+              "shift": null,
+              "shielding_tensor": null,
+              "rdkit_index": null
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "compound_name": "Norreticulatin",
+    "smiles": "CC=CCC=CC=CC/CC=CC=CCC\\CCC=CCC/CCCCCC=CCCC=CCC",
+    "inchikey": "PRMUPNPVIWOFLN-UHFFFAOYSA-N",
+    "npmrd_id": null,
+    "submission": {
+      "source": "deposition_system",
+      "type": "published_article",
+      "uuid": "6581eb36-b558-455d-8ede-d0504449b057",
+      "compound_uuid": "5jkR6mW79L",
+      "submission_date": "2023-08-17T23:34:03.083182+00:00",
+      "embargo_status": "publish",
+      "embargo_date": null
+    },
+    "citation": {
+      "doi": "10.1080/14786419.2023.2245958",
+      "pmid": 37574817,
+      "pii": null
+    },
+    "origin": {
+      "species": "tinctorum",
+      "genus": "Parmotrema",
+      "private_collection": {
+        "compound_source_type": null,
+        "purified_in_house": {
+          "biological_material_source": null
+        },
+        "commercial": {
+          "supplier": null,
+          "cas_number": null,
+          "catalogue_number": null
+        },
+        "compound_library": {
+          "library_name": null,
+          "library_description": null,
+          "library_compound_code": null
+        },
+        "other": {
+          "user_specified_compound_source": null,
+          "biological_material_source": null
+        }
+      }
+    },
+    "depositor_info": {
+      "email": "test_email@test.com",
+      "account_id": 0,
+      "attribution_name": null,
+      "attribution_organization": "TEST",
+      "show_email_in_attribution": true,
+      "show_name_in_attribution": false,
+      "show_organization_in_attribution": true
+    },
+    "nmr_data": {
+      "peak_lists": [
+        {
+          "solvent": "C2D6OS",
+          "reference": "TMS",
+          "c_values": [
+            20,
+            20
+          ],
+          "h_values": [
+            10,
+            10
+          ],
+          "c_frequency": 125.753766827,
+          "h_frequency": 500.113791393,
+          "frequency_units": "MHz",
+          "c_temperature": 288,
+          "h_temperature": 288,
+          "temperature_units": "K"
+        }
+      ],
+      "experimental_data": {
+        "nmr_data_download_link": "https://article-pipeline-test-bucket.s3.amazonaws.com/db/6581eb36-b558-455d-8ede-d0504449b057/473/original_data/PRMUPNPVIWOFLN-UHFFFAOYSA-N/original_data_PRMUPNPVIWOFLN-UHFFFAOYSA-N.zip?AWSAccessKeyId=AKIATG5FM4URBBXHRLET&Signature=dpYWKeK5T7YqWktmYA6d4%2Bt%2Fljo%3D&Expires=1694718420",
+        "nmr_metadata": [
+          {
+            "vendor": "Varian",
+            "filetype": "Varian_native",
+            "solvent": "C2D6OS",
+            "frequency": [
+              125.753766827
+            ],
+            "frequency_units": "MHz",
+            "f1_nucleus": "13C",
+            "f2_nucleus": "",
+            "temperature": 288,
+            "temperature_units": "K",
+            "experiment_type": "1D",
+            "original_data_path": "Borrelidin_B_NMR_RAW/Borrelidin_B_13C.fid/procpar",
+            "extracted_experiment_folder": "13C_1D"
+          },
+          {
+            "vendor": "Varian",
+            "filetype": "Varian_native",
+            "solvent": "C2D6OS",
+            "frequency": [
+              500.113791393
+            ],
+            "frequency_units": "MHz",
+            "f1_nucleus": "1H",
+            "f2_nucleus": "",
+            "temperature": 288,
+            "temperature_units": "K",
+            "experiment_type": "1D",
+            "original_data_path": "Borrelidin_B_NMR_RAW/Borrelidin_B_1H.fid/procpar",
+            "extracted_experiment_folder": "1H_1D"
+          },
+          {
+            "vendor": "Varian",
+            "filetype": "Varian_native",
+            "solvent": "C2D6OS",
+            "frequency": [
+              500.113791393,
+              500.113791393
+            ],
+            "frequency_units": "MHz",
+            "f1_nucleus": "1H",
+            "f2_nucleus": "1H",
+            "temperature": 288,
+            "temperature_units": "K",
+            "experiment_type": "COSY",
+            "original_data_path": "Borrelidin_B_NMR_RAW/Borrelidin_B_gCOSY.fid/procpar",
+            "extracted_experiment_folder": "1H_1H_COSY"
+          },
+          {
+            "vendor": "Varian",
+            "filetype": "Varian_native",
+            "solvent": "C2D6OS",
+            "frequency": [
+              500.113791393,
+              125.753769879
+            ],
+            "frequency_units": "MHz",
+            "f1_nucleus": "1H",
+            "f2_nucleus": "13C",
+            "temperature": 288,
+            "temperature_units": "K",
+            "experiment_type": "HMBC",
+            "original_data_path": "Borrelidin_B_NMR_RAW/Borrelidin_B_gHMBC.fid/procpar",
+            "extracted_experiment_folder": "1H_13C_HMBC"
+          },
+          {
+            "vendor": "Varian",
+            "filetype": "Varian_native",
+            "solvent": "C2D6OS",
+            "frequency": [
+              500.113791393,
+              125.753768608
+            ],
+            "frequency_units": "MHz",
+            "f1_nucleus": "1H",
+            "f2_nucleus": "13C",
+            "temperature": 288,
+            "temperature_units": "K",
+            "experiment_type": "HSQC",
+            "original_data_path": "Borrelidin_B_NMR_RAW/Borrelidin_B_gHSQC.fid/procpar",
+            "extracted_experiment_folder": "1H_13C_HSQC"
+          },
+          {
+            "vendor": "Varian",
+            "filetype": "Varian_native",
+            "solvent": "C2D6OS",
+            "frequency": [
+              500.113791393,
+              125.753771183
+            ],
+            "frequency_units": "MHz",
+            "f1_nucleus": "1H",
+            "f2_nucleus": "13C",
+            "temperature": 288,
+            "temperature_units": "K",
+            "experiment_type": "HSQC",
+            "original_data_path": "Borrelidin_B_NMR_RAW/Borrelidin_B_gHSQCTOCSY.fid/procpar",
+            "extracted_experiment_folder": "1H_13C_HSQC-2"
+          }
+        ]
+      },
+      "assignment_data": {
+        "h_nmr": {
+          "solvent": null,
+          "temperature": null,
+          "temperature_units": null,
+          "reference": null,
+          "frequency": null,
+          "frequency_units": null,
+          "spectrum": [
+            {
+              "shift": null,
+              "integration": null,
+              "multiplicity": null,
+              "coupling": [],
+              "atom_index": null,
+              "rdkit_index": [],
+              "interchangeable_index": []
+            }
+          ]
+        },
+        "c_nmr": {
+          "solvent": null,
+          "temperature": null,
+          "temperature_units": null,
+          "reference": null,
+          "frequency": null,
+          "frequency_units": null,
+          "spectrum": [
+            {
+              "shift": null,
+              "atom_index": null,
+              "rdkit_index": null
+            }
+          ]
+        }
+      },
+      "predicted_data": {
+        "prediction_method": null,
+        "dft_protocol": {
+          "molecular_dynamics": {
+            "md_software": null,
+            "md_software_version": null,
+            "forcefield": null,
+            "energy_window": null,
+            "downselection": null
+          },
+          "quantum_mechanics": {
+            "qm_software": null,
+            "qm_software_version": null,
+            "tasks": [],
+            "functionals": [],
+            "basis_sets": [],
+            "solvent": null,
+            "conversion_factors": {
+              "H": {
+                "m": null,
+                "b": null
+              },
+              "C": {
+                "m": null,
+                "b": null
+              }
+            }
+          }
+        },
+        "ml_protocol": {
+          "ml_model": null,
+          "training_set": null,
+          "training_parameters": {
+            "parameter_1": null,
+            "parameter_2": null
+          },
+          "chemical_shifts": {
+            "solvent": null,
+            "temperature": null,
+            "temperature_units": null,
+            "h_nmr": {
+              "shift": null,
+              "shielding_tensor": null,
+              "rdkit_index": null
+            },
+            "c_nmr": {
+              "shift": null,
+              "shielding_tensor": null,
+              "rdkit_index": null
+            }
+          }
+        }
+      }
+    }
+  }
+]

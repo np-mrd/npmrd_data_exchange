@@ -1,0 +1,359 @@
+[
+  {
+    "compound_name": "Test Compound 1",
+    "smiles": "CCC=CCC=CCCC=CCC/CC=CC=CC/CCC=CCC=C=CC=CC/CCC",
+    "inchikey": "JWMMGZHWYJVVLP-UHFFFAOYSA-N",
+    "npmrd_id": null,
+    "submission": {
+      "source": "deposition_system",
+      "type": "presubmission_article",
+      "uuid": "9d327d62-e4c7-4c71-b89a-50c744b4a496",
+      "compound_uuid": "4XeUYZas4D",
+      "submission_date": "2023-04-05T18:42:06.626299+00:00",
+      "embargo_status": "publish",
+      "embargo_date": null
+    },
+    "citation": {
+      "doi": null,
+      "pmid": null,
+      "pii": null
+    },
+    "origin": {
+      "species": "Test Species 1",
+      "genus": "Test Genus 1",
+      "private_collection": {
+        "compound_source_type": null,
+        "purified_in_house": {
+          "biological_material_source": null
+        },
+        "commercial": {
+          "supplier": null,
+          "cas_number": null,
+          "catalogue_number": null
+        },
+        "compound_library": {
+          "library_name": null,
+          "library_description": null,
+          "library_compound_code": null
+        },
+        "other": {
+          "user_specified_compound_source": null,
+          "biological_material_source": null
+        }
+      }
+    },
+    "depositor_info": {
+      "email": "mpin@sfu.ca",
+      "account_id": 414,
+      "attribution_name": null,
+      "attribution_organization": null,
+      "show_email_in_attribution": true,
+      "show_name_in_attribution": false,
+      "show_organization_in_attribution": false
+    },
+    "nmr_data": {
+      "peak_lists": [
+        {
+          "solvent": "",
+          "reference": "",
+          "c_values": [],
+          "h_values": [],
+          "c_frequency": null,
+          "h_frequency": null,
+          "frequency_units": "MHz",
+          "c_temperature": null,
+          "h_temperature": null,
+          "temperature_units": "K"
+        }
+      ],
+      "experimental_data": {
+        "nmr_data_download_link": null,
+        "nmr_metadata": [
+          {
+            "vendor": "",
+            "filetype": "",
+            "solvent": "",
+            "frequency": [],
+            "frequency_units": "MHz",
+            "f1_nucleus": "",
+            "f2_nucleus": "",
+            "temperature": null,
+            "temperature_units": "K",
+            "experiment_type": "",
+            "original_data_path": "",
+            "extracted_experiment_folder": ""
+          }
+        ]
+      },
+      "assignment_data": {
+        "h_nmr": {
+          "solvent": null,
+          "temperature": null,
+          "temperature_units": null,
+          "reference": null,
+          "frequency": null,
+          "frequency_units": null,
+          "spectrum": [
+            {
+              "shift": null,
+              "integration": null,
+              "multiplicity": null,
+              "coupling": [],
+              "atom_index": null,
+              "rdkit_index": [],
+              "interchangeable_index": []
+            }
+          ]
+        },
+        "c_nmr": {
+          "solvent": null,
+          "temperature": null,
+          "temperature_units": null,
+          "reference": null,
+          "frequency": null,
+          "frequency_units": null,
+          "spectrum": [
+            {
+              "shift": null,
+              "atom_index": null,
+              "rdkit_index": null
+            }
+          ]
+        }
+      },
+      "predicted_data": {
+        "prediction_method": null,
+        "dft_protocol": {
+          "molecular_dynamics": {
+            "md_software": null,
+            "md_software_version": null,
+            "forcefield": null,
+            "energy_window": null,
+            "downselection": null
+          },
+          "quantum_mechanics": {
+            "qm_software": null,
+            "qm_software_version": null,
+            "tasks": [],
+            "functionals": [],
+            "basis_sets": [],
+            "solvent": null,
+            "conversion_factors": {
+              "H": {
+                "m": null,
+                "b": null
+              },
+              "C": {
+                "m": null,
+                "b": null
+              }
+            }
+          }
+        },
+        "ml_protocol": {
+          "ml_model": null,
+          "training_set": null,
+          "training_parameters": {
+            "parameter_1": null,
+            "parameter_2": null
+          },
+          "chemical_shifts": {
+            "solvent": null,
+            "temperature": null,
+            "temperature_units": null,
+            "h_nmr": {
+              "shift": null,
+              "shielding_tensor": null,
+              "rdkit_index": null
+            },
+            "c_nmr": {
+              "shift": null,
+              "shielding_tensor": null,
+              "rdkit_index": null
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "compound_name": "Test Compound 2",
+    "smiles": "CCC=CCC=CCCC=CCC/CC=CC=CC/CCC=CCC=C=CC=CC/CCCCC",
+    "inchikey": "ANLFMOYEZNSNON-UHFFFAOYSA-N",
+    "npmrd_id": null,
+    "submission": {
+      "source": "deposition_system",
+      "type": "presubmission_article",
+      "uuid": "9d327d62-e4c7-4c71-b89a-50c744b4a496",
+      "compound_uuid": "GQq5goWgXa",
+      "submission_date": "2023-04-05T18:42:06.626299+00:00",
+      "embargo_status": "publish",
+      "embargo_date": null
+    },
+    "citation": {
+      "doi": null,
+      "pmid": null,
+      "pii": null
+    },
+    "origin": {
+      "species": "Test Species 1",
+      "genus": "Test Genus 1",
+      "private_collection": {
+        "compound_source_type": null,
+        "purified_in_house": {
+          "biological_material_source": null
+        },
+        "commercial": {
+          "supplier": null,
+          "cas_number": null,
+          "catalogue_number": null
+        },
+        "compound_library": {
+          "library_name": null,
+          "library_description": null,
+          "library_compound_code": null
+        },
+        "other": {
+          "user_specified_compound_source": null,
+          "biological_material_source": null
+        }
+      }
+    },
+    "depositor_info": {
+      "email": "mpin@sfu.ca",
+      "account_id": 414,
+      "attribution_name": null,
+      "attribution_organization": null,
+      "show_email_in_attribution": true,
+      "show_name_in_attribution": false,
+      "show_organization_in_attribution": false
+    },
+    "nmr_data": {
+      "peak_lists": [
+        {
+          "solvent": "CDCl3",
+          "reference": "TMS",
+          "c_values": [],
+          "h_values": [
+            10,
+            10
+          ],
+          "c_frequency": "",
+          "h_frequency": 300,
+          "frequency_units": "MHz",
+          "c_temperature": "",
+          "h_temperature": 300,
+          "temperature_units": "K"
+        }
+      ],
+      "experimental_data": {
+        "nmr_data_download_link": null,
+        "nmr_metadata": [
+          {
+            "vendor": "",
+            "filetype": "",
+            "solvent": "",
+            "frequency": [],
+            "frequency_units": "MHz",
+            "f1_nucleus": "",
+            "f2_nucleus": "",
+            "temperature": null,
+            "temperature_units": "K",
+            "experiment_type": "",
+            "original_data_path": "",
+            "extracted_experiment_folder": ""
+          }
+        ]
+      },
+      "assignment_data": {
+        "h_nmr": {
+          "solvent": null,
+          "temperature": null,
+          "temperature_units": null,
+          "reference": null,
+          "frequency": null,
+          "frequency_units": null,
+          "spectrum": [
+            {
+              "shift": null,
+              "integration": null,
+              "multiplicity": null,
+              "coupling": [],
+              "atom_index": null,
+              "rdkit_index": [],
+              "interchangeable_index": []
+            }
+          ]
+        },
+        "c_nmr": {
+          "solvent": null,
+          "temperature": null,
+          "temperature_units": null,
+          "reference": null,
+          "frequency": null,
+          "frequency_units": null,
+          "spectrum": [
+            {
+              "shift": null,
+              "atom_index": null,
+              "rdkit_index": null
+            }
+          ]
+        }
+      },
+      "predicted_data": {
+        "prediction_method": null,
+        "dft_protocol": {
+          "molecular_dynamics": {
+            "md_software": null,
+            "md_software_version": null,
+            "forcefield": null,
+            "energy_window": null,
+            "downselection": null
+          },
+          "quantum_mechanics": {
+            "qm_software": null,
+            "qm_software_version": null,
+            "tasks": [],
+            "functionals": [],
+            "basis_sets": [],
+            "solvent": null,
+            "conversion_factors": {
+              "H": {
+                "m": null,
+                "b": null
+              },
+              "C": {
+                "m": null,
+                "b": null
+              }
+            }
+          }
+        },
+        "ml_protocol": {
+          "ml_model": null,
+          "training_set": null,
+          "training_parameters": {
+            "parameter_1": null,
+            "parameter_2": null
+          },
+          "chemical_shifts": {
+            "solvent": null,
+            "temperature": null,
+            "temperature_units": null,
+            "h_nmr": {
+              "shift": null,
+              "shielding_tensor": null,
+              "rdkit_index": null
+            },
+            "c_nmr": {
+              "shift": null,
+              "shielding_tensor": null,
+              "rdkit_index": null
+            }
+          }
+        }
+      }
+    }
+  }
+]

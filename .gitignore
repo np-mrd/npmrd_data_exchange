@@ -175,6 +175,7 @@
 # VSCode
 .vscode/*
 !.vscode/settings.json
+settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
@@ -196,7 +197,6 @@ node_modules/
 creds.js
  
 # Private Files
-*.json
 *.csv
 *.csv.gz
 *.tsv
