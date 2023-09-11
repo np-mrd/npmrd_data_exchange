@@ -2,9 +2,9 @@ import unittest
 import os
 import sys
 
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
 
-from validation_scripts.validator import JSONValidator  # Import the JSONValidator class
+from validation.validator import JSONValidator  # Import the JSONValidator class
 
 class TestValidator(unittest.TestCase):
 

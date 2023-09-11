@@ -5,11 +5,11 @@ A repo to house tools essential for data transfer between different tech stacks 
 
 The script can be run on an NP-MRD Exchange JSON by using the following command line command...
 
-    python validation_scripts/validator.py NP-MRD-JSON.json
+    python validation/validator.py NP-MRD-JSON.json
 
 Additionally, in order to run the script within python you can also import the "JSONValidator" class and then run the "validate" command on the path to your json
 
-    from validation_scripts.validator import JSONValidator
+    from validation.validator import JSONValidator
 
     json_file_path = "path/to/json.json"
     validator = JSONValidator(json_file_path)
@@ -22,7 +22,7 @@ Because the scripts are written in python they cannot be run natively in Ruby. H
     require 'json'
 
     def run_python_script(input_data)
-    output = `python validation_scripts/validator.py --input '#{input_data.to_json}'`
+    output = `python validation/validator.py --input '#{input_data.to_json}'`
     JSON.parse(output)
     end
 
