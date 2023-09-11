@@ -1,0 +1,18 @@
+{
+    "HSQCTOCSY": "HSQCTOCSY",
+    "HSQC-TOCSY": "HSQCTOCSY",
+    "COSY": "COSY",
+    "HSQC": "HSQC",
+    "HMQC": "HMQC",
+    "HMBC": "HMBC",
+    "TOCSY": "TOCSY",
+    "DIPSI2ESGPPH": "TOCSY",
+    "HETLOC": "HETLOC",
+    "MLEV": "MLEV",
+    "ROESY": "ROESY",
+    "NOESY": "NOESY",
+    "DOSY": "DOSY",
+    "DEPT": "DEPT",
+    "H2BC": "H2BC",
+    "HOMO2DJ": "HOMO2DJ"
+}

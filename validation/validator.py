@@ -1,7 +1,5 @@
 import sys
 import json
-import re
-
 
 class JSONValidator:
     def __init__(self, json_file_path):
@@ -31,7 +29,7 @@ class JSONValidator:
 
         return result
 
-    def _confirm_non_null_fields(self, json, result, field_names):
+    def _confirm_non_null_fields(self, json_data, result, field_names):
         """
         Used to confirm that a provided list of field_names is present and not null within the
         individual compound json provided to it. field_names is a list of stings.
@@ -41,13 +39,13 @@ class JSONValidator:
         "nest.nested_valueA1.nested_valueA2|nest2.nested_valueB1.nested_valueB2.
         
         Args:
-            json (dict): NP-MRD Exchange json for a single compound
+            json_data (dict): NP-MRD Exchange json for a single compound
             result (dict): Result dictionary for a compound
             field_names (list): A list of field names that will be checked for in the
-            json to confirm that they exist and are non-null.
+            json_data to confirm that they exist and are non-null.
 
         Returns:
-            dict: dictionary status report for the compound json passed into it (see 
+            dict: dictionary status report for the compound json_data passed into it (see 
             validate returns for details).
         """
         for field_name in field_names:
@@ -57,7 +55,7 @@ class JSONValidator:
             fail_threshold = len(field_one_ofs)
             for one_of in field_one_ofs:
                 # Now traverse nested entries specified in field name
-                current_data = json
+                current_data = json_data
                 field_parts = one_of.split('.')
                 for part in field_parts:
                     if part in current_data and current_data[part] != None:
@@ -70,13 +68,13 @@ class JSONValidator:
 
         return result
 
-    def _check_deposition_system(self, json, result):
+    def _check_deposition_system(self, json_data, result):
         """
         Runs validation steps necessary for a compound with the submission.source "deposition_system" 
         """
-        if json['submission']['source'] != "deposition_system":
+        if json_data['submission']['source'] != "deposition_system":
             self._fail_entry(
-                result, "Invalid source for deposition_system: " + json['submission']['source'])
+                result, "Invalid source for deposition_system: " + json_data['submission']['source'])
 
         always_non_null = [
             'smiles',
@@ -92,21 +90,21 @@ class JSONValidator:
             'depositor_info.show_organization_in_attribution',
             'depositor_info.account_id',
         ]
-        result = self._confirm_non_null_fields(json, result, always_non_null)
+        result = self._confirm_non_null_fields(json_data, result, always_non_null)
 
         # Ensure published article has necessary fields
-        if json['submission']['type'] == "published_article":
+        if json_data['submission']['type'] == "published_article":
             non_null_citation = ['citation.doi|citation.pmid|citation.pii']
             result = self._confirm_non_null_fields(
-                json, result, non_null_citation)
-        elif json['submission']['type'] == "presubmission_article":
+                json_data, result, non_null_citation)
+        elif json_data['submission']['type'] == "presubmission_article":
             pass
-        elif json['submission']['type'] == "private_deposition":
+        elif json_data['submission']['type'] == "private_deposition":
             non_null_compound_source = [
                 'origin.private_collection.compound_source_type']
             result = self._confirm_non_null_fields(
-                json, result, non_null_compound_source)
-            compound_source_type = json.get('origin', {}).get(
+                json_data, result, non_null_compound_source)
+            compound_source_type = json_data.get('origin', {}).get(
                 'private_collection', {}).get('compound_source_type', "")
             if compound_source_type == "purified_in_house":
                 non_null_purified_in_house = [
@@ -115,20 +113,20 @@ class JSONValidator:
                     'origin.genus',
                 ]
                 result = self._confirm_non_null_fields(
-                    json, result, non_null_purified_in_house)
+                    json_data, result, non_null_purified_in_house)
             elif compound_source_type == "commercial":
                 non_null_commerical = [
                     'origin.private_collection.commercial.supplier',
                     'origin.private_collection.commercial.cas_number'
                 ]
                 result = self._confirm_non_null_fields(
-                    json, result, non_null_commerical)
+                    json_data, result, non_null_commerical)
             elif compound_source_type == "compound_library":
                 non_null_compound_library = [
                     'origin.private_collection.compound_library.library_name'
                 ]
                 result = self._confirm_non_null_fields(
-                    json, result, non_null_compound_library)
+                    json_data, result, non_null_compound_library)
             elif compound_source_type == "other":
                 non_null_other = [
                     'origin.private_collection.other.user_specified_compound_source',
@@ -137,61 +135,61 @@ class JSONValidator:
                     'origin.genus',
                 ]
                 result = self._confirm_non_null_fields(
-                    json, result, non_null_other)
+                    json_data, result, non_null_other)
 
-        if json['submission']['embargo_status'] == "publish":
+        if json_data['submission']['embargo_status'] == "publish":
             pass
-        elif json['submission']['embargo_status'] == "embargo_until_date":
+        elif json_data['submission']['embargo_status'] == "embargo_until_date":
             non_null_embargo_date = ['submission.embargo_date']
             result = self._confirm_non_null_fields(
-                json, result, non_null_embargo_date)
-        elif json['submission']['embargo_status'] == "embargo_until_publication":
+                json_data, result, non_null_embargo_date)
+        elif json_data['submission']['embargo_status'] == "embargo_until_publication":
             pass
 
-        if json['depositor_info']['show_name_in_attribution'] == True:
+        if json_data['depositor_info']['show_name_in_attribution'] == True:
             result = self._confirm_non_null_fields(
-                json, result, ['depositor_info.attribution_name'])
-        if json['depositor_info']['show_organization_in_attribution'] == True:
+                json_data, result, ['depositor_info.attribution_name'])
+        if json_data['depositor_info']['show_organization_in_attribution'] == True:
             result = self._confirm_non_null_fields(
-                json, result, ['depositor_info.attribution_organization'])
+                json_data, result, ['depositor_info.attribution_organization'])
 
         # If test has not failed then pass back positive result
         return self._check_if_entry_is_valid(result)
 
-    def _check_dft_team(self, json, result):
+    def _check_dft_team(self, json_data, result):
         """
         Runs validation steps necessary for a compound with the submission.source "dft_team" 
         """
         
         return self._check_if_entry_is_valid(result)
 
-    def _check_general(self, json):
+    def _check_wrapper(self, json_data):
         """
         Validates that a valid submission.source exists in the json for an individual
         compound. Then runs an additional check script to validate the json depending
         on its source.
         
         Args:
-            json (dict): json for individual compound in the NP-MRD Exchange json format.
+            json_data (dict): json for individual compound in the NP-MRD Exchange json format.
 
         Returns:
             dict: dictionary status report for the compound json passed into it (see 
             validate returns for details).
         """
-        source = json.get('submission', {}).get('source', "")
+        source = json_data.get('submission', {}).get('source', "")
         result = {
             'index': None,
-            'inchikey': json.get('inchikey', ""),
+            'inchikey': json_data.get('inchikey', ""),
             'source': source,
-            "type": json.get('submission', {}).get('type', ""),
+            "type": json_data.get('submission', {}).get('type', ""),
             'valid': None,
             'error_message': None,
         }
 
         if source == "deposition_system":
-            return self._check_deposition_system(json, result)
+            return self._check_deposition_system(json_data, result)
         elif source == "dft_team":
-            return self._check_dft_team(json, result)
+            return self._check_dft_team(json_data, result)
         else:
             return self._fail_entry(result, "Invalid source")
 
@@ -237,12 +235,9 @@ class JSONValidator:
                 json_list = json.load(file)
 
             for i, json_data in enumerate(json_list):
-                validation_result = self._check_general(json_data)
+                validation_result = self._check_wrapper(json_data)
                 validation_result['index'] = i
                 self.results.append(validation_result)
-
-            print("results is")
-            print(self.results)
 
             return self.results
 
