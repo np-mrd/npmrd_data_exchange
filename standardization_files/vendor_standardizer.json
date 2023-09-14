@@ -1,0 +1,11 @@
+{
+    "VARIAN": "Varian",
+    "PROCPAR" : "Varian",
+    "BRUKER": "Bruker",
+    "ACQU" : "Bruker",
+    "JCAMPDX": "Jcampdx",
+    "JEOL": "JEOL",
+    "JDF": "JEOL",
+    "MNOVA" : "Mnova",
+    "OTHER" : "Other"
+}

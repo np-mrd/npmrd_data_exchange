@@ -1,0 +1,12 @@
+{
+    "VARIAN": "Varian_native",
+    "PROCPAR" : "Varian_native",
+    "BRUKER": "Bruker_native",
+    "ACQU" : "Bruker_native",
+    "Jcampdx": "Jcampdx",
+    "JDX": "Jcampdx",
+    "JEOL": "JEOL_native",
+    "JDF": "JEOL_native",
+    "MNOVA" : "Mnova",
+    "OTHER" : "Other"
+}

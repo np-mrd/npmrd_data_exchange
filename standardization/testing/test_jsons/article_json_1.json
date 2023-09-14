@@ -5,7 +5,7 @@
     "inchikey": "NJPYVCPTFPPLNC-UHFFFAOYSA-N",
     "npmrd_id": null,
     "submission": {
-      "source": "deposition_system",
+      "source": "DEPOSITION_SYSTEM",
       "type": "published_article",
       "uuid": "6581eb36-b558-455d-8ede-d0504449b057",
       "compound_uuid": "FduHi3Nmd6",
@@ -53,6 +53,24 @@
     },
     "nmr_data": {
       "peak_lists": [
+        {
+          "solvent": "c2d6Os",
+          "reference": "TMS",
+          "c_values": [
+            20.21328910,
+            20
+          ],
+          "h_values": [
+            10,
+            10
+          ],
+          "c_frequency": 125.753766827,
+          "h_frequency": 500.113791393,
+          "frequency_units": "MHz",
+          "c_temperature": 288,
+          "h_temperature": 288,
+          "temperature_units": "K"
+        },
         {
           "solvent": "C2D6OS",
           "reference": "TMS",

@@ -1,6 +1,6 @@
 {
   "$schema": "npmrd_exchange",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "type": "object",
   "properties": {
     "compound_name": {
@@ -168,7 +168,8 @@
         },
         "account_id": {
           "type": "integer",
-          "maximum": 1000000
+          "maximum": 1000000,
+          "minimum": 0
         },
         "attribution_name": {
           "type": ["string", "null"],
