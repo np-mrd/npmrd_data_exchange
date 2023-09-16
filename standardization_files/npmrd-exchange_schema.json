@@ -371,7 +371,7 @@
                       "coupling": {
                         "type": "array",
                         "items": {
-                          "type": "number"
+                          "type": ["number", "null"]
                         }
                       },
                       "atom_index": {
