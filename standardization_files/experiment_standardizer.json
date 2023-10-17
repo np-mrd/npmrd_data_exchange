@@ -7,6 +7,7 @@
     "HMBC": "HMBC",
     "TOCSY": "TOCSY",
     "DIPSI2ESGPPH": "TOCSY",
+    "DIPSI2GPPHZS": "TOCSY",
     "HETLOC": "HETLOC",
     "MLEV": "MLEV",
     "ROESY": "ROESY",
