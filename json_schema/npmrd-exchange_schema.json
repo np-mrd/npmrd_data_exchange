@@ -384,6 +384,7 @@
                   "null"
                 ],
                 "maxLength": 16
+              }
             }
           }
         },
@@ -519,7 +520,7 @@
                       "string",
                       "null"
                     ],
-                    "maxLength": 16
+                    "maxLength": 10000
                   }
                 }
               }
