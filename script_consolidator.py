@@ -33,8 +33,6 @@ class ScriptConsolidator:
 
             if run_standardizer:
                 standardizer = JSONStandardizer(json_data)
-                print("json_data is")
-                print(json_data)
                 (
                     standardized_json_data,
                     standardizer_notes,
