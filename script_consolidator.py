@@ -22,20 +22,14 @@ class ScriptConsolidator:
         self.json_list = json_list
         self.results = {}
 
-    def run_scripts(
-        self, run_schema=True, run_standardizer=True, run_validator=True
-    ):
+    def run_scripts(self, run_schema=True, run_standardizer=True, run_validator=True):
         updated_json_list = []
         result_dict = {}
         for i, json_data in enumerate(self.json_list):
             result_dict[i] = {}
             result_dict[i]["inchikey"] = json_data.get("inchikey", "")
-            result_dict[i]["source"] = json_data.get("submission", {}).get(
-                "source", ""
-            )
-            result_dict[i]["type"] = json_data.get("submission", {}).get(
-                "type", ""
-            )
+            result_dict[i]["source"] = json_data.get("submission", {}).get("source", "")
+            result_dict[i]["type"] = json_data.get("submission", {}).get("type", "")
 
             if run_standardizer:
                 standardizer = JSONStandardizer(json_data)
@@ -58,21 +52,17 @@ class ScriptConsolidator:
                     result_dict[i]["schema"]["valid"] = True
                 except jsonschema.exceptions.ValidationError as e:
                     for error in sorted(e.path):
-                        result_dict[i]["schema"]["message"] = result_dict[i][
-                            "schema"
-                        ]["message"].append(
-                            f"Path: {'/'.join(str(p) for p in error)}"
-                        )
+                        result_dict[i]["schema"]["message"] = result_dict[i]["schema"][
+                            "message"
+                        ].append(f"Path: {'/'.join(str(p) for p in error)}")
                 except exceptions.SchemaError as e:
-                    result_dict[i]["schema"]["message"] = result_dict[i][
-                        "schema"
-                    ]["message"].append(f"Schema error: {e}")
+                    result_dict[i]["schema"]["message"] = result_dict[i]["schema"][
+                        "message"
+                    ].append(f"Schema error: {e}")
                 except Exception as e:
-                    result_dict[i]["schema"]["message"] = result_dict[i][
-                        "schema"
-                    ]["message"].append(
-                        f"An unexpected error occurred: {str(e)}"
-                    )
+                    result_dict[i]["schema"]["message"] = result_dict[i]["schema"][
+                        "message"
+                    ].append(f"An unexpected error occurred: {str(e)}")
 
             if run_validator:
                 validator = JSONValidator(json_data)

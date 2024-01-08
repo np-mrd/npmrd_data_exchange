@@ -40,7 +40,7 @@ class JSONStandardizer:
             "depositor_info.show_name_in_attribution": "make_bool",
             "depositor_info.show_organization_in_attribution": "make_bool",
             "nmr_data.peak_lists.solvent": "standardize_solvent",
-            "nmr_data.peak_lists.c_values": "decimal_places-3",
+            "nmr_data.peak_lists.c_values": "decimal_places-4",
             "nmr_data.peak_lists.h_values": "decimal_places-4",
             "nmr_data.peak_lists.h_temperature": "decimal_places-1",
             "nmr_data.peak_lists.c_temperature": "decimal_places-1",
@@ -83,7 +83,7 @@ class JSONStandardizer:
             new_val = val
             if isinstance(val, str):
                 if val.startswith("NP") and val[2:].isdigit() and len(val) == 9:
-                    pass # Input is already in the correct format
+                    pass  # Input is already in the correct format
                 elif val.isdigit():
                     new_val = f"NP{val.zfill(7)}"
             elif isinstance(val, (int, float)):
@@ -175,7 +175,14 @@ class JSONStandardizer:
             # Specify how many decimal places to use after the "-""
             # i.e. "decimal_places-2" will limit to 2 decimals places
             path_parts = rule.split("-")
-            new_val = float(round(val, int(path_parts[-1])))
+
+            if type(val) == list:
+                new_val = []
+                for val_entry in val:
+                    new_val.append(float(round(val_entry, int(path_parts[-1]))))
+            else:
+                new_val = float(round(val, int(path_parts[-1])))
+
             if val != new_val:
                 self.notes.append(
                     f"{target_field}: adjusted to go to {path_parts[-1]} decimal places '{val}' = {type(val)} -> '{new_val}' = {type(new_val)}"
@@ -193,9 +200,7 @@ class JSONStandardizer:
 
         elif rule == "standardize_date":
             # Convert date to standardized format and remove time (retain only date)
-            midnight_date = val.replace(
-                hour=0, minute=0, second=0, microsecond=0
-            )
+            midnight_date = val.replace(hour=0, minute=0, second=0, microsecond=0)
             new_val = parser.parse(val).strftime("%Y-%m-%dT%H:%M:%S.%f+00:00")
             if val != new_val:
                 self.notes.append(
@@ -213,8 +218,11 @@ class JSONStandardizer:
         target_field = path_parts[-1]
 
         current = json_data
+
+        print(f"target_field is {target_field}")
         for _ in range(len(path_parts) - 1):
             part = path_parts.pop(0)
+            print(f"part is {part}")
             current = current.get(part, {})
             # If entry is a list then create a loop and recursively check each entry
             if type(current) == list:
@@ -223,9 +231,7 @@ class JSONStandardizer:
                 if type(current_first) == dict:
                     for current_entry in current:
                         loop_path_parts = ".".join(path_parts)
-                        self._traverse_json(
-                            current_entry, loop_path_parts, rule
-                        )
+                        self._traverse_json(current_entry, loop_path_parts, rule)
                     return json_data
 
         # run rule if field exists and is not None
@@ -307,4 +313,3 @@ if __name__ == "__main__":
             print("All entries have been standardized.")
         else:
             print("Some entries failed standardization.")
-

@@ -1,6 +1,6 @@
 {
   "$schema": "npmrd_exchange",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "type": "object",
   "properties": {
     "compound_name": {
@@ -314,14 +314,34 @@
               "c_values": {
                 "type": "array",
                 "items": {
-                  "type": "number"
+                  "oneOf": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "array",
+                      "items": {
+                        "type": "number"
+                      }
+                    }
+                  ]
                 },
                 "maxLength": 1000
               },
               "h_values": {
                 "type": "array",
                 "items": {
-                  "type": "number"
+                  "oneOf": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "array",
+                      "items": {
+                        "type": "number"
+                      }
+                    }
+                  ]
                 },
                 "maxLength": 1000
               },
@@ -377,6 +397,13 @@
                   "C",
                   "F"
                 ]
+              },
+              "peak_uuid": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "maxLength": 16
               }
             }
           }
@@ -494,14 +521,21 @@
                     ],
                     "maxLength": 100
                   },
-                  "original_data_path": {
+                  "extracted_experiment_folder": {
                     "type": [
                       "string",
                       "null"
                     ],
                     "maxLength": 10000
                   },
-                  "extracted_experiment_folder": {
+                  "extracted_data_path": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "maxLength": 10000
+                  },
+                  "spectrum_uuid": {
                     "type": [
                       "string",
                       "null"
