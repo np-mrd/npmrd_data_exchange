@@ -30,6 +30,7 @@
     "METHANOL": "CD3OD",
     "MEOH": "CD3OD",
     "METHANOL-D3": "CD3OD",
+    "METHANOL-D4": "CD3OD",
     "DEUTERATED-METHANOL": "CD3OD",
     "MEOD": "CD3OD",
     "CD3OD_SPE": "CD3OD",
