@@ -1,6 +1,6 @@
 {
   "$schema": "npmrd_exchange",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "type": "object",
   "properties": {
     "compound_name": {
@@ -78,8 +78,8 @@
         "embargo_status": {
           "type": "string",
           "enum": [
-            "publish",
-            "embargo_until_date",
+            "release_immediately",
+            "do_not_release",
             "embargo_until_publication"
           ],
           "maxLength": 30
@@ -90,6 +90,19 @@
             "null"
           ],
           "format": "date"
+        },
+        "embargo_uuid": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "maxLength": 10
+        },
+        "embargo_ready_to_release": {
+            "type": [
+              "boolean",
+              "null"
+            ]
         }
       },
       "required": [
