@@ -91,14 +91,7 @@
           ],
           "format": "date"
         },
-        "embargo_uuid": {
-            "type": [
-              "string",
-              "null"
-            ],
-            "maxLength": 10
-        },
-        "embargo_ready_to_release": {
+        "compound_embargo_release_ready": {
             "type": [
               "boolean",
               "null"
@@ -417,6 +410,12 @@
                   "null"
                 ],
                 "maxLength": 16
+              },
+              "peak_embargo_release_ready": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
               }
             }
           }
@@ -554,6 +553,12 @@
                       "null"
                     ],
                     "maxLength": 10000
+                  },
+                  "peak_embargo_release_ready": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ]
                   }
                 }
               }
