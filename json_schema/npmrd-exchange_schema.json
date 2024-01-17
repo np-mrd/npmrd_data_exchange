@@ -404,14 +404,14 @@
                   "F"
                 ]
               },
-              "peak_uuid": {
+              "peak_list_uuid": {
                 "type": [
                   "string",
                   "null"
                 ],
                 "maxLength": 16
               },
-              "peak_embargo_release_ready": {
+              "peak_list_embargo_release_ready": {
                 "type": [
                   "boolean",
                   "null"
@@ -554,7 +554,7 @@
                     ],
                     "maxLength": 10000
                   },
-                  "peak_embargo_release_ready": {
+                  "spectrum_embargo_release_ready": {
                     "type": [
                       "boolean",
                       "null"
