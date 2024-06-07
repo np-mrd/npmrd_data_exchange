@@ -639,7 +639,7 @@
           {
             "vendor": "Varian",
             "filetype": "Varian_native",
-            "solvent": "CDCL3",
+            "solvent": "CDCl3",
             "frequency": [
               500.111410129
             ],
@@ -818,7 +818,7 @@
           {
             "vendor": "JEOL",
             "filetype": "Jcampdx",
-            "solvent": "CDCL3",
+            "solvent": "CDCl3",
             "frequency": [
               399.782198378
             ],
