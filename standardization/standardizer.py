@@ -1,10 +1,8 @@
 import sys
 import json
 from dateutil import parser
+import traceback
 import os
-
-# with open('../standardization_files/experiment_standarizer.json', 'r') as json_file:
-#     exp_standardizer_json = json.load(json_file)
 
 current_dir = os.path.dirname(__file__)
 one_level_up = os.path.dirname(current_dir)
@@ -22,8 +20,9 @@ filetype_standardizer_path = os.path.join(
 
 
 class JSONStandardizer:
-    def __init__(self, json_data):
-        self.json_data = json_data
+    def __init__(self, json_path):
+        with open(json_path, "r") as json_data_file:
+            self.json_data = json.load(json_data_file)
         self.notes = []
         self.rules = {
             "npmrd_id": "correct_npmrd_id",
@@ -40,10 +39,9 @@ class JSONStandardizer:
             "depositor_info.show_name_in_attribution": "make_bool",
             "depositor_info.show_organization_in_attribution": "make_bool",
             "nmr_data.peak_lists.solvent": "standardize_solvent",
-            "nmr_data.peak_lists.c_values": "decimal_places-4",
-            "nmr_data.peak_lists.h_values": "decimal_places-4",
-            "nmr_data.peak_lists.h_temperature": "decimal_places-1",
-            "nmr_data.peak_lists.c_temperature": "decimal_places-1",
+            "nmr_data.peak_lists.values": "decimal_places-4",
+            "nmr_data.peak_lists.temperature": "decimal_places-1",
+            "nmr_data.peak_lists.frequency": "decimal_places-5",
             "nmr_data.experimental_data.nmr_metadata.vendor": "standardize_vendor",
             "nmr_data.experimental_data.nmr_metadata.filetype": "standardize_filetype",
             "nmr_data.experimental_data.nmr_metadata.temperature": "decimal_places-1",
@@ -56,14 +54,14 @@ class JSONStandardizer:
         with open(filetype_standardizer_path, "r") as filetype_json_file:
             self.filetype_standardizer_json = json.load(filetype_json_file)
 
-    def _run_rule(self, current, val, target_field, rule):
+    def _run_rule(self, current, val, field_path, rule):
         # Check if the target field exists and apply the specified rule
         if rule == "lowercase":
             # For string to be lowercase
             new_val = val.lower()
             if val != new_val:
                 self.notes.append(
-                    f"{target_field}: made lowercase '{val}' -> '{new_val}'"
+                    f"'{field_path}': made lowercase '{val}' -> '{new_val}'"
                 )
             return new_val
 
@@ -72,7 +70,7 @@ class JSONStandardizer:
             new_val = val.upper()
             if val != new_val:
                 self.notes.append(
-                    f"{target_field}: made uppercase '{val}' -> '{new_val}'"
+                    f"'{field_path}': made uppercase '{val}' -> '{new_val}'"
                 )
             return new_val
 
@@ -91,7 +89,7 @@ class JSONStandardizer:
 
             if val != new_val:
                 self.notes.append(
-                    f"{target_field}: corrected npmrd_id format '{val}' = {type(val)} -> '{new_val}' = {type(new_val)}"
+                    f"'{field_path}': corrected npmrd_id format '{val}' = {type(val)} -> '{new_val}' = {type(new_val)}"
                 )
             return new_val
 
@@ -101,7 +99,7 @@ class JSONStandardizer:
                 new_val = self.solv_standardizer_json[val.upper()]
                 if val != new_val:
                     self.notes.append(
-                        f"{target_field}: solvent standardized '{val}' -> '{new_val}'"
+                        f"'{field_path}': solvent standardized '{val}' -> '{new_val}'"
                     )
                 return new_val
             else:
@@ -113,7 +111,7 @@ class JSONStandardizer:
                 new_val = self.vendor_standardizer_json[val.upper()]
                 if val != new_val:
                     self.notes.append(
-                        f"{target_field}: made int '{val}' = {type(val)} -> '{new_val}' = {type(new_val)}"
+                        f"'{field_path}': made int '{val}' = {type(val)} -> '{new_val}' = {type(new_val)}"
                     )
                 return new_val
             else:
@@ -125,7 +123,7 @@ class JSONStandardizer:
                 new_val = self.filetype_standardizer_json[val.upper()]
                 if val != new_val:
                     self.notes.append(
-                        f"{target_field}: filetype standardized '{val}' -> '{new_val}'"
+                        f"'{field_path}': filetype standardized '{val}' -> '{new_val}'"
                     )
                 return new_val
             else:
@@ -136,7 +134,7 @@ class JSONStandardizer:
             new_val = int(val)
             if val != new_val:
                 self.notes.append(
-                    f"{target_field}: made int '{val}' = {type(val)} -> '{new_val}' = {type(new_val)}"
+                    f"'{field_path}': made int '{val}' = {type(val)} -> '{new_val}' = {type(new_val)}"
                 )
             return new_val
 
@@ -145,7 +143,7 @@ class JSONStandardizer:
             new_val = float(val)
             if val != new_val:
                 self.notes.append(
-                    f"{target_field}: made float '{val}' = {type(val)} -> '{new_val}' = {type(new_val)}"
+                    f"'{field_path}': made float '{val}' = {type(val)} -> '{new_val}' = {type(new_val)}"
                 )
             return new_val
 
@@ -167,7 +165,7 @@ class JSONStandardizer:
 
             if val != new_val:
                 self.notes.append(
-                    f"{target_field}: made bool '{val}' = {type(val)} -> '{new_val}' = {type(new_val)}"
+                    f"'{field_path}': made bool '{val}' = {type(val)} -> '{new_val}' = {type(new_val)}"
                 )
             return new_val
 
@@ -185,7 +183,7 @@ class JSONStandardizer:
 
             if val != new_val:
                 self.notes.append(
-                    f"{target_field}: adjusted to go to {path_parts[-1]} decimal places '{val}' = {type(val)} -> '{new_val}' = {type(new_val)}"
+                    f"'{field_path}': adjusted to go to {path_parts[-1]} decimal places '{val}' = {type(val)} -> '{new_val}' = {type(new_val)}"
                 )
             return new_val
 
@@ -194,7 +192,7 @@ class JSONStandardizer:
             new_val = parser.parse(val).strftime("%Y-%m-%dT%H:%M:%S.%f+00:00")
             if val != new_val:
                 self.notes.append(
-                    f"{target_field}: standardized date/time format '{val}' = {type(val)} -> '{new_val}' = {type(new_val)}"
+                    f"'{field_path}': standardized date/time format '{val}' = {type(val)} -> '{new_val}' = {type(new_val)}"
                 )
             return new_val
 
@@ -204,7 +202,7 @@ class JSONStandardizer:
             new_val = parser.parse(val).strftime("%Y-%m-%dT%H:%M:%S.%f+00:00")
             if val != new_val:
                 self.notes.append(
-                    f"{target_field}: standardized date format '{val}' = {type(val)} -> '{new_val}' = {type(new_val)}"
+                    f"'{field_path}': standardized date format '{val}' = {type(val)} -> '{new_val}' = {type(new_val)}"
                 )
             return new_val
 
@@ -219,10 +217,8 @@ class JSONStandardizer:
 
         current = json_data
 
-        print(f"target_field is {target_field}")
         for _ in range(len(path_parts) - 1):
             part = path_parts.pop(0)
-            print(f"part is {part}")
             current = current.get(part, {})
             # If entry is a list then create a loop and recursively check each entry
             if type(current) == list:
@@ -241,7 +237,7 @@ class JSONStandardizer:
                 new_list = []
                 for target_field_entry in current[target_field]:
                     new_val = self._run_rule(
-                        current, target_field_entry, target_field, rule
+                        current, target_field_entry, field_path, rule
                     )
                     if new_val:
                         new_list.append(new_val)
@@ -252,28 +248,30 @@ class JSONStandardizer:
             # Else run on the target_field value directly
             else:
                 new_val = self._run_rule(
-                    current, current[target_field], target_field, rule
+                    current, current[target_field], field_path, rule
                 )
                 if new_val:
                     current[target_field] = new_val
 
         return
 
-    def _run_standardizer(self, json_data):
-        for key, value in json_data.items():
-            # Trim whitespace from all str entries
-            if isinstance(value, str):
-                strip_value = value.strip()
-                if strip_value == "":
-                    json_data[key] = None
+    def _run_standardizer(self, json_data_list):
+        """Standardize each dictionary in a list of dictionaries."""
+        for json_data in json_data_list:
+            for key, value in json_data.items():
+                # Trim whitespace from all str entries
+                if isinstance(value, str):
+                    strip_value = value.strip()
+                    if strip_value == "":
+                        json_data[key] = None
+                    else:
+                        json_data[key] = strip_value
 
-                json_data[key] = value.strip()
-
-        # Apply "rules" to appropriate fields in json
-        for field_path, rule in self.rules.items():
-            self._traverse_json(json_data, field_path, rule)
-
-        return json_data, self.notes
+            # Apply "rules" to appropriate fields in json
+            for field_path, rule in self.rules.items():
+                self._traverse_json(json_data, field_path, rule)
+        
+        return json_data_list, self.notes
 
     def standardize(self):
         """
@@ -287,11 +285,10 @@ class JSONStandardizer:
         """
         try:
             standardized_json = self._run_standardizer(self.json_data)
-
             return standardized_json
 
-        except Exception as e:
-            print(f"An error occurred: {str(e)}")
+        except Exception:
+            print(f"An error occurred: {traceback.format_exc()}")
 
 
 if __name__ == "__main__":

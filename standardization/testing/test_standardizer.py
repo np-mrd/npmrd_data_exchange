@@ -30,10 +30,12 @@ class TestStandardizer(unittest.TestCase):
     def run_test_for_json_file(self, json_file):
         json_file_path = os.path.join(self.test_json_folder, json_file)
         standardizer = JSONStandardizer(json_file_path)
-        standardition_results = standardizer.standardize()
+        standardition_results, standardization_notes = standardizer.standardize()
 
         print("standardition_results is")
         print(standardition_results)
+        print("standardization_notes is")
+        print(standardization_notes)
 
         self.assertTrue(standardition_results[0]['inchikey'] != None, f"Validation failed")
 

@@ -1,0 +1,370 @@
+[
+  {
+    "name": "3-Dimethylallyl-4-hydroxybenzoic acid",
+    "np_mrd_id": null,
+    "smiles": "CC(=CCC1=C(C=CC(=C1)C(=O)O)O)C",
+    "original_isolation": false,
+    "origin_doi": "10.1248/cpb.47.1521",
+    "origin_type": "Plant",
+    "origin_genus": "Brazilian",
+    "origin_species": "propolis",
+    "c_nmr": {
+      "solvent": "Methanol-d4",
+      "temperature": null,
+      "reference": "TMS",
+      "frequency": 68,
+      "spectrum": [
+        {
+          "rdkit_index": 8,
+          "shift": 122.6,
+          "atom_index": "1"
+        },
+        {
+          "rdkit_index": 7,
+          "shift": 132.6,
+          "atom_index": "2"
+        },
+        {
+          "rdkit_index": 6,
+          "shift": 129.3,
+          "atom_index": "3"
+        },
+        {
+          "rdkit_index": 14,
+          "shift": 161.1,
+          "atom_index": "4"
+        },
+        {
+          "rdkit_index": 13,
+          "shift": 115.3,
+          "atom_index": "5"
+        },
+        {
+          "rdkit_index": 12,
+          "shift": 130.5,
+          "atom_index": "6"
+        },
+        {
+          "rdkit_index": 9,
+          "shift": 170.5,
+          "atom_index": "7"
+        },
+        {
+          "rdkit_index": 5,
+          "shift": 29.1,
+          "atom_index": "8"
+        },
+        {
+          "rdkit_index": 4,
+          "shift": 123.3,
+          "atom_index": "9"
+        },
+        {
+          "rdkit_index": 2,
+          "shift": 133.7,
+          "atom_index": "10"
+        },
+        {
+          "rdkit_index": 1,
+          "shift": 26,
+          "atom_index": "11"
+        },
+        {
+          "rdkit_index": 3,
+          "shift": 17.9,
+          "atom_index": "12"
+        }
+      ]
+    },
+    "h_nmr": {
+      "solvent": "Methanol-d4",
+      "temperature": null,
+      "reference": "TMS",
+      "frequency": 270,
+      "spectrum": [
+        {
+          "shift": 7.74,
+          "multiplicity": "d",
+          "coupling": [
+            2
+          ],
+          "atom_index": "2",
+          "rdkit_index": [
+            25
+          ],
+          "interchangable_index": []
+        },
+        {
+          "shift": 6.78,
+          "multiplicity": "d",
+          "coupling": [
+            8.2
+          ],
+          "atom_index": "5",
+          "rdkit_index": [
+            28
+          ],
+          "interchangable_index": []
+        },
+        {
+          "shift": 7.71,
+          "multiplicity": "dd",
+          "coupling": [
+            2.3,
+            8.2
+          ],
+          "atom_index": "6",
+          "rdkit_index": [
+            27
+          ],
+          "interchangable_index": []
+        },
+        {
+          "shift": 3.3,
+          "multiplicity": "m",
+          "coupling": [],
+          "atom_index": "8",
+          "rdkit_index": [
+            23,
+            24
+          ],
+          "interchangable_index": []
+        },
+        {
+          "shift": 5.3,
+          "multiplicity": "m",
+          "coupling": [],
+          "atom_index": "9",
+          "rdkit_index": [
+            22
+          ],
+          "interchangable_index": []
+        },
+        {
+          "shift": 1.75,
+          "multiplicity": "s",
+          "coupling": [],
+          "atom_index": "11",
+          "rdkit_index": [
+            16,
+            17,
+            18
+          ],
+          "interchangable_index": []
+        },
+        {
+          "shift": 1.72,
+          "multiplicity": "s",
+          "coupling": [],
+          "atom_index": "12",
+          "rdkit_index": [
+            19,
+            20,
+            21
+          ],
+          "interchangable_index": []
+        }
+      ]
+    }
+  },
+  {
+    "name": "Isokaempferide",
+    "np_mrd_id": null,
+    "smiles": "COC1=C(OC2=CC(=CC(=C2C1=O)O)O)C3=CC=C(C=C3)O",
+    "original_isolation": false,
+    "origin_doi": "10.1248/cpb.47.1521",
+    "origin_type": "Plant",
+    "origin_genus": "Brazilian",
+    "origin_species": "propolis",
+    "c_nmr": {
+      "solvent": "Dimethylsulfoxide-d6",
+      "temperature": null,
+      "reference": "TMS",
+      "frequency": 68,
+      "spectrum": [
+        {
+          "rdkit_index": 4,
+          "shift": 155.5,
+          "atom_index": "2"
+        },
+        {
+          "rdkit_index": 3,
+          "shift": 137.5,
+          "atom_index": "3"
+        },
+        {
+          "rdkit_index": 21,
+          "shift": 177.8,
+          "atom_index": "4"
+        },
+        {
+          "rdkit_index": 18,
+          "shift": 161.2,
+          "atom_index": "5"
+        },
+        {
+          "rdkit_index": 17,
+          "shift": 98.5,
+          "atom_index": "6"
+        },
+        {
+          "rdkit_index": 15,
+          "shift": 164.1,
+          "atom_index": "7"
+        },
+        {
+          "rdkit_index": 14,
+          "shift": 93.6,
+          "atom_index": "8"
+        },
+        {
+          "rdkit_index": 13,
+          "shift": 156.3,
+          "atom_index": "9"
+        },
+        {
+          "rdkit_index": 20,
+          "shift": 104.1,
+          "atom_index": "10"
+        },
+        {
+          "rdkit_index": 1,
+          "shift": 59.6,
+          "atom_index": "11"
+        },
+        {
+          "rdkit_index": 5,
+          "shift": 120.5,
+          "atom_index": "1'"
+        },
+        {
+          "rdkit_index": 6,
+          "shift": 130,
+          "atom_index": "2'"
+        },
+        {
+          "rdkit_index": 7,
+          "shift": 115.5,
+          "atom_index": "3'"
+        },
+        {
+          "rdkit_index": 8,
+          "shift": 160.1,
+          "atom_index": "4'"
+        },
+        {
+          "rdkit_index": 10,
+          "shift": 115.5,
+          "atom_index": "5'"
+        },
+        {
+          "rdkit_index": 11,
+          "shift": 130,
+          "atom_index": "6'"
+        }
+      ]
+    },
+    "h_nmr": {
+      "solvent": "Dimethylsulfoxide-d6",
+      "temperature": null,
+      "reference": "TMS",
+      "frequency": 270,
+      "spectrum": [
+        {
+          "shift": 6.2,
+          "multiplicity": "d",
+          "coupling": [
+            2
+          ],
+          "atom_index": "6",
+          "rdkit_index": [
+            33
+          ],
+          "interchangable_index": []
+        },
+        {
+          "shift": 6.44,
+          "multiplicity": "d",
+          "coupling": [
+            2
+          ],
+          "atom_index": "8",
+          "rdkit_index": [
+            31
+          ],
+          "interchangable_index": []
+        },
+        {
+          "shift": 3.78,
+          "multiplicity": "s",
+          "coupling": [],
+          "atom_index": "11",
+          "rdkit_index": [
+            23,
+            24,
+            25
+          ],
+          "interchangable_index": []
+        },
+        {
+          "shift": 7.94,
+          "multiplicity": "d",
+          "coupling": [
+            8.6
+          ],
+          "atom_index": "2'",
+          "rdkit_index": [
+            26
+          ],
+          "interchangable_index": []
+        },
+        {
+          "shift": 6.95,
+          "multiplicity": "d",
+          "coupling": [
+            8.9
+          ],
+          "atom_index": "3'",
+          "rdkit_index": [
+            27
+          ],
+          "interchangable_index": []
+        },
+        {
+          "shift": 6.95,
+          "multiplicity": "d",
+          "coupling": [
+            8.9
+          ],
+          "atom_index": "5'",
+          "rdkit_index": [
+            29
+          ],
+          "interchangable_index": []
+        },
+        {
+          "shift": 7.94,
+          "multiplicity": "d",
+          "coupling": [
+            8.6
+          ],
+          "atom_index": "6'",
+          "rdkit_index": [
+            30
+          ],
+          "interchangable_index": []
+        },
+        {
+          "shift": 12.7,
+          "multiplicity": "br. s",
+          "coupling": [],
+          "atom_index": "OH-5",
+          "rdkit_index": [
+            34
+          ],
+          "interchangable_index": []
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,665 @@
+[
+    {
+        "compound_name": "Physapubenolide",
+        "smiles": "Physapubenolide",
+        "inchikey": "",
+        "npmrd_id": null,
+        "submission": {
+            "source": "",
+            "type": null,
+            "uuid": null,
+            "compound_uuid": null,
+            "submission_date": "",
+            "embargo_status": "",
+            "embargo_date": null,
+            "compound_embargo_release_ready": null
+        },
+        "citation": {
+            "doi": "10.1039/P19850002241",
+            "pmid": null,
+            "pii": null
+        },
+        "origin": {
+            "species": "pubescens",
+            "genus": "Physalis",
+            "private_collection": {
+                "compound_source_type": null,
+                "purified_in_house": {
+                    "biological_material_source": null
+                },
+                "commercial": {
+                    "supplier": null,
+                    "cas_number": null,
+                    "catalogue_number": null
+                },
+                "compound_library": {
+                    "library_name": null,
+                    "library_description": null,
+                    "library_compound_code": null
+                },
+                "other": {
+                    "user_specified_compound_source": null,
+                    "biological_material_source": null
+                }
+            }
+        },
+        "depositor_info": {
+            "email": null,
+            "account_id": 0,
+            "attribution_name": null,
+            "attribution_organization": null,
+            "show_email_in_attribution": false,
+            "show_name_in_attribution": false,
+            "show_organization_in_attribution": false
+        },
+        "nmr_data": {
+            "peak_lists": [
+                {
+                    "solvent": null,
+                    "reference": null,
+                    "values": [
+                        null
+                    ],
+                    "frequency": null,
+                    "frequency_units": null,
+                    "temperature": null,
+                    "temperature_units": null,
+                    "peak_list_uuid": null,
+                    "peak_list_embargo_release_ready": null
+                }
+            ],
+            "experimental_data": {
+                "nmr_data_download_link": null,
+                "nmr_metadata": [
+                    {
+                        "vendor": null,
+                        "filetype": null,
+                        "solvent": null,
+                        "frequency": [
+                            0.0
+                        ],
+                        "frequency_units": null,
+                        "f1_nucleus": null,
+                        "f2_nucleus": null,
+                        "temperature": null,
+                        "temperature_units": null,
+                        "experiment_type": null,
+                        "extracted_experiment_folder": null,
+                        "extracted_data_path": null,
+                        "spectrum_uuid": null,
+                        "spectrum_embargo_release_ready": null
+                    }
+                ]
+            },
+            "assignment_data": [
+                {
+                    "atom": "C",
+                    "solvent": null,
+                    "temperature": null,
+                    "temperature_units": "K",
+                    "reference": null,
+                    "frequency": 270,
+                    "frequency_units": "MHz",
+                    "spectrum": [
+                        {
+                            "shift": 202.6,
+                            "integration": null,
+                            "multiplicity": null,
+                            "coupling": [],
+                            "atom_index": "1",
+                            "rdkit_index": [
+                                33
+                            ],
+                            "interchangeable_index": []
+                        },
+                        {
+                            "shift": 131.5,
+                            "integration": null,
+                            "multiplicity": null,
+                            "coupling": [],
+                            "atom_index": "2",
+                            "rdkit_index": [
+                                32
+                            ],
+                            "interchangeable_index": []
+                        },
+                        {
+                            "shift": 143.5,
+                            "integration": null,
+                            "multiplicity": null,
+                            "coupling": [],
+                            "atom_index": "3",
+                            "rdkit_index": [
+                                31
+                            ],
+                            "interchangeable_index": []
+                        },
+                        {
+                            "shift": 69.6,
+                            "integration": null,
+                            "multiplicity": null,
+                            "coupling": [],
+                            "atom_index": "4",
+                            "rdkit_index": [
+                                29
+                            ],
+                            "interchangeable_index": []
+                        },
+                        {
+                            "shift": 63.4,
+                            "integration": null,
+                            "multiplicity": null,
+                            "coupling": [],
+                            "atom_index": "5",
+                            "rdkit_index": [
+                                28
+                            ],
+                            "interchangeable_index": []
+                        },
+                        {
+                            "shift": 62.7,
+                            "integration": null,
+                            "multiplicity": null,
+                            "coupling": [],
+                            "atom_index": "6",
+                            "rdkit_index": [
+                                26
+                            ],
+                            "interchangeable_index": []
+                        },
+                        {
+                            "shift": 26.1,
+                            "integration": null,
+                            "multiplicity": null,
+                            "coupling": [],
+                            "atom_index": "7",
+                            "rdkit_index": [
+                                25
+                            ],
+                            "interchangeable_index": []
+                        },
+                        {
+                            "shift": 40.3,
+                            "integration": null,
+                            "multiplicity": null,
+                            "coupling": [],
+                            "atom_index": "8",
+                            "rdkit_index": [
+                                24
+                            ],
+                            "interchangeable_index": []
+                        },
+                        {
+                            "shift": 36.1,
+                            "integration": null,
+                            "multiplicity": null,
+                            "coupling": [],
+                            "atom_index": "9",
+                            "rdkit_index": [
+                                23
+                            ],
+                            "interchangeable_index": []
+                        },
+                        {
+                            "shift": 47.9,
+                            "integration": null,
+                            "multiplicity": null,
+                            "coupling": [],
+                            "atom_index": "10",
+                            "rdkit_index": [
+                                35
+                            ],
+                            "interchangeable_index": []
+                        },
+                        {
+                            "shift": 21.8,
+                            "integration": null,
+                            "multiplicity": null,
+                            "coupling": [],
+                            "atom_index": "11",
+                            "rdkit_index": [
+                                22
+                            ],
+                            "interchangeable_index": []
+                        },
+                        {
+                            "shift": 41.4,
+                            "integration": null,
+                            "multiplicity": null,
+                            "coupling": [],
+                            "atom_index": "12",
+                            "rdkit_index": [
+                                21
+                            ],
+                            "interchangeable_index": []
+                        },
+                        {
+                            "shift": 46.1,
+                            "integration": null,
+                            "multiplicity": null,
+                            "coupling": [],
+                            "atom_index": "13",
+                            "rdkit_index": [
+                                19
+                            ],
+                            "interchangeable_index": []
+                        },
+                        {
+                            "shift": 84.1,
+                            "integration": null,
+                            "multiplicity": null,
+                            "coupling": [],
+                            "atom_index": "14",
+                            "rdkit_index": [
+                                37
+                            ],
+                            "interchangeable_index": []
+                        },
+                        {
+                            "shift": 80.8,
+                            "integration": null,
+                            "multiplicity": null,
+                            "coupling": [],
+                            "atom_index": "15",
+                            "rdkit_index": [
+                                5
+                            ],
+                            "interchangeable_index": []
+                        },
+                        {
+                            "shift": 33.8,
+                            "integration": null,
+                            "multiplicity": null,
+                            "coupling": [],
+                            "atom_index": "16",
+                            "rdkit_index": [
+                                6
+                            ],
+                            "interchangeable_index": []
+                        },
+                        {
+                            "shift": 52.3,
+                            "integration": null,
+                            "multiplicity": null,
+                            "coupling": [],
+                            "atom_index": "17",
+                            "rdkit_index": [
+                                7
+                            ],
+                            "interchangeable_index": []
+                        },
+                        {
+                            "shift": 15.6,
+                            "integration": null,
+                            "multiplicity": null,
+                            "coupling": [],
+                            "atom_index": "18",
+                            "rdkit_index": [
+                                20
+                            ],
+                            "interchangeable_index": []
+                        },
+                        {
+                            "shift": 17.2,
+                            "integration": null,
+                            "multiplicity": null,
+                            "coupling": [],
+                            "atom_index": "19",
+                            "rdkit_index": [
+                                36
+                            ],
+                            "interchangeable_index": []
+                        },
+                        {
+                            "shift": 37.5,
+                            "integration": null,
+                            "multiplicity": null,
+                            "coupling": [],
+                            "atom_index": "20",
+                            "rdkit_index": [
+                                8
+                            ],
+                            "interchangeable_index": []
+                        },
+                        {
+                            "shift": 17.2,
+                            "integration": null,
+                            "multiplicity": null,
+                            "coupling": [],
+                            "atom_index": "21",
+                            "rdkit_index": [
+                                9
+                            ],
+                            "interchangeable_index": []
+                        },
+                        {
+                            "shift": 78.5,
+                            "integration": null,
+                            "multiplicity": null,
+                            "coupling": [],
+                            "atom_index": "22",
+                            "rdkit_index": [
+                                10
+                            ],
+                            "interchangeable_index": []
+                        },
+                        {
+                            "shift": 31.2,
+                            "integration": null,
+                            "multiplicity": null,
+                            "coupling": [],
+                            "atom_index": "23",
+                            "rdkit_index": [
+                                11
+                            ],
+                            "interchangeable_index": []
+                        },
+                        {
+                            "shift": 149.5,
+                            "integration": null,
+                            "multiplicity": null,
+                            "coupling": [],
+                            "atom_index": "24",
+                            "rdkit_index": [
+                                12
+                            ],
+                            "interchangeable_index": []
+                        },
+                        {
+                            "shift": 121.9,
+                            "integration": null,
+                            "multiplicity": null,
+                            "coupling": [],
+                            "atom_index": "25",
+                            "rdkit_index": [
+                                14
+                            ],
+                            "interchangeable_index": []
+                        },
+                        {
+                            "shift": 166.8,
+                            "integration": null,
+                            "multiplicity": null,
+                            "coupling": [],
+                            "atom_index": "26",
+                            "rdkit_index": [
+                                16
+                            ],
+                            "interchangeable_index": []
+                        },
+                        {
+                            "shift": 12.4,
+                            "integration": null,
+                            "multiplicity": null,
+                            "coupling": [],
+                            "atom_index": "27",
+                            "rdkit_index": [
+                                15
+                            ],
+                            "interchangeable_index": []
+                        },
+                        {
+                            "shift": 20.5,
+                            "integration": null,
+                            "multiplicity": null,
+                            "coupling": [],
+                            "atom_index": "28",
+                            "rdkit_index": [
+                                13
+                            ],
+                            "interchangeable_index": []
+                        },
+                        {
+                            "shift": 169.8,
+                            "integration": null,
+                            "multiplicity": null,
+                            "coupling": [],
+                            "atom_index": "C-OCH3",
+                            "rdkit_index": [
+                                2
+                            ],
+                            "interchangeable_index": []
+                        },
+                        {
+                            "shift": 21.5,
+                            "integration": null,
+                            "multiplicity": null,
+                            "coupling": [],
+                            "atom_index": "CO-C-H3",
+                            "rdkit_index": [
+                                1
+                            ],
+                            "interchangeable_index": []
+                        }
+                    ]
+                },
+                {
+                    "atom": "H",
+                    "solvent": "Chloroform-d",
+                    "temperature": null,
+                    "temperature_units": "K",
+                    "reference": null,
+                    "frequency": 22.63,
+                    "frequency_units": "MHz",
+                    "spectrum": [
+                        {
+                            "shift": 6.18,
+                            "integration": null,
+                            "multiplicity": "d",
+                            "coupling": [
+                                10
+                            ],
+                            "atom_index": "2",
+                            "rdkit_index": [
+                                74
+                            ],
+                            "interchangeable_index": []
+                        },
+                        {
+                            "shift": 6.95,
+                            "integration": null,
+                            "multiplicity": "dd",
+                            "coupling": [
+                                10,
+                                5.5
+                            ],
+                            "atom_index": "3",
+                            "rdkit_index": [
+                                73
+                            ],
+                            "interchangeable_index": []
+                        },
+                        {
+                            "shift": 3.79,
+                            "integration": null,
+                            "multiplicity": "d",
+                            "coupling": [
+                                5.5
+                            ],
+                            "atom_index": "4",
+                            "rdkit_index": [
+                                71
+                            ],
+                            "interchangeable_index": []
+                        },
+                        {
+                            "shift": 3.36,
+                            "integration": null,
+                            "multiplicity": "m",
+                            "coupling": [],
+                            "atom_index": "6",
+                            "rdkit_index": [
+                                70
+                            ],
+                            "interchangeable_index": []
+                        },
+                        {
+                            "shift": 4.97,
+                            "integration": null,
+                            "multiplicity": "d",
+                            "coupling": [
+                                4.4
+                            ],
+                            "atom_index": "15",
+                            "rdkit_index": [
+                                42
+                            ],
+                            "interchangeable_index": []
+                        },
+                        {
+                            "shift": 1.11,
+                            "integration": null,
+                            "multiplicity": "s",
+                            "coupling": [],
+                            "atom_index": "18",
+                            "rdkit_index": [
+                                59,
+                                60,
+                                61
+                            ],
+                            "interchangeable_index": []
+                        },
+                        {
+                            "shift": 1.4,
+                            "integration": null,
+                            "multiplicity": "s",
+                            "coupling": [],
+                            "atom_index": "19",
+                            "rdkit_index": [
+                                75,
+                                76,
+                                77
+                            ],
+                            "interchangeable_index": []
+                        },
+                        {
+                            "shift": 1.02,
+                            "integration": null,
+                            "multiplicity": "d",
+                            "coupling": [
+                                6.8
+                            ],
+                            "atom_index": "21",
+                            "rdkit_index": [
+                                47,
+                                48,
+                                49
+                            ],
+                            "interchangeable_index": []
+                        },
+                        {
+                            "shift": 4.32,
+                            "integration": null,
+                            "multiplicity": "dt",
+                            "coupling": [],
+                            "atom_index": "22",
+                            "rdkit_index": [
+                                50
+                            ],
+                            "interchangeable_index": []
+                        },
+                        {
+                            "shift": 1.87,
+                            "integration": null,
+                            "multiplicity": "s",
+                            "coupling": [],
+                            "atom_index": "27",
+                            "rdkit_index": [
+                                56,
+                                57,
+                                58
+                            ],
+                            "interchangeable_index": []
+                        },
+                        {
+                            "shift": 1.94,
+                            "integration": null,
+                            "multiplicity": "s",
+                            "coupling": [],
+                            "atom_index": "28",
+                            "rdkit_index": [
+                                53,
+                                54,
+                                55
+                            ],
+                            "interchangeable_index": []
+                        },
+                        {
+                            "shift": 1.99,
+                            "integration": null,
+                            "multiplicity": "s",
+                            "coupling": [],
+                            "atom_index": "CO-C-H3",
+                            "rdkit_index": [
+                                39,
+                                40,
+                                41
+                            ],
+                            "interchangeable_index": []
+                        }
+                    ]
+                }
+            ],
+            "predicted_data": {
+                "prediction_method": null,
+                "dft_protocol": {
+                    "molecular_dynamics": {
+                        "md_software": null,
+                        "md_software_version": null,
+                        "forcefield": null,
+                        "energy_window": null,
+                        "downselection": null
+                    },
+                    "quantum_mechanics": {
+                        "qm_software": null,
+                        "qm_software_version": null,
+                        "tasks": [
+                            null
+                        ],
+                        "functionals": [
+                            null
+                        ],
+                        "basis_sets": [
+                            null
+                        ],
+                        "solvent": null,
+                        "conversion_factors": {
+                            "H": {
+                                "m": null,
+                                "b": null
+                            },
+                            "C": {
+                                "m": null,
+                                "b": null
+                            }
+                        }
+                    }
+                },
+                "ml_protocol": {
+                    "ml_model": null,
+                    "training_set": null,
+                    "training_parameters": {
+                        "parameter_1": null,
+                        "parameter_2": null
+                    },
+                    "chemical_shifts": {
+                        "solvent": null,
+                        "temperature": null,
+                        "temperature_units": null,
+                        "h_nmr": {
+                            "shift": null,
+                            "shielding_tensor": null,
+                            "rdkit_index": null
+                        },
+                        "c_nmr": {
+                            "shift": null,
+                            "shielding_tensor": null,
+                            "rdkit_index": null
+                        }
+                    }
+                }
+            }
+        },
+        "np_mrd_id": null
+    }
+]

@@ -1,6 +1,6 @@
 {
-  "$schema": "npmrd_exchange",
-  "version": "2.0.4",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "version": "2.0.5",
   "type": "object",
   "properties": {
     "compound_name": {
@@ -303,6 +303,16 @@
           "items": {
             "type": "object",
             "properties": {
+              "atom": {
+                "type": [
+                  "string"
+                ],
+                "enum": [
+                  "C",
+                  "H"
+                ],
+                "maxLength": 1
+              },
               "solvent": {
                 "type": [
                   "string",
@@ -317,7 +327,7 @@
                 ],
                 "maxLength": 10000
               },
-              "c_values": {
+              "values": {
                 "type": "array",
                 "items": {
                   "oneOf": [
@@ -334,32 +344,7 @@
                 },
                 "maxLength": 1000
               },
-              "h_values": {
-                "type": "array",
-                "items": {
-                  "oneOf": [
-                    {
-                      "type": "number"
-                    },
-                    {
-                      "type": "array",
-                      "items": {
-                        "type": "number"
-                      }
-                    }
-                  ]
-                },
-                "maxLength": 1000
-              },
-              "c_frequency": {
-                "type": [
-                  "number",
-                  "null"
-                ],
-                "minimum": 50,
-                "maximum": 1400
-              },
-              "h_frequency": {
+              "frequency": {
                 "type": [
                   "number",
                   "null"
@@ -377,15 +362,7 @@
                   "Hz"
                 ]
               },
-              "c_temperature": {
-                "type": [
-                  "integer",
-                  "null"
-                ],
-                "minimum": 200,
-                "maximum": 400
-              },
-              "h_temperature": {
+              "temperature": {
                 "type": [
                   "integer",
                   "null"
@@ -566,11 +543,21 @@
           }
         },
         "assignment_data": {
-          "type": "object",
-          "properties": {
-            "h_nmr": {
-              "type": "object",
-              "properties": {
+        "type": "array",
+        "items": [
+            {
+            "type": "object",
+            "properties": {
+                "atom": {
+                    "type": [
+                      "string"
+                    ],
+                    "enum": [
+                        "C",
+                        "H"
+                    ],
+                    "maxLength": 1
+                },
                 "solvent": {
                   "type": [
                     "string",
@@ -688,95 +675,8 @@
                   }
                 }
               }
-            },
-            "c_nmr": {
-              "type": "object",
-              "properties": {
-                "solvent": {
-                  "type": [
-                    "string",
-                    "null"
-                  ],
-                  "maxLength": 10000
-                },
-                "temperature": {
-                  "type": [
-                    "integer",
-                    "null"
-                  ],
-                  "minimum": 1,
-                  "maximum": 500
-                },
-                "temperature_units": {
-                  "type": [
-                    "string",
-                    "null"
-                  ],
-                  "enum": [
-                    "K",
-                    "C",
-                    "F",
-                    null
-                  ]
-                },
-                "reference": {
-                  "type": [
-                    "string",
-                    "null"
-                  ],
-                  "maxLength": 10000
-                },
-                "frequency": {
-                  "type": [
-                    "number",
-                    "null"
-                  ],
-                  "maxLength": 10000
-                },
-                "frequency_units": {
-                  "type": [
-                    "string",
-                    "null"
-                  ],
-                  "enum": [
-                    "MHz",
-                    "Hz",
-                    null
-                  ]
-                },
-                "spectrum": {
-                  "type": "array",
-                  "items": {
-                    "type": "object",
-                    "properties": {
-                      "shift": {
-                        "type": [
-                          "number",
-                          "null"
-                        ],
-                        "maximum": 250,
-                        "minimum": -11
-                      },
-                      "atom_index": {
-                        "type": [
-                          "integer",
-                          "null"
-                        ]
-                      },
-                      "rdkit_index": {
-                        "type": [
-                          "integer",
-                          "null"
-                        ],
-                        "maximum": 2000,
-                        "minimum": 1
-                      }
-                    }
-                  }
-                }
-              }
             }
-          }
+          ]
         },
         "predicted_data": {
           "type": "object",
