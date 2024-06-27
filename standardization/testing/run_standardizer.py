@@ -1,12 +1,17 @@
 import unittest
 import os
 import sys
+import json
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
 
 from standardization.standardizer import JSONStandardizer
 
-standardizer = JSONStandardizer("/Users/mpin/Documents/SFU/lingingtonlab/npmrd_data_exchange/standardization/testing/test_jsons/article_json_1.json")
+json_file_path = os.path.join("./test_jsons/article_json_1.json")
+with open(json_file_path, 'r') as file:
+    json_dict = json.load(file)
+
+standardizer = JSONStandardizer(json_dict)
 standardition_results = standardizer.standardize()
 
 print("standardition_results is")

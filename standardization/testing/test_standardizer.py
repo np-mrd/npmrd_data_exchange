@@ -1,6 +1,7 @@
 import unittest
 import os
 import sys
+import json
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
 
@@ -29,13 +30,11 @@ class TestStandardizer(unittest.TestCase):
 
     def run_test_for_json_file(self, json_file):
         json_file_path = os.path.join(self.test_json_folder, json_file)
-        standardizer = JSONStandardizer(json_file_path)
+        with open(json_file_path, 'r') as file:
+            json_dict = json.load(file)
+        
+        standardizer = JSONStandardizer(json_dict)
         standardition_results, standardization_notes = standardizer.standardize()
-
-        print("standardition_results is")
-        print(standardition_results)
-        print("standardization_notes is")
-        print(standardization_notes)
 
         self.assertTrue(standardition_results[0]['inchikey'] != None, f"Validation failed")
 

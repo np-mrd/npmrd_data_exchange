@@ -20,9 +20,8 @@ filetype_standardizer_path = os.path.join(
 
 
 class JSONStandardizer:
-    def __init__(self, json_path):
-        with open(json_path, "r") as json_data_file:
-            self.json_data = json.load(json_data_file)
+    def __init__(self, json_dict):
+        self.json_data = json_dict
         self.notes = []
         self.rules = {
             "npmrd_id": "correct_npmrd_id",
@@ -299,13 +298,16 @@ if __name__ == "__main__":
 
         try:
             with open(json_file_path, "r") as file:
-                json_data = json.load(file)
+                json_dict = json.load(file)
         except FileNotFoundError:
-            print(f"JSON not found: {json_data}")
+            print(f"JSON not found: {json_dict}")
         except json.JSONDecodeError:
-            print(f"Provided JSON is invalid: {json_data}")
+            print(f"Provided JSON is invalid: {json_dict}")
+        
+        print("json_dict is")
+        print(json_dict)
 
-        standardizer = JSONStandardizer(json_data)
+        standardizer = JSONStandardizer(json_dict)
         if standardizer.standardize():
             print("All entries have been standardized.")
         else:
