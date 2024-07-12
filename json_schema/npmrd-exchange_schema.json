@@ -17,7 +17,10 @@
       "maxLength": 10000
     },
     "inchikey": {
-      "type": "string",
+       "type": [
+        "string",
+        "null"
+      ],
       "minLength": 27,
       "maxLength": 27
     },
@@ -76,11 +79,15 @@
           "format": "date-time"
         },
         "embargo_status": {
-          "type": "string",
+          "type": [
+            "string",
+            "null"
+          ],
           "enum": [
             "release_immediately",
             "do_not_release",
-            "embargo_until_publication"
+            "embargo_until_publication",
+            null
           ],
           "maxLength": 30
         },
@@ -99,9 +106,7 @@
         }
       },
       "required": [
-        "source",
-        "submission_date",
-        "embargo_status"
+        "source"
       ]
     },
     "citation": {
@@ -303,13 +308,15 @@
           "items": {
             "type": "object",
             "properties": {
-              "atom": {
+              "nucleus": {
                 "type": [
-                  "string"
+                  "string",
+                  "null"
                 ],
                 "enum": [
                   "C",
-                  "H"
+                  "H",
+                  null
                 ],
                 "maxLength": 1
               },
@@ -339,6 +346,9 @@
                       "items": {
                         "type": "number"
                       }
+                    },
+                    {
+                        "type": "null"
                     }
                   ]
                 },
@@ -360,7 +370,8 @@
                 "enum": [
                   "MHz",
                   "Hz"
-                ]
+                ],
+                "default": "MHz"
               },
               "temperature": {
                 "type": [
@@ -379,7 +390,8 @@
                   "K",
                   "C",
                   "F"
-                ]
+                ],
+                "default": "K"
               },
               "peak_list_uuid": {
                 "type": [
@@ -387,6 +399,14 @@
                   "null"
                 ],
                 "maxLength": 16
+              },
+              "linked_peak_list_uuids": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "minItems": 0,
+                "maxItems": 10
               },
               "peak_list_embargo_release_ready": {
                 "type": [
@@ -466,7 +486,8 @@
                       "Hz",
                       null
                     ],
-                    "maxLength": 100
+                    "maxLength": 100,
+                    "default": "MHz"
                   },
                   "f1_nucleus": {
                     "type": [
@@ -498,10 +519,10 @@
                     "enum": [
                       "K",
                       "C",
-                      "F",
-                      null
+                      "F"
                     ],
-                    "maxLength": 10
+                    "maxLength": 10,
+                    "default": "K"
                   },
                   "experiment_type": {
                     "type": [
@@ -548,7 +569,15 @@
             {
             "type": "object",
             "properties": {
-                "atom": {
+                "assignment_uuid": {
+                    "type": [
+                        "string",
+                        "null"
+                      ],
+                      "minLength": 36,
+                      "maxLength": 36
+                },
+                "nucleus": {
                     "type": [
                       "string"
                     ],
@@ -581,9 +610,9 @@
                   "enum": [
                     "K",
                     "C",
-                    "F",
-                    null
-                  ]
+                    "F"
+                  ],
+                  "default": "K"
                 },
                 "reference": {
                   "type": [
@@ -620,8 +649,8 @@
                           "number",
                           "null"
                         ],
-                        "maximum": 21,
-                        "minimum": -3
+                        "maximum": 250,
+                        "minimum": -11
                       },
                       "integration": {
                         "type": [
@@ -647,7 +676,7 @@
                       },
                       "atom_index": {
                         "type": [
-                          "integer",
+                          "string",
                           "null"
                         ]
                       },
@@ -888,9 +917,9 @@
                       "enum": [
                         "K",
                         "C",
-                        "F",
-                        null
-                      ]
+                        "F"
+                      ],
+                      "default": "K"
                     },
                     "h_nmr": {
                       "type": "object",
@@ -959,7 +988,6 @@
   },
   "required": [
     "smiles",
-    "inchikey",
     "submission",
     "citation",
     "origin",

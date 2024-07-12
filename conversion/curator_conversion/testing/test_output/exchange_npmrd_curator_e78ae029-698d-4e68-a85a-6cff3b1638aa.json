@@ -1,16 +1,16 @@
 [
     {
         "compound_name": "Penitol A",
-        "smiles": "Penitol A",
-        "inchikey": "",
+        "smiles": "C[C@H]1OC2(CCCCC2)C2=C([C@@H]1C)C(C)=C(O)C=C2O",
+        "inchikey": null,
         "npmrd_id": null,
         "submission": {
-            "source": "",
+            "source": "npmrd_curator",
             "type": null,
             "uuid": null,
             "compound_uuid": null,
             "submission_date": "",
-            "embargo_status": "",
+            "embargo_status": null,
             "embargo_date": null,
             "compound_embargo_release_ready": null
         },
@@ -55,16 +55,20 @@
         "nmr_data": {
             "peak_lists": [
                 {
+                    "nucleus": null,
                     "solvent": null,
                     "reference": null,
                     "values": [
                         null
                     ],
                     "frequency": null,
-                    "frequency_units": null,
+                    "frequency_units": "MHz",
                     "temperature": null,
-                    "temperature_units": null,
+                    "temperature_units": "K",
                     "peak_list_uuid": null,
+                    "linked_peak_list_uuids": [
+                        ""
+                    ],
                     "peak_list_embargo_release_ready": null
                 }
             ],
@@ -78,11 +82,11 @@
                         "frequency": [
                             0.0
                         ],
-                        "frequency_units": null,
+                        "frequency_units": "MHz",
                         "f1_nucleus": null,
                         "f2_nucleus": null,
                         "temperature": null,
-                        "temperature_units": null,
+                        "temperature_units": "K",
                         "experiment_type": null,
                         "extracted_experiment_folder": null,
                         "extracted_data_path": null,
@@ -93,7 +97,8 @@
             },
             "assignment_data": [
                 {
-                    "atom": "C",
+                    "assignment_uuid": "fe40cc28-95a6-4a3b-830a-ee2b84cb6de5",
+                    "nucleus": "C",
                     "solvent": "Methanol-d4",
                     "temperature": null,
                     "temperature_units": "K",
@@ -105,193 +110,262 @@
                             "shift": 76.2,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "1",
                             "rdkit_index": [
                                 15
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 72.2,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "3",
                             "rdkit_index": [
                                 12
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 38.4,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "4",
                             "rdkit_index": [
                                 10
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 114.3,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "5",
                             "rdkit_index": [
                                 2
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 155.2,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "6",
                             "rdkit_index": [
                                 3
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 102.3,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "7",
                             "rdkit_index": [
                                 5
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 153.1,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "8",
                             "rdkit_index": [
                                 6
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 121.5,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "9",
                             "rdkit_index": [
                                 8
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 140.7,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "10",
                             "rdkit_index": [
                                 9
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 21.8,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "11",
                             "rdkit_index": [
                                 13
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 20.8,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "12",
                             "rdkit_index": [
                                 11
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 11.8,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "13",
                             "rdkit_index": [
                                 1
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 35.7,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "14",
                             "rdkit_index": [
                                 16
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 23.1,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "15",
                             "rdkit_index": [
                                 17
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 26.7,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "16",
                             "rdkit_index": [
                                 18
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 22.9,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "17",
                             "rdkit_index": [
                                 19
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 34.2,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "18",
                             "rdkit_index": [
                                 20
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         }
                     ]
                 },
                 {
-                    "atom": "H",
+                    "assignment_uuid": "1a2b6681-c10d-408f-a6ad-fc61ec720451",
+                    "nucleus": "H",
                     "solvent": "Methanol-d4",
                     "temperature": null,
                     "temperature_units": "K",
@@ -565,7 +639,7 @@
                     "chemical_shifts": {
                         "solvent": null,
                         "temperature": null,
-                        "temperature_units": null,
+                        "temperature_units": "K",
                         "h_nmr": {
                             "shift": null,
                             "shielding_tensor": null,
@@ -584,16 +658,16 @@
     },
     {
         "compound_name": "Penicitol E",
-        "smiles": "Penicitol E",
-        "inchikey": "",
+        "smiles": "[H][C@]12O[C@H](C)[C@@H](C)C3=C1C(O[C@@]1(O)CCCC[C@@]21[H])=CC(O)=C3C",
+        "inchikey": null,
         "npmrd_id": null,
         "submission": {
-            "source": "",
+            "source": "npmrd_curator",
             "type": null,
             "uuid": null,
             "compound_uuid": null,
             "submission_date": "",
-            "embargo_status": "",
+            "embargo_status": null,
             "embargo_date": null,
             "compound_embargo_release_ready": null
         },
@@ -638,16 +712,20 @@
         "nmr_data": {
             "peak_lists": [
                 {
+                    "nucleus": null,
                     "solvent": null,
                     "reference": null,
                     "values": [
                         null
                     ],
                     "frequency": null,
-                    "frequency_units": null,
+                    "frequency_units": "MHz",
                     "temperature": null,
-                    "temperature_units": null,
+                    "temperature_units": "K",
                     "peak_list_uuid": null,
+                    "linked_peak_list_uuids": [
+                        ""
+                    ],
                     "peak_list_embargo_release_ready": null
                 }
             ],
@@ -661,11 +739,11 @@
                         "frequency": [
                             0.0
                         ],
-                        "frequency_units": null,
+                        "frequency_units": "MHz",
                         "f1_nucleus": null,
                         "f2_nucleus": null,
                         "temperature": null,
-                        "temperature_units": null,
+                        "temperature_units": "K",
                         "experiment_type": null,
                         "extracted_experiment_folder": null,
                         "extracted_data_path": null,
@@ -676,7 +754,8 @@
             },
             "assignment_data": [
                 {
-                    "atom": "C",
+                    "assignment_uuid": "83ca9553-36ae-44a8-9c03-06ef2c33fa4e",
+                    "nucleus": "C",
                     "solvent": "Chloroform-d",
                     "temperature": null,
                     "temperature_units": "K",
@@ -688,204 +767,277 @@
                             "shift": 61.8,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "1",
                             "rdkit_index": [
                                 14
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 74.8,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "3",
                             "rdkit_index": [
                                 11
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 35.1,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "4",
                             "rdkit_index": [
                                 9
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 114.3,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "5",
                             "rdkit_index": [
                                 2
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 153.8,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "6",
                             "rdkit_index": [
                                 3
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 100.2,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "7",
                             "rdkit_index": [
                                 5
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 148.8,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "8",
                             "rdkit_index": [
                                 6
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 109.9,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "9",
                             "rdkit_index": [
                                 7
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 137.9,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "10",
                             "rdkit_index": [
                                 8
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 18.5,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "11",
                             "rdkit_index": [
                                 12
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 22.4,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "12",
                             "rdkit_index": [
                                 10
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 10,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "13",
                             "rdkit_index": [
                                 1
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 41.2,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "14",
                             "rdkit_index": [
                                 15
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 99.2,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "15",
                             "rdkit_index": [
                                 20
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 39.8,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "16",
                             "rdkit_index": [
                                 19
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 23.2,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "17",
                             "rdkit_index": [
                                 18
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 24.1,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "18",
                             "rdkit_index": [
                                 17
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 22.3,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "19",
                             "rdkit_index": [
                                 16
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         }
                     ]
                 },
                 {
-                    "atom": "H",
+                    "assignment_uuid": "3c1b8ab4-6799-4ff5-aad5-488d396ad630",
+                    "nucleus": "H",
                     "solvent": "Chloroform-d",
                     "temperature": null,
                     "temperature_units": "K",
@@ -1153,7 +1305,7 @@
                     "chemical_shifts": {
                         "solvent": null,
                         "temperature": null,
-                        "temperature_units": null,
+                        "temperature_units": "K",
                         "h_nmr": {
                             "shift": null,
                             "shielding_tensor": null,
@@ -1172,16 +1324,16 @@
     },
     {
         "compound_name": "Penicitol F",
-        "smiles": "Penicitol F",
-        "inchikey": "",
+        "smiles": "[H][C@@]12O[C@H](C)[C@@H](C)C3=C1C(O[C@]1(O)CCCC[C@@]21[H])=CC(O)=C3C",
+        "inchikey": null,
         "npmrd_id": null,
         "submission": {
-            "source": "",
+            "source": "npmrd_curator",
             "type": null,
             "uuid": null,
             "compound_uuid": null,
             "submission_date": "",
-            "embargo_status": "",
+            "embargo_status": null,
             "embargo_date": null,
             "compound_embargo_release_ready": null
         },
@@ -1226,16 +1378,20 @@
         "nmr_data": {
             "peak_lists": [
                 {
+                    "nucleus": null,
                     "solvent": null,
                     "reference": null,
                     "values": [
                         null
                     ],
                     "frequency": null,
-                    "frequency_units": null,
+                    "frequency_units": "MHz",
                     "temperature": null,
-                    "temperature_units": null,
+                    "temperature_units": "K",
                     "peak_list_uuid": null,
+                    "linked_peak_list_uuids": [
+                        ""
+                    ],
                     "peak_list_embargo_release_ready": null
                 }
             ],
@@ -1249,11 +1405,11 @@
                         "frequency": [
                             0.0
                         ],
-                        "frequency_units": null,
+                        "frequency_units": "MHz",
                         "f1_nucleus": null,
                         "f2_nucleus": null,
                         "temperature": null,
-                        "temperature_units": null,
+                        "temperature_units": "K",
                         "experiment_type": null,
                         "extracted_experiment_folder": null,
                         "extracted_data_path": null,
@@ -1264,7 +1420,8 @@
             },
             "assignment_data": [
                 {
-                    "atom": "C",
+                    "assignment_uuid": "003e23f4-894a-46c8-bb0f-92110c07349e",
+                    "nucleus": "C",
                     "solvent": "Chloroform-d",
                     "temperature": null,
                     "temperature_units": "K",
@@ -1276,204 +1433,277 @@
                             "shift": 71.4,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "1",
                             "rdkit_index": [
                                 14
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 79.1,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "3",
                             "rdkit_index": [
                                 11
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 38.1,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "4",
                             "rdkit_index": [
                                 9
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 114.4,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "5",
                             "rdkit_index": [
                                 2
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 154.3,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "6",
                             "rdkit_index": [
                                 3
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 100.4,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "7",
                             "rdkit_index": [
                                 5
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 148.5,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "8",
                             "rdkit_index": [
                                 6
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 114.7,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "9",
                             "rdkit_index": [
                                 7
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 139,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "10",
                             "rdkit_index": [
                                 8
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 21.8,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "11",
                             "rdkit_index": [
                                 12
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 19.9,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "12",
                             "rdkit_index": [
                                 10
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 11.1,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "13",
                             "rdkit_index": [
                                 1
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 44,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "14",
                             "rdkit_index": [
                                 15
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 98.5,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "15",
                             "rdkit_index": [
                                 20
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 39,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "16",
                             "rdkit_index": [
                                 19
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 23.1,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "17",
                             "rdkit_index": [
                                 18
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 25.1,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "18",
                             "rdkit_index": [
                                 17
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 26.2,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "19",
                             "rdkit_index": [
                                 16
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         }
                     ]
                 },
                 {
-                    "atom": "H",
+                    "assignment_uuid": "aba022a2-c8b2-440e-b484-5fb2bcfac8a5",
+                    "nucleus": "H",
                     "solvent": "Chloroform-d",
                     "temperature": null,
                     "temperature_units": "K",
@@ -1743,7 +1973,7 @@
                     "chemical_shifts": {
                         "solvent": null,
                         "temperature": null,
-                        "temperature_units": null,
+                        "temperature_units": "K",
                         "h_nmr": {
                             "shift": null,
                             "shielding_tensor": null,
@@ -1762,16 +1992,16 @@
     },
     {
         "compound_name": "Penicitol G",
-        "smiles": "Penicitol G",
-        "inchikey": "",
+        "smiles": "[H][C@]12O[C@H](C)[C@@H](C)C3=C1C(O[C@@]1(O)CCCC[C@]21[H])=CC(O)=C3C",
+        "inchikey": null,
         "npmrd_id": null,
         "submission": {
-            "source": "",
+            "source": "npmrd_curator",
             "type": null,
             "uuid": null,
             "compound_uuid": null,
             "submission_date": "",
-            "embargo_status": "",
+            "embargo_status": null,
             "embargo_date": null,
             "compound_embargo_release_ready": null
         },
@@ -1816,16 +2046,20 @@
         "nmr_data": {
             "peak_lists": [
                 {
+                    "nucleus": null,
                     "solvent": null,
                     "reference": null,
                     "values": [
                         null
                     ],
                     "frequency": null,
-                    "frequency_units": null,
+                    "frequency_units": "MHz",
                     "temperature": null,
-                    "temperature_units": null,
+                    "temperature_units": "K",
                     "peak_list_uuid": null,
+                    "linked_peak_list_uuids": [
+                        ""
+                    ],
                     "peak_list_embargo_release_ready": null
                 }
             ],
@@ -1839,11 +2073,11 @@
                         "frequency": [
                             0.0
                         ],
-                        "frequency_units": null,
+                        "frequency_units": "MHz",
                         "f1_nucleus": null,
                         "f2_nucleus": null,
                         "temperature": null,
-                        "temperature_units": null,
+                        "temperature_units": "K",
                         "experiment_type": null,
                         "extracted_experiment_folder": null,
                         "extracted_data_path": null,
@@ -1854,7 +2088,8 @@
             },
             "assignment_data": [
                 {
-                    "atom": "C",
+                    "assignment_uuid": "bfcdee3c-57e6-4c36-be2e-3b4610409a2d",
+                    "nucleus": "C",
                     "solvent": "Chloroform-d",
                     "temperature": null,
                     "temperature_units": "K",
@@ -1866,204 +2101,277 @@
                             "shift": 62.7,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "1",
                             "rdkit_index": [
                                 14
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 74.9,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "3",
                             "rdkit_index": [
                                 11
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 35.1,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "4",
                             "rdkit_index": [
                                 9
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 114.3,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "5",
                             "rdkit_index": [
                                 2
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 153.9,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "6",
                             "rdkit_index": [
                                 3
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 100.5,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "7",
                             "rdkit_index": [
                                 5
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 148.9,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "8",
                             "rdkit_index": [
                                 6
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 112.5,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "9",
                             "rdkit_index": [
                                 7
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 137.5,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "10",
                             "rdkit_index": [
                                 8
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 18.9,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "11",
                             "rdkit_index": [
                                 12
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 22.7,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "12",
                             "rdkit_index": [
                                 10
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 10.2,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "13",
                             "rdkit_index": [
                                 1
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 44,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "14",
                             "rdkit_index": [
                                 15
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 99.2,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "15",
                             "rdkit_index": [
                                 20
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 39.1,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "16",
                             "rdkit_index": [
                                 19
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 23.1,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "17",
                             "rdkit_index": [
                                 18
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 25.1,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "18",
                             "rdkit_index": [
                                 17
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 25,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "19",
                             "rdkit_index": [
                                 16
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         }
                     ]
                 },
                 {
-                    "atom": "H",
+                    "assignment_uuid": "fe2b855f-38b6-407f-9cd4-4e0e0484fb37",
+                    "nucleus": "H",
                     "solvent": "Chloroform-d",
                     "temperature": null,
                     "temperature_units": "K",
@@ -2327,7 +2635,7 @@
                     "chemical_shifts": {
                         "solvent": null,
                         "temperature": null,
-                        "temperature_units": null,
+                        "temperature_units": "K",
                         "h_nmr": {
                             "shift": null,
                             "shielding_tensor": null,
@@ -2346,16 +2654,16 @@
     },
     {
         "compound_name": "Penicitol H",
-        "smiles": "Penicitol H",
-        "inchikey": "",
+        "smiles": "[H][C@@]12O[C@H](C)[C@@H](C)C3=C1C(O[C@]1(O)CCCC[C@]21[H])=CC(O)=C3C",
+        "inchikey": null,
         "npmrd_id": null,
         "submission": {
-            "source": "",
+            "source": "npmrd_curator",
             "type": null,
             "uuid": null,
             "compound_uuid": null,
             "submission_date": "",
-            "embargo_status": "",
+            "embargo_status": null,
             "embargo_date": null,
             "compound_embargo_release_ready": null
         },
@@ -2400,16 +2708,20 @@
         "nmr_data": {
             "peak_lists": [
                 {
+                    "nucleus": null,
                     "solvent": null,
                     "reference": null,
                     "values": [
                         null
                     ],
                     "frequency": null,
-                    "frequency_units": null,
+                    "frequency_units": "MHz",
                     "temperature": null,
-                    "temperature_units": null,
+                    "temperature_units": "K",
                     "peak_list_uuid": null,
+                    "linked_peak_list_uuids": [
+                        ""
+                    ],
                     "peak_list_embargo_release_ready": null
                 }
             ],
@@ -2423,11 +2735,11 @@
                         "frequency": [
                             0.0
                         ],
-                        "frequency_units": null,
+                        "frequency_units": "MHz",
                         "f1_nucleus": null,
                         "f2_nucleus": null,
                         "temperature": null,
-                        "temperature_units": null,
+                        "temperature_units": "K",
                         "experiment_type": null,
                         "extracted_experiment_folder": null,
                         "extracted_data_path": null,
@@ -2438,7 +2750,8 @@
             },
             "assignment_data": [
                 {
-                    "atom": "C",
+                    "assignment_uuid": "73b544db-89e3-488f-9288-272d401d8643",
+                    "nucleus": "C",
                     "solvent": "Chloroform-d",
                     "temperature": null,
                     "temperature_units": "K",
@@ -2450,204 +2763,277 @@
                             "shift": 69,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "1",
                             "rdkit_index": [
                                 14
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 78.7,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "3",
                             "rdkit_index": [
                                 11
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 37.9,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "4",
                             "rdkit_index": [
                                 9
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 114.6,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "5",
                             "rdkit_index": [
                                 2
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 154.3,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "6",
                             "rdkit_index": [
                                 3
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 100.2,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "7",
                             "rdkit_index": [
                                 5
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 148.4,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "8",
                             "rdkit_index": [
                                 6
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 112,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "9",
                             "rdkit_index": [
                                 7
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 139.2,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "10",
                             "rdkit_index": [
                                 8
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 21.6,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "11",
                             "rdkit_index": [
                                 12
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 19.5,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "12",
                             "rdkit_index": [
                                 10
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 11.3,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "13",
                             "rdkit_index": [
                                 1
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 41.1,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "14",
                             "rdkit_index": [
                                 15
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 98.7,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "15",
                             "rdkit_index": [
                                 20
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 39.6,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "16",
                             "rdkit_index": [
                                 19
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 23.1,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "17",
                             "rdkit_index": [
                                 18
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 24.3,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "18",
                             "rdkit_index": [
                                 17
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 22.3,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "19",
                             "rdkit_index": [
                                 16
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         }
                     ]
                 },
                 {
-                    "atom": "H",
+                    "assignment_uuid": "21311444-571e-4fc3-953c-c151cc763320",
+                    "nucleus": "H",
                     "solvent": "Chloroform-d",
                     "temperature": null,
                     "temperature_units": "K",
@@ -2910,7 +3296,7 @@
                     "chemical_shifts": {
                         "solvent": null,
                         "temperature": null,
-                        "temperature_units": null,
+                        "temperature_units": "K",
                         "h_nmr": {
                             "shift": null,
                             "shielding_tensor": null,
@@ -2929,16 +3315,16 @@
     },
     {
         "compound_name": "Penicitol I ",
-        "smiles": "Penicitol I ",
-        "inchikey": "",
+        "smiles": "[H][C@@]12O[C@H](C)[C@@H](C)C3=C1C(O[C@@]1(CCCC[C@@]21[H])OC)=CC(O)=C3C",
+        "inchikey": null,
         "npmrd_id": null,
         "submission": {
-            "source": "",
+            "source": "npmrd_curator",
             "type": null,
             "uuid": null,
             "compound_uuid": null,
             "submission_date": "",
-            "embargo_status": "",
+            "embargo_status": null,
             "embargo_date": null,
             "compound_embargo_release_ready": null
         },
@@ -2983,16 +3369,20 @@
         "nmr_data": {
             "peak_lists": [
                 {
+                    "nucleus": null,
                     "solvent": null,
                     "reference": null,
                     "values": [
                         null
                     ],
                     "frequency": null,
-                    "frequency_units": null,
+                    "frequency_units": "MHz",
                     "temperature": null,
-                    "temperature_units": null,
+                    "temperature_units": "K",
                     "peak_list_uuid": null,
+                    "linked_peak_list_uuids": [
+                        ""
+                    ],
                     "peak_list_embargo_release_ready": null
                 }
             ],
@@ -3006,11 +3396,11 @@
                         "frequency": [
                             0.0
                         ],
-                        "frequency_units": null,
+                        "frequency_units": "MHz",
                         "f1_nucleus": null,
                         "f2_nucleus": null,
                         "temperature": null,
-                        "temperature_units": null,
+                        "temperature_units": "K",
                         "experiment_type": null,
                         "extracted_experiment_folder": null,
                         "extracted_data_path": null,
@@ -3021,7 +3411,8 @@
             },
             "assignment_data": [
                 {
-                    "atom": "C",
+                    "assignment_uuid": "5dcb14c0-a0fc-4365-8ed0-5c224ea90b9b",
+                    "nucleus": "C",
                     "solvent": "Chloroform-d",
                     "temperature": null,
                     "temperature_units": "K",
@@ -3033,215 +3424,292 @@
                             "shift": 71.5,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "1",
                             "rdkit_index": [
                                 9
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 79.1,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "3",
                             "rdkit_index": [
                                 11
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 38.1,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "4",
                             "rdkit_index": [
                                 13
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 114.3,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "5",
                             "rdkit_index": [
                                 16
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 154.2,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "6",
                             "rdkit_index": [
                                 18
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 100.3,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "7",
                             "rdkit_index": [
                                 20
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 148.4,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "8",
                             "rdkit_index": [
                                 21
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 115.2,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "9",
                             "rdkit_index": [
                                 22
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 138.9,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "10",
                             "rdkit_index": [
                                 15
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 21.8,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "11",
                             "rdkit_index": [
                                 12
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 19.9,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "12",
                             "rdkit_index": [
                                 14
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 11.1,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "13",
                             "rdkit_index": [
                                 17
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 44.8,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "14",
                             "rdkit_index": [
                                 8
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 100.6,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "15",
                             "rdkit_index": [
                                 3
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 31.5,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "16",
                             "rdkit_index": [
                                 4
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 22.6,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "17",
                             "rdkit_index": [
                                 5
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 25.2,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "18",
                             "rdkit_index": [
                                 6
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 26.2,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "19",
                             "rdkit_index": [
                                 7
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         },
                         {
                             "shift": 48.2,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [],
+                            "coupling": [
+                                null
+                            ],
                             "atom_index": "20",
                             "rdkit_index": [
                                 1
                             ],
-                            "interchangeable_index": []
+                            "interchangeable_index": [
+                                null
+                            ]
                         }
                     ]
                 },
                 {
-                    "atom": "H",
+                    "assignment_uuid": "caf0c4b3-fcd7-4612-baa8-237e14e14b77",
+                    "nucleus": "H",
                     "solvent": "Chloroform-d",
                     "temperature": null,
                     "temperature_units": "K",
@@ -3520,7 +3988,7 @@
                     "chemical_shifts": {
                         "solvent": null,
                         "temperature": null,
-                        "temperature_units": null,
+                        "temperature_units": "K",
                         "h_nmr": {
                             "shift": null,
                             "shielding_tensor": null,
