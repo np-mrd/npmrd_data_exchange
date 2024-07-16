@@ -64,37 +64,34 @@ class CuratorConverter:
         """Save DataFrame data to a CSV file."""
         data.to_csv(file_path, index=False)
 
-    @staticmethod
-    def generate_empty_value(schema):
+    def generate_empty_value(self, schema):
         schema_type = schema.get("type")
         default_value = schema.get("default")
         
-        if default_value:
+        if default_value is not None:
             return default_value
         elif schema_type == "object":
-            empty_obj = {key: CuratorConverter.generate_empty_value(value) for key, value in schema.get("properties", {}).items()}
+            return {key: self.generate_empty_value(value) for key, value in schema.get("properties", {}).items()}
         elif schema_type == "array":
             items_schema = schema.get("items")
             if isinstance(items_schema, list):
-                return [CuratorConverter.generate_empty_value(item) for item in items_schema]
+                return [self.generate_empty_value(item) for item in items_schema]
             elif isinstance(items_schema, dict):
-                return [CuratorConverter.generate_empty_value(items_schema)]
+                return [self.generate_empty_value(items_schema)] if items_schema else []
             else:
                 return []
         elif schema_type == "string":
-            empty_obj = ""
+            return ""
         elif schema_type == "integer":
-            empty_obj = 0 
+            return 0
         elif schema_type == "number":
-            empty_obj = 0.0
+            return 0.0
         elif schema_type == "boolean":
-            empty_obj = False
+            return False
         elif schema_type == "null":
             return None
         else:
             return None
-        
-        return empty_obj
 
     def generate_json_from_schema(self):
         return self.generate_empty_value(self.schema)
@@ -147,6 +144,7 @@ class CuratorConverter:
                 new_spectrum_list = []
                 for curator_c_spectrum in curator_entry['c_nmr']['spectrum']:
                     new_spectrum_entry = self.get_empty_spectrum_from_schema()
+                    print("H empty get_empty_assignment_data_from_schema is", new_spectrum_entry)
                     new_spectrum_entry['shift'] = curator_c_spectrum['shift']
                     new_spectrum_entry['atom_index'] = curator_c_spectrum['atom_index']
                     new_spectrum_entry['rdkit_index'] = [curator_c_spectrum['rdkit_index']]
@@ -161,6 +159,7 @@ class CuratorConverter:
             if len(curator_entry['h_nmr']['spectrum']) > 0:
                 has_assignment_data = True
                 new_assignment_entry = self.get_empty_assignment_data_from_schema()
+                
                 new_assignment_entry['assignment_uuid'] = self.determine_assignment_uuid(
                     curator_entry['smiles'],
                     curator_entry['origin_doi'],
@@ -177,6 +176,7 @@ class CuratorConverter:
                 new_spectrum_list = []
                 for curator_h_spectrum in curator_entry['h_nmr']['spectrum']:
                     new_spectrum_entry = self.get_empty_spectrum_from_schema()
+                    print("H empty get_empty_assignment_data_from_schema is", new_spectrum_entry)
                     new_spectrum_entry['shift'] = curator_h_spectrum['shift']
                     new_spectrum_entry['multiplicity'] = curator_h_spectrum['multiplicity']
                     new_spectrum_entry['coupling'] = curator_h_spectrum['coupling']

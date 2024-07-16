@@ -672,7 +672,8 @@
                             "number",
                             "null"
                           ]
-                        }
+                        },
+                        "default": []
                       },
                       "atom_index": {
                         "type": [
@@ -698,7 +699,8 @@
                             "integer",
                             "null"
                           ]
-                        }
+                        },
+                        "default": []
                       }
                     }
                   }

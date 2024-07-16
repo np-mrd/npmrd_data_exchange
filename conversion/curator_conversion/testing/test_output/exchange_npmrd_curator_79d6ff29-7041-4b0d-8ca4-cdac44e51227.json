@@ -110,181 +110,133 @@
                             "shift": 122.6,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [
-                                null
-                            ],
+                            "coupling": [],
                             "atom_index": "1",
                             "rdkit_index": [
                                 8
                             ],
-                            "interchangeable_index": [
-                                null
-                            ]
+                            "interchangeable_index": []
                         },
                         {
                             "shift": 132.6,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [
-                                null
-                            ],
+                            "coupling": [],
                             "atom_index": "2",
                             "rdkit_index": [
                                 7
                             ],
-                            "interchangeable_index": [
-                                null
-                            ]
+                            "interchangeable_index": []
                         },
                         {
                             "shift": 129.3,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [
-                                null
-                            ],
+                            "coupling": [],
                             "atom_index": "3",
                             "rdkit_index": [
                                 6
                             ],
-                            "interchangeable_index": [
-                                null
-                            ]
+                            "interchangeable_index": []
                         },
                         {
                             "shift": 161.1,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [
-                                null
-                            ],
+                            "coupling": [],
                             "atom_index": "4",
                             "rdkit_index": [
                                 14
                             ],
-                            "interchangeable_index": [
-                                null
-                            ]
+                            "interchangeable_index": []
                         },
                         {
                             "shift": 115.3,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [
-                                null
-                            ],
+                            "coupling": [],
                             "atom_index": "5",
                             "rdkit_index": [
                                 13
                             ],
-                            "interchangeable_index": [
-                                null
-                            ]
+                            "interchangeable_index": []
                         },
                         {
                             "shift": 130.5,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [
-                                null
-                            ],
+                            "coupling": [],
                             "atom_index": "6",
                             "rdkit_index": [
                                 12
                             ],
-                            "interchangeable_index": [
-                                null
-                            ]
+                            "interchangeable_index": []
                         },
                         {
                             "shift": 170.5,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [
-                                null
-                            ],
+                            "coupling": [],
                             "atom_index": "7",
                             "rdkit_index": [
                                 9
                             ],
-                            "interchangeable_index": [
-                                null
-                            ]
+                            "interchangeable_index": []
                         },
                         {
                             "shift": 29.1,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [
-                                null
-                            ],
+                            "coupling": [],
                             "atom_index": "8",
                             "rdkit_index": [
                                 5
                             ],
-                            "interchangeable_index": [
-                                null
-                            ]
+                            "interchangeable_index": []
                         },
                         {
                             "shift": 123.3,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [
-                                null
-                            ],
+                            "coupling": [],
                             "atom_index": "9",
                             "rdkit_index": [
                                 4
                             ],
-                            "interchangeable_index": [
-                                null
-                            ]
+                            "interchangeable_index": []
                         },
                         {
                             "shift": 133.7,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [
-                                null
-                            ],
+                            "coupling": [],
                             "atom_index": "10",
                             "rdkit_index": [
                                 2
                             ],
-                            "interchangeable_index": [
-                                null
-                            ]
+                            "interchangeable_index": []
                         },
                         {
                             "shift": 26,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [
-                                null
-                            ],
+                            "coupling": [],
                             "atom_index": "11",
                             "rdkit_index": [
                                 1
                             ],
-                            "interchangeable_index": [
-                                null
-                            ]
+                            "interchangeable_index": []
                         },
                         {
                             "shift": 17.9,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [
-                                null
-                            ],
+                            "coupling": [],
                             "atom_index": "12",
                             "rdkit_index": [
                                 3
                             ],
-                            "interchangeable_index": [
-                                null
-                            ]
+                            "interchangeable_index": []
                         }
                     ]
                 },
@@ -563,241 +515,177 @@
                             "shift": 155.5,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [
-                                null
-                            ],
+                            "coupling": [],
                             "atom_index": "2",
                             "rdkit_index": [
                                 4
                             ],
-                            "interchangeable_index": [
-                                null
-                            ]
+                            "interchangeable_index": []
                         },
                         {
                             "shift": 137.5,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [
-                                null
-                            ],
+                            "coupling": [],
                             "atom_index": "3",
                             "rdkit_index": [
                                 3
                             ],
-                            "interchangeable_index": [
-                                null
-                            ]
+                            "interchangeable_index": []
                         },
                         {
                             "shift": 177.8,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [
-                                null
-                            ],
+                            "coupling": [],
                             "atom_index": "4",
                             "rdkit_index": [
                                 21
                             ],
-                            "interchangeable_index": [
-                                null
-                            ]
+                            "interchangeable_index": []
                         },
                         {
                             "shift": 161.2,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [
-                                null
-                            ],
+                            "coupling": [],
                             "atom_index": "5",
                             "rdkit_index": [
                                 18
                             ],
-                            "interchangeable_index": [
-                                null
-                            ]
+                            "interchangeable_index": []
                         },
                         {
                             "shift": 98.5,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [
-                                null
-                            ],
+                            "coupling": [],
                             "atom_index": "6",
                             "rdkit_index": [
                                 17
                             ],
-                            "interchangeable_index": [
-                                null
-                            ]
+                            "interchangeable_index": []
                         },
                         {
                             "shift": 164.1,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [
-                                null
-                            ],
+                            "coupling": [],
                             "atom_index": "7",
                             "rdkit_index": [
                                 15
                             ],
-                            "interchangeable_index": [
-                                null
-                            ]
+                            "interchangeable_index": []
                         },
                         {
                             "shift": 93.6,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [
-                                null
-                            ],
+                            "coupling": [],
                             "atom_index": "8",
                             "rdkit_index": [
                                 14
                             ],
-                            "interchangeable_index": [
-                                null
-                            ]
+                            "interchangeable_index": []
                         },
                         {
                             "shift": 156.3,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [
-                                null
-                            ],
+                            "coupling": [],
                             "atom_index": "9",
                             "rdkit_index": [
                                 13
                             ],
-                            "interchangeable_index": [
-                                null
-                            ]
+                            "interchangeable_index": []
                         },
                         {
                             "shift": 104.1,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [
-                                null
-                            ],
+                            "coupling": [],
                             "atom_index": "10",
                             "rdkit_index": [
                                 20
                             ],
-                            "interchangeable_index": [
-                                null
-                            ]
+                            "interchangeable_index": []
                         },
                         {
                             "shift": 59.6,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [
-                                null
-                            ],
+                            "coupling": [],
                             "atom_index": "11",
                             "rdkit_index": [
                                 1
                             ],
-                            "interchangeable_index": [
-                                null
-                            ]
+                            "interchangeable_index": []
                         },
                         {
                             "shift": 120.5,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [
-                                null
-                            ],
+                            "coupling": [],
                             "atom_index": "1'",
                             "rdkit_index": [
                                 5
                             ],
-                            "interchangeable_index": [
-                                null
-                            ]
+                            "interchangeable_index": []
                         },
                         {
                             "shift": 130,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [
-                                null
-                            ],
+                            "coupling": [],
                             "atom_index": "2'",
                             "rdkit_index": [
                                 6
                             ],
-                            "interchangeable_index": [
-                                null
-                            ]
+                            "interchangeable_index": []
                         },
                         {
                             "shift": 115.5,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [
-                                null
-                            ],
+                            "coupling": [],
                             "atom_index": "3'",
                             "rdkit_index": [
                                 7
                             ],
-                            "interchangeable_index": [
-                                null
-                            ]
+                            "interchangeable_index": []
                         },
                         {
                             "shift": 160.1,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [
-                                null
-                            ],
+                            "coupling": [],
                             "atom_index": "4'",
                             "rdkit_index": [
                                 8
                             ],
-                            "interchangeable_index": [
-                                null
-                            ]
+                            "interchangeable_index": []
                         },
                         {
                             "shift": 115.5,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [
-                                null
-                            ],
+                            "coupling": [],
                             "atom_index": "5'",
                             "rdkit_index": [
                                 10
                             ],
-                            "interchangeable_index": [
-                                null
-                            ]
+                            "interchangeable_index": []
                         },
                         {
                             "shift": 130,
                             "integration": null,
                             "multiplicity": null,
-                            "coupling": [
-                                null
-                            ],
+                            "coupling": [],
                             "atom_index": "6'",
                             "rdkit_index": [
                                 11
                             ],
-                            "interchangeable_index": [
-                                null
-                            ]
+                            "interchangeable_index": []
                         }
                     ]
                 },
