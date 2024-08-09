@@ -53,51 +53,14 @@
             "show_organization_in_attribution": false
         },
         "nmr_data": {
-            "peak_lists": [
-                {
-                    "nucleus": null,
-                    "solvent": null,
-                    "reference": null,
-                    "values": [
-                        null
-                    ],
-                    "frequency": null,
-                    "frequency_units": "MHz",
-                    "temperature": null,
-                    "temperature_units": "K",
-                    "peak_list_uuid": null,
-                    "linked_peak_list_uuids": [
-                        ""
-                    ],
-                    "peak_list_embargo_release_ready": null
-                }
-            ],
+            "peak_lists": [],
             "experimental_data": {
                 "nmr_data_download_link": null,
-                "nmr_metadata": [
-                    {
-                        "vendor": null,
-                        "filetype": null,
-                        "solvent": null,
-                        "frequency": [
-                            0.0
-                        ],
-                        "frequency_units": "MHz",
-                        "f1_nucleus": null,
-                        "f2_nucleus": null,
-                        "temperature": null,
-                        "temperature_units": "K",
-                        "experiment_type": null,
-                        "extracted_experiment_folder": null,
-                        "extracted_data_path": null,
-                        "spectrum_uuid": null,
-                        "spectrum_embargo_release_ready": null
-                    }
-                ]
+                "nmr_metadata": []
             },
             "assignment_data": [
                 {
-                    "assignment_uuid": "a619e7ec-c14f-4416-ad90-a1460c82b313",
+                    "assignment_uuid": null,
                     "nucleus": "C",
                     "solvent": null,
                     "temperature": null,
@@ -105,6 +68,7 @@
                     "reference": null,
                     "frequency": 270,
                     "frequency_units": "MHz",
+                    "assignment_data_embargo_release_ready": null,
                     "spectrum": [
                         {
                             "shift": 202.6,
@@ -439,7 +403,7 @@
                     ]
                 },
                 {
-                    "assignment_uuid": "1b0fd68e-996f-476d-9955-601e2fa1a1cd",
+                    "assignment_uuid": null,
                     "nucleus": "H",
                     "solvent": "Chloroform-d",
                     "temperature": null,
@@ -447,6 +411,7 @@
                     "reference": null,
                     "frequency": 22.63,
                     "frequency_units": "MHz",
+                    "assignment_data_embargo_release_ready": null,
                     "spectrum": [
                         {
                             "shift": 6.18,

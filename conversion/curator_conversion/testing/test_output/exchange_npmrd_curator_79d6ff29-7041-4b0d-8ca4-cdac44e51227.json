@@ -53,51 +53,14 @@
             "show_organization_in_attribution": false
         },
         "nmr_data": {
-            "peak_lists": [
-                {
-                    "nucleus": null,
-                    "solvent": null,
-                    "reference": null,
-                    "values": [
-                        null
-                    ],
-                    "frequency": null,
-                    "frequency_units": "MHz",
-                    "temperature": null,
-                    "temperature_units": "K",
-                    "peak_list_uuid": null,
-                    "linked_peak_list_uuids": [
-                        ""
-                    ],
-                    "peak_list_embargo_release_ready": null
-                }
-            ],
+            "peak_lists": [],
             "experimental_data": {
                 "nmr_data_download_link": null,
-                "nmr_metadata": [
-                    {
-                        "vendor": null,
-                        "filetype": null,
-                        "solvent": null,
-                        "frequency": [
-                            0.0
-                        ],
-                        "frequency_units": "MHz",
-                        "f1_nucleus": null,
-                        "f2_nucleus": null,
-                        "temperature": null,
-                        "temperature_units": "K",
-                        "experiment_type": null,
-                        "extracted_experiment_folder": null,
-                        "extracted_data_path": null,
-                        "spectrum_uuid": null,
-                        "spectrum_embargo_release_ready": null
-                    }
-                ]
+                "nmr_metadata": []
             },
             "assignment_data": [
                 {
-                    "assignment_uuid": "a5d77edd-806d-4f4b-97fa-2748f09ee993",
+                    "assignment_uuid": null,
                     "nucleus": "C",
                     "solvent": "Methanol-d4",
                     "temperature": null,
@@ -105,6 +68,7 @@
                     "reference": "TMS",
                     "frequency": 68,
                     "frequency_units": "MHz",
+                    "assignment_data_embargo_release_ready": null,
                     "spectrum": [
                         {
                             "shift": 122.6,
@@ -241,7 +205,7 @@
                     ]
                 },
                 {
-                    "assignment_uuid": "6141ec8c-1f84-4b40-8b7c-d40a3ab56cf3",
+                    "assignment_uuid": null,
                     "nucleus": "H",
                     "solvent": "Methanol-d4",
                     "temperature": null,
@@ -249,6 +213,7 @@
                     "reference": "TMS",
                     "frequency": 270,
                     "frequency_units": "MHz",
+                    "assignment_data_embargo_release_ready": null,
                     "spectrum": [
                         {
                             "shift": 7.74,
@@ -458,51 +423,14 @@
             "show_organization_in_attribution": false
         },
         "nmr_data": {
-            "peak_lists": [
-                {
-                    "nucleus": null,
-                    "solvent": null,
-                    "reference": null,
-                    "values": [
-                        null
-                    ],
-                    "frequency": null,
-                    "frequency_units": "MHz",
-                    "temperature": null,
-                    "temperature_units": "K",
-                    "peak_list_uuid": null,
-                    "linked_peak_list_uuids": [
-                        ""
-                    ],
-                    "peak_list_embargo_release_ready": null
-                }
-            ],
+            "peak_lists": [],
             "experimental_data": {
                 "nmr_data_download_link": null,
-                "nmr_metadata": [
-                    {
-                        "vendor": null,
-                        "filetype": null,
-                        "solvent": null,
-                        "frequency": [
-                            0.0
-                        ],
-                        "frequency_units": "MHz",
-                        "f1_nucleus": null,
-                        "f2_nucleus": null,
-                        "temperature": null,
-                        "temperature_units": "K",
-                        "experiment_type": null,
-                        "extracted_experiment_folder": null,
-                        "extracted_data_path": null,
-                        "spectrum_uuid": null,
-                        "spectrum_embargo_release_ready": null
-                    }
-                ]
+                "nmr_metadata": []
             },
             "assignment_data": [
                 {
-                    "assignment_uuid": "bb711122-6704-48c7-bb19-3d38c5c22c52",
+                    "assignment_uuid": null,
                     "nucleus": "C",
                     "solvent": "Dimethylsulfoxide-d6",
                     "temperature": null,
@@ -510,6 +438,7 @@
                     "reference": "TMS",
                     "frequency": 68,
                     "frequency_units": "MHz",
+                    "assignment_data_embargo_release_ready": null,
                     "spectrum": [
                         {
                             "shift": 155.5,
@@ -690,7 +619,7 @@
                     ]
                 },
                 {
-                    "assignment_uuid": "5d77b1dc-d12d-4c8e-a442-8ea4912df361",
+                    "assignment_uuid": null,
                     "nucleus": "H",
                     "solvent": "Dimethylsulfoxide-d6",
                     "temperature": null,
@@ -698,6 +627,7 @@
                     "reference": "TMS",
                     "frequency": 270,
                     "frequency_units": "MHz",
+                    "assignment_data_embargo_release_ready": null,
                     "spectrum": [
                         {
                             "shift": 6.2,

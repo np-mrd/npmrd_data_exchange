@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "type": "object",
   "properties": {
     "compound_name": {
@@ -564,150 +564,156 @@
           }
         },
         "assignment_data": {
-        "type": "array",
-        "items": [
-            {
-            "type": "object",
-            "properties": {
-                "assignment_uuid": {
+            "type": "array",
+            "items": [
+                {
+                "type": "object",
+                "properties": {
+                    "assignment_uuid": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "minLength": 36,
+                        "maxLength": 36
+                    },
+                    "nucleus": {
+                        "type": [
+                        "string"
+                        ],
+                        "enum": [
+                            "C",
+                            "H"
+                        ],
+                        "maxLength": 1
+                    },
+                    "solvent": {
                     "type": [
                         "string",
                         "null"
-                      ],
-                      "minLength": 36,
-                      "maxLength": 36
-                },
-                "nucleus": {
+                    ],
+                    "maxLength": 10000
+                    },
+                    "temperature": {
                     "type": [
-                      "string"
+                        "integer",
+                        "null"
+                    ],
+                    "minimum": 1,
+                    "maximum": 500
+                    },
+                    "temperature_units": {
+                    "type": [
+                        "string",
+                        "null"
                     ],
                     "enum": [
+                        "K",
                         "C",
-                        "H"
+                        "F"
                     ],
-                    "maxLength": 1
-                },
-                "solvent": {
-                  "type": [
-                    "string",
-                    "null"
-                  ],
-                  "maxLength": 10000
-                },
-                "temperature": {
-                  "type": [
-                    "integer",
-                    "null"
-                  ],
-                  "minimum": 1,
-                  "maximum": 500
-                },
-                "temperature_units": {
-                  "type": [
-                    "string",
-                    "null"
-                  ],
-                  "enum": [
-                    "K",
-                    "C",
-                    "F"
-                  ],
-                  "default": "K"
-                },
-                "reference": {
-                  "type": [
-                    "string",
-                    "null"
-                  ],
-                  "maxLength": 10000
-                },
-                "frequency": {
-                  "type": [
-                    "number",
-                    "null"
-                  ],
-                  "maxLength": 10000
-                },
-                "frequency_units": {
-                  "type": [
-                    "string",
-                    "null"
-                  ],
-                  "enum": [
-                    "MHz",
-                    "Hz",
-                    null
-                  ]
-                },
-                "spectrum": {
-                  "type": "array",
-                  "items": {
-                    "type": "object",
-                    "properties": {
-                      "shift": {
+                    "default": "K"
+                    },
+                    "reference": {
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "maxLength": 10000
+                    },
+                    "frequency": {
+                    "type": [
+                        "number",
+                        "null"
+                    ],
+                    "maxLength": 10000
+                    },
+                    "frequency_units": {
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "enum": [
+                        "MHz",
+                        "Hz",
+                        null
+                    ]
+                    },
+                    "assignment_data_embargo_release_ready": {
                         "type": [
-                          "number",
-                          "null"
-                        ],
-                        "maximum": 250,
-                        "minimum": -11
-                      },
-                      "integration": {
-                        "type": [
-                          "integer",
-                          "null"
+                        "boolean",
+                        "null"
                         ]
-                      },
-                      "multiplicity": {
-                        "type": [
-                          "string",
-                          "null"
-                        ],
-                        "maxLength": 10000
-                      },
-                      "coupling": {
-                        "type": "array",
-                        "items": {
-                          "type": [
+                    },
+                    "spectrum": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                        "shift": {
+                            "type": [
                             "number",
                             "null"
-                          ]
+                            ],
+                            "maximum": 250,
+                            "minimum": -11
                         },
-                        "default": []
-                      },
-                      "atom_index": {
-                        "type": [
-                          "string",
-                          "null"
-                        ]
-                      },
-                      "rdkit_index": {
-                        "type": "array",
-                        "items": {
-                          "type": [
+                        "integration": {
+                            "type": [
                             "integer",
                             "null"
-                          ],
-                          "maximum": 2000,
-                          "minimum": 1
+                            ]
+                        },
+                        "multiplicity": {
+                            "type": [
+                            "string",
+                            "null"
+                            ],
+                            "maxLength": 10000
+                        },
+                        "coupling": {
+                            "type": "array",
+                            "items": {
+                            "type": [
+                                "number",
+                                "null"
+                            ]
+                            },
+                            "default": []
+                        },
+                        "atom_index": {
+                            "type": [
+                            "string",
+                            "null"
+                            ]
+                        },
+                        "rdkit_index": {
+                            "type": "array",
+                            "items": {
+                            "type": [
+                                "integer",
+                                "null"
+                            ],
+                            "maximum": 2000,
+                            "minimum": 1
+                            }
+                        },
+                        "interchangeable_index": {
+                            "type": "array",
+                            "items": {
+                            "type": [
+                                "integer",
+                                "null"
+                            ]
+                            },
+                            "default": []
                         }
-                      },
-                      "interchangeable_index": {
-                        "type": "array",
-                        "items": {
-                          "type": [
-                            "integer",
-                            "null"
-                          ]
-                        },
-                        "default": []
-                      }
+                        }
                     }
-                  }
+                    }
                 }
-              }
-            }
-          ]
+                }
+            ]
         },
         "predicted_data": {
           "type": "object",
