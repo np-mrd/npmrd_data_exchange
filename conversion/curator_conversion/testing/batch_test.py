@@ -1,9 +1,10 @@
+# Run (on a local machine from "npmrd_data_exchange" repo) using this command...
+# python -m conversion.curator_conversion.testing.batch_test
+
 import os
 import glob
 import json
 from ..npmrd_curator_converter import CuratorConverter
-# from conversion.curator_conversion.npmrd_curator_converter import CuratorConverter
-# from conversion.curator_conversion.npmrd_curator_converter import CuratorConverter
 
 
 # First deletes all files in /test_output then runs npmrd_curator_converter.py

@@ -574,8 +574,24 @@
                             "string",
                             "null"
                         ],
-                        "minLength": 36,
-                        "maxLength": 36
+                        "minLength": 38,
+                        "maxLength": 38
+                    },
+                    "curator_email_address": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "minLength": 0,
+                        "maxLength": 1000
+                    },
+                    "rdkit_version": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "minLength": 0,
+                        "maxLength": 100
                     },
                     "nucleus": {
                         "type": [
