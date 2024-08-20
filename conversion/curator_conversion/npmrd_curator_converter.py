@@ -113,7 +113,7 @@ class CuratorConverter:
             if len(curator_entry['c_nmr']['spectrum']) > 0:
                 has_assignment_data = True
                 new_assignment_entry = self.get_empty_assignment_data_from_schema()
-                new_assignment_entry['assignment_uuid'] = f"{curator_entry['session_uuid']}-c"
+                new_assignment_entry['assignment_uuid'] = None
                 new_assignment_entry['curator_email_address'] = curator_entry['curator_email_address']
                 new_assignment_entry['rdkit_version'] = curator_entry['rdkit_version']
                 new_assignment_entry['nucleus'] = "C"
@@ -142,7 +142,7 @@ class CuratorConverter:
                 has_assignment_data = True
                 new_assignment_entry = self.get_empty_assignment_data_from_schema()
                 
-                new_assignment_entry['assignment_uuid'] = f"{curator_entry['session_uuid']}-h"
+                new_assignment_entry['assignment_uuid'] = None
                 new_assignment_entry['curator_email_address'] = curator_entry['curator_email_address']
                 new_assignment_entry['rdkit_version'] = curator_entry['rdkit_version']
                 new_assignment_entry['nucleus'] = "H"
