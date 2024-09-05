@@ -594,8 +594,8 @@
                         "string",
                         "null"
                       ],
-                      "minLength": 38,
-                      "maxLength": 38
+                      "minLength": 36,
+                      "maxLength": 36
                     },
                     "solvent": {
                       "type": [
@@ -702,8 +702,8 @@
                         "string",
                         "null"
                       ],
-                      "minLength": 38,
-                      "maxLength": 38
+                      "minLength": 36,
+                      "maxLength": 36
                     },
                     "nucleus": {
                       "type": [

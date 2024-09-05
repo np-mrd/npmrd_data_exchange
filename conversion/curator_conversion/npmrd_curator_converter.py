@@ -47,20 +47,24 @@ class CuratorConverter:
         except Exception as e:
             print(f"An error occurred: {e}")
 
-    def generate_empty_value(self, schema):
+    def generate_empty_value(self, schema, empty_arrays=False):
         schema_type = schema.get("type")
         default_value = schema.get("default")
         
         if default_value is not None:
             return default_value
         elif schema_type == "object":
-            return {key: self.generate_empty_value(value) for key, value in schema.get("properties", {}).items()}
+            return {key: self.generate_empty_value(value, empty_arrays) for key, value in schema.get("properties", {}).items()}
         elif schema_type == "array":
+            if empty_arrays == True:
+                print(f"empty_arrays toggle is {empty_arrays}")
+            if empty_arrays == True:
+                return []
             items_schema = schema.get("items")
             if isinstance(items_schema, list):
-                return [self.generate_empty_value(item) for item in items_schema]
+                return [self.generate_empty_value(item, empty_arrays) for item in items_schema]
             elif isinstance(items_schema, dict):
-                return [self.generate_empty_value(items_schema)] if items_schema else []
+                return [self.generate_empty_value(items_schema, empty_arrays)] if items_schema else []
             else:
                 return []
         elif schema_type == "string":
@@ -78,6 +82,9 @@ class CuratorConverter:
 
     def generate_json_from_schema(self):
         return self.generate_empty_value(self.schema)
+    
+    def generate_empty_json_from_schema(self):
+        return self.generate_empty_value(schema=self.schema, empty_arrays=True)
 
     def get_empty_assignment_data_from_schema(self):
         return self.generate_empty_value(self.schema)['nmr_data']['assignment_data'][0]
@@ -94,7 +101,9 @@ class CuratorConverter:
 
         # Iterate through full input json
         for curator_entry in self.curator_json_dict:
-            new_json = self.generate_json_from_schema()
+            new_json = self.generate_empty_json_from_schema()
+            print("new_json is")
+            print(new_json)
 
             new_json['compound_name'] = curator_entry['name']
             new_json['np_mrd_id'] = None
@@ -114,10 +123,11 @@ class CuratorConverter:
             new_assignment_entry['rdkit_version'] = curator_entry['rdkit_version']
             new_assignment_entry['mol_block'] = curator_entry['mol_block']
             
-            new_assignment_uuid = str(uuid.uuid4())
+            new_assignment_uuid_c = str(uuid.uuid4())
+            new_assignment_uuid_h = str(uuid.uuid4())
             
             if len(curator_entry['c_nmr']['spectrum']) > 0:
-                new_assignment_entry['c_nmr']['assignment_uuid'] = new_assignment_uuid + "c"
+                new_assignment_entry['c_nmr']['assignment_uuid'] = new_assignment_uuid_c
                 new_assignment_entry['c_nmr']['solvent'] = curator_entry['c_nmr']['solvent']
                 new_assignment_entry['c_nmr']['temperature'] = curator_entry['c_nmr']['temperature']
                 new_assignment_entry['c_nmr']['temperature_units'] = "K"
@@ -139,7 +149,7 @@ class CuratorConverter:
 
 
             if len(curator_entry['h_nmr']['spectrum']) > 0:
-                new_assignment_entry['h_nmr']['assignment_uuid'] = new_assignment_uuid + "h"
+                new_assignment_entry['h_nmr']['assignment_uuid'] = new_assignment_uuid_h
                 new_assignment_entry['h_nmr']['solvent'] = curator_entry['h_nmr']['solvent']
                 new_assignment_entry['h_nmr']['temperature'] = curator_entry['h_nmr']['temperature']
                 new_assignment_entry['h_nmr']['temperature_units'] = "K"
@@ -160,9 +170,6 @@ class CuratorConverter:
                     new_spectrum_list.append(new_h_spectrum_entry)
 
                 new_assignment_entry['h_nmr']['spectrum'] = new_spectrum_list
-            
-            print("new_json is")
-            print(new_json)
             
             new_json['nmr_data']['assignment_data'].append(new_assignment_entry)
             self.validate_exchange_json(new_json)
