@@ -2,6 +2,7 @@ import json
 import os
 import pandas as pd
 import jsonschema
+import uuid
 
 # Get the directory of the current script
 script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -81,8 +82,11 @@ class CuratorConverter:
     def get_empty_assignment_data_from_schema(self):
         return self.generate_empty_value(self.schema)['nmr_data']['assignment_data'][0]
 
-    def get_empty_spectrum_from_schema(self):
-        return self.generate_empty_value(self.schema)['nmr_data']['assignment_data'][0]['spectrum'][0]
+    def get_empty_c_spectrum_from_schema(self):
+        return self.generate_empty_value(self.schema)['nmr_data']['assignment_data'][0]['c_nmr']['spectrum'][0]
+    
+    def get_empty_h_spectrum_from_schema(self):
+        return self.generate_empty_value(self.schema)['nmr_data']['assignment_data'][0]['h_nmr']['spectrum'][0]
 
     def convert_json(self):
         """Update the schema with data from the input JSON."""
@@ -102,86 +106,69 @@ class CuratorConverter:
             new_json['nmr_data']['experimental_data']['nmr_metadata'] = []
             new_json['nmr_data']['peak_lists'] = []
             new_json['submission']['source'] = "npmrd_curator"
-
-            has_assignment_data = False
             
             # Entries to fill out the "assignment_data" list of the exchange json with.
             # Typically one for C and one for H
-            new_assignment_entry_list = []
-
-            # Add carbon nmr values if they exist
+            new_assignment_entry = self.get_empty_assignment_data_from_schema()
+            new_assignment_entry['curator_email_address'] = curator_entry['curator_email_address']
+            new_assignment_entry['rdkit_version'] = curator_entry['rdkit_version']
+            new_assignment_entry['mol_block'] = curator_entry['mol_block']
+            
+            new_assignment_uuid = str(uuid.uuid4())
+            
             if len(curator_entry['c_nmr']['spectrum']) > 0:
-                has_assignment_data = True
-                new_assignment_entry = self.get_empty_assignment_data_from_schema()
-                new_assignment_entry['assignment_uuid'] = None
-                new_assignment_entry['curator_email_address'] = curator_entry['curator_email_address']
-                new_assignment_entry['rdkit_version'] = curator_entry['rdkit_version']
-                new_assignment_entry['nucleus'] = "C"
-                new_assignment_entry['solvent'] = curator_entry['c_nmr']['solvent']
-                new_assignment_entry['temperature'] = curator_entry['c_nmr']['temperature']
-                new_assignment_entry['temperature_units'] = "K"
-                new_assignment_entry['reference'] = curator_entry['c_nmr']['reference']
-                new_assignment_entry['frequency'] = curator_entry['c_nmr']['frequency']
-                new_assignment_entry['frequency_units'] = "MHz"
-
+                new_assignment_entry['c_nmr']['assignment_uuid'] = new_assignment_uuid + "c"
+                new_assignment_entry['c_nmr']['solvent'] = curator_entry['c_nmr']['solvent']
+                new_assignment_entry['c_nmr']['temperature'] = curator_entry['c_nmr']['temperature']
+                new_assignment_entry['c_nmr']['temperature_units'] = "K"
+                new_assignment_entry['c_nmr']['reference'] = curator_entry['c_nmr']['reference']
+                new_assignment_entry['c_nmr']['frequency'] = curator_entry['c_nmr']['frequency']
+                new_assignment_entry['c_nmr']['frequency_units'] = "MHz"
+                new_assignment_entry['c_nmr']['assignment_data_embargo_release_ready'] = None
+                
                 new_spectrum_list = []
                 for curator_c_spectrum in curator_entry['c_nmr']['spectrum']:
-                    new_spectrum_entry = self.get_empty_spectrum_from_schema()
-                    new_spectrum_entry['shift'] = curator_c_spectrum['shift']
-                    new_spectrum_entry['atom_index'] = curator_c_spectrum['atom_index']
-                    new_spectrum_entry['rdkit_index'] = [curator_c_spectrum['rdkit_index']]
-                    new_spectrum_list.append(new_spectrum_entry)
+                    new_c_spectrum_entry = self.get_empty_c_spectrum_from_schema()
+                    new_c_spectrum_entry['shift'] = curator_c_spectrum['shift']
+                    new_c_spectrum_entry['mol_block_index'] = [curator_c_spectrum['rdkit_index']]
+                    new_spectrum_list.append(new_c_spectrum_entry)
 
-                new_assignment_entry['spectrum'] = new_spectrum_list
-                new_assignment_entry_list.append(new_assignment_entry)
+                new_assignment_entry['c_nmr']['spectrum'] = new_spectrum_list
             else:
                 print(f"WARNING: NO c_nmr DATA IN ENTRY {curator_entry['name']} / {curator_entry['origin_doi']}")
 
-            # Add hydrogen nmr values if they exist
-            if len(curator_entry['h_nmr']['spectrum']) > 0:
-                has_assignment_data = True
-                new_assignment_entry = self.get_empty_assignment_data_from_schema()
-                
-                new_assignment_entry['assignment_uuid'] = None
-                new_assignment_entry['curator_email_address'] = curator_entry['curator_email_address']
-                new_assignment_entry['rdkit_version'] = curator_entry['rdkit_version']
-                new_assignment_entry['nucleus'] = "H"
-                new_assignment_entry['solvent'] = curator_entry['h_nmr']['solvent']
-                new_assignment_entry['temperature'] = curator_entry['h_nmr']['temperature']
-                new_assignment_entry['temperature_units'] = "K"
-                new_assignment_entry['reference'] = curator_entry['h_nmr']['reference']
-                new_assignment_entry['frequency'] = curator_entry['h_nmr']['frequency']
-                new_assignment_entry['frequency_units'] = "MHz"
 
+            if len(curator_entry['h_nmr']['spectrum']) > 0:
+                new_assignment_entry['h_nmr']['assignment_uuid'] = new_assignment_uuid + "h"
+                new_assignment_entry['h_nmr']['solvent'] = curator_entry['h_nmr']['solvent']
+                new_assignment_entry['h_nmr']['temperature'] = curator_entry['h_nmr']['temperature']
+                new_assignment_entry['h_nmr']['temperature_units'] = "K"
+                new_assignment_entry['h_nmr']['reference'] = curator_entry['h_nmr']['reference']
+                new_assignment_entry['h_nmr']['frequency'] = curator_entry['h_nmr']['frequency']
+                new_assignment_entry['h_nmr']['frequency_units'] = "MHz"
+                new_assignment_entry['h_nmr']['assignment_data_embargo_release_ready'] = None
+                
                 new_spectrum_list = []
                 for curator_h_spectrum in curator_entry['h_nmr']['spectrum']:
-                    new_spectrum_entry = self.get_empty_spectrum_from_schema()
-                    new_spectrum_entry['shift'] = curator_h_spectrum['shift']
-                    new_spectrum_entry['multiplicity'] = curator_h_spectrum['multiplicity']
-                    new_spectrum_entry['coupling'] = curator_h_spectrum['coupling']
-                    new_spectrum_entry['atom_index'] = curator_h_spectrum['atom_index']
-                    new_spectrum_entry['rdkit_index'] = curator_h_spectrum['rdkit_index']
-                    new_spectrum_entry['interchangeable_index'] = curator_h_spectrum['interchangable_index']
-                    new_spectrum_list.append(new_spectrum_entry)
+                    new_h_spectrum_entry = self.get_empty_h_spectrum_from_schema()
+                    new_h_spectrum_entry['shift'] = curator_h_spectrum['shift']
+                    new_h_spectrum_entry['multiplicity'] = curator_h_spectrum['multiplicity']
+                    new_h_spectrum_entry['coupling'] = curator_h_spectrum['coupling']
+                    new_h_spectrum_entry['atom_index'] = curator_h_spectrum['atom_index']
+                    new_h_spectrum_entry['rdkit_index'] = curator_h_spectrum['rdkit_index']
+                    new_h_spectrum_entry['interchangeable_index'] = curator_h_spectrum['interchangable_index']
+                    new_spectrum_list.append(new_h_spectrum_entry)
 
-                new_assignment_entry['spectrum'] = new_spectrum_list
-                
-                # Validate the json with the schema
-                new_assignment_entry_list.append(new_assignment_entry)
-            else:
-                print(f"WARNING: NO h_nmr DATA IN ENTRY {curator_entry['name']} / {curator_entry['origin_doi']}")
-
-            # Attach assignment data to full NP-MRD Json
-            if has_assignment_data:
-                new_json['nmr_data']['assignment_data'] = new_assignment_entry_list
-
-                # Validate assignment entry
-                self.validate_exchange_json(new_json)
-                
-                final_json_list.append(new_json)
-            else:
-                print(f"WARNING: NO ASSIGNMENT DATA IN ENTRY {curator_entry['name']} / {curator_entry['origin_doi']}")
-
+                new_assignment_entry['h_nmr']['spectrum'] = new_spectrum_list
+            
+            print("new_json is")
+            print(new_json)
+            
+            new_json['nmr_data']['assignment_data'].append(new_assignment_entry)
+            self.validate_exchange_json(new_json)
+            
+            final_json_list.append(new_json)
+            
         return final_json_list
     
     def validate_exchange_json(self, json):

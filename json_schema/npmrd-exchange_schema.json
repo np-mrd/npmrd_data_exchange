@@ -1,937 +1,626 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema",
-  "version": "2.0.6",
-  "type": "object",
-  "properties": {
-    "compound_name": {
-      "type": [
-        "string",
-        "null"
-      ],
-      "minLength": 2,
-      "maxLength": 1000
-    },
-    "smiles": {
-      "type": "string",
-      "minLength": 4,
-      "maxLength": 10000
-    },
-    "inchikey": {
-       "type": [
-        "string",
-        "null"
-      ],
-      "minLength": 27,
-      "maxLength": 27
-    },
-    "npmrd_id": {
-      "type": [
-        "string",
-        "null"
-      ],
-      "minLength": 9,
-      "maxLength": 9
-    },
-    "submission": {
-      "type": "object",
-      "properties": {
-        "source": {
-          "type": "string",
-          "enum": [
-            "deposition_system",
-            "npmrd_curator",
-            "dft_team",
-            "ml_team"
-          ],
-          "maxLength": 30
-        },
-        "type": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "enum": [
-            "published_article",
-            "presubmission_article",
-            "private_deposition",
-            null
-          ],
-          "maxLength": 30
-        },
-        "uuid": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "minLength": 36,
-          "maxLength": 36
-        },
-        "compound_uuid": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "minLength": 10,
-          "maxLength": 10
-        },
-        "submission_date": {
-          "type": "string",
-          "format": "date-time"
-        },
-        "embargo_status": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "enum": [
-            "release_immediately",
-            "do_not_release",
-            "embargo_until_publication",
-            null
-          ],
-          "maxLength": 30
-        },
-        "embargo_date": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "format": "date"
-        },
-        "compound_embargo_release_ready": {
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "version": "2.0.6",
+    "type": "object",
+    "properties": {
+      "compound_name": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "minLength": 2,
+        "maxLength": 1000
+      },
+      "smiles": {
+        "type": "string",
+        "minLength": 4,
+        "maxLength": 10000
+      },
+      "inchikey": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "minLength": 27,
+        "maxLength": 27
+      },
+      "npmrd_id": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "minLength": 9,
+        "maxLength": 9
+      },
+      "submission": {
+        "type": "object",
+        "properties": {
+          "source": {
+            "type": "string",
+            "enum": [
+              "deposition_system",
+              "npmrd_curator",
+              "dft_team",
+              "ml_team"
+            ],
+            "maxLength": 30
+          },
+          "type": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "enum": [
+              "published_article",
+              "presubmission_article",
+              "private_deposition",
+              null
+            ],
+            "maxLength": 30
+          },
+          "uuid": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 36,
+            "maxLength": 36
+          },
+          "compound_uuid": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 10,
+            "maxLength": 10
+          },
+          "submission_date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "embargo_status": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "enum": [
+              "release_immediately",
+              "do_not_release",
+              "embargo_until_publication",
+              null
+            ],
+            "maxLength": 30
+          },
+          "embargo_date": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date"
+          },
+          "compound_embargo_release_ready": {
             "type": [
               "boolean",
               "null"
             ]
-        }
+          }
+        },
+        "required": [
+          "source"
+        ]
       },
-      "required": [
-        "source"
-      ]
-    },
-    "citation": {
-      "type": "object",
-      "properties": {
-        "doi": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "maxLength": 1000
-        },
-        "pmid": {
-          "type": [
-            "integer",
-            "null"
-          ],
-          "maxLength": 20
-        },
-        "pii": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "maxLength": 30
-        }
-      }
-    },
-    "origin": {
-      "type": "object",
-      "properties": {
-        "species": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "maxLength": 10000
-        },
-        "genus": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "maxLength": 10000
-        },
-        "private_collection": {
-          "type": "object",
-          "properties": {
-            "compound_source_type": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "enum": [
-                "purified_in_house",
-                "commercial",
-                "compound_library",
-                "other",
-                null
-              ],
-              "maxLength": 30
-            },
-            "purified_in_house": {
-              "type": "object",
-              "properties": {
-                "biological_material_source": {
-                  "type": [
-                    "string",
-                    "null"
-                  ],
-                  "maxLength": 10000
-                }
-              }
-            },
-            "commercial": {
-              "type": "object",
-              "properties": {
-                "supplier": {
-                  "type": [
-                    "string",
-                    "null"
-                  ],
-                  "maxLength": 10000
-                },
-                "cas_number": {
-                  "type": [
-                    "string",
-                    "null"
-                  ],
-                  "maxLength": 12
-                },
-                "catalogue_number": {
-                  "type": [
-                    "string",
-                    "null"
-                  ],
-                  "maxLength": 10000
-                }
-              }
-            },
-            "compound_library": {
-              "type": "object",
-              "properties": {
-                "library_name": {
-                  "type": [
-                    "string",
-                    "null"
-                  ],
-                  "maxLength": 10000
-                },
-                "library_description": {
-                  "type": [
-                    "string",
-                    "null"
-                  ],
-                  "maxLength": 10000
-                },
-                "library_compound_code": {
-                  "type": [
-                    "string",
-                    "null"
-                  ],
-                  "maxLength": 10000
-                }
-              }
-            },
-            "other": {
-              "type": "object",
-              "properties": {
-                "user_specified_compound_source": {
-                  "type": [
-                    "string",
-                    "null"
-                  ],
-                  "maxLength": 10000
-                },
-                "biological_material_source": {
-                  "type": [
-                    "string",
-                    "null"
-                  ],
-                  "maxLength": 10000
-                }
-              }
-            }
+      "citation": {
+        "type": "object",
+        "properties": {
+          "doi": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "maxLength": 1000
+          },
+          "pmid": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "maxLength": 20
+          },
+          "pii": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "maxLength": 30
           }
         }
-      }
-    },
-    "depositor_info": {
-      "type": "object",
-      "properties": {
-        "email": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "format": "email",
-          "maxLength": 10000
-        },
-        "account_id": {
-          "type": "integer",
-          "maximum": 1000000,
-          "minimum": 0
-        },
-        "attribution_name": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "maxLength": 10000
-        },
-        "attribution_organization": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "maxLength": 10000
-        },
-        "show_email_in_attribution": {
-          "type": "boolean"
-        },
-        "show_name_in_attribution": {
-          "type": "boolean"
-        },
-        "show_organization_in_attribution": {
-          "type": "boolean"
-        }
       },
-      "required": [
-        "email"
-      ]
-    },
-    "nmr_data": {
-      "type": "object",
-      "properties": {
-        "peak_lists": {
-          "type": "array",
-          "items": {
+      "origin": {
+        "type": "object",
+        "properties": {
+          "species": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "maxLength": 10000
+          },
+          "genus": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "maxLength": 10000
+          },
+          "private_collection": {
             "type": "object",
             "properties": {
-              "nucleus": {
+              "compound_source_type": {
                 "type": [
                   "string",
                   "null"
                 ],
                 "enum": [
-                  "C",
-                  "H",
+                  "purified_in_house",
+                  "commercial",
+                  "compound_library",
+                  "other",
                   null
                 ],
-                "maxLength": 1
+                "maxLength": 30
               },
-              "solvent": {
-                "type": [
-                  "string",
-                  "null"
-                ],
-                "maxLength": 10000
+              "purified_in_house": {
+                "type": "object",
+                "properties": {
+                  "biological_material_source": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "maxLength": 10000
+                  }
+                }
               },
-              "reference": {
-                "type": [
-                  "string",
-                  "null"
-                ],
-                "maxLength": 10000
+              "commercial": {
+                "type": "object",
+                "properties": {
+                  "supplier": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "maxLength": 10000
+                  },
+                  "cas_number": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "maxLength": 12
+                  },
+                  "catalogue_number": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "maxLength": 10000
+                  }
+                }
               },
-              "values": {
-                "type": "array",
-                "items": {
-                  "oneOf": [
-                    {
+              "compound_library": {
+                "type": "object",
+                "properties": {
+                  "library_name": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "maxLength": 10000
+                  },
+                  "library_description": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "maxLength": 10000
+                  },
+                  "library_compound_code": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "maxLength": 10000
+                  }
+                }
+              },
+              "other": {
+                "type": "object",
+                "properties": {
+                  "user_specified_compound_source": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "maxLength": 10000
+                  },
+                  "biological_material_source": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "maxLength": 10000
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "depositor_info": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "email",
+            "maxLength": 10000
+          },
+          "account_id": {
+            "type": "integer",
+            "maximum": 1000000,
+            "minimum": 0
+          },
+          "attribution_name": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "maxLength": 10000
+          },
+          "attribution_organization": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "maxLength": 10000
+          },
+          "show_email_in_attribution": {
+            "type": "boolean"
+          },
+          "show_name_in_attribution": {
+            "type": "boolean"
+          },
+          "show_organization_in_attribution": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "email"
+        ]
+      },
+      "nmr_data": {
+        "type": "object",
+        "properties": {
+          "peak_lists": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "nucleus": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "enum": [
+                    "C",
+                    "H",
+                    null
+                  ],
+                  "maxLength": 1
+                },
+                "solvent": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "maxLength": 10000
+                },
+                "reference": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "maxLength": 10000
+                },
+                "values": {
+                  "type": "array",
+                  "items": {
+                    "oneOf": [{
                       "type": "number"
-                    },
-                    {
+                    }, {
                       "type": "array",
                       "items": {
                         "type": "number"
                       }
-                    },
-                    {
-                        "type": "null"
-                    }
+                    }, {
+                      "type": "null"
+                    }]
+                  },
+                  "maxLength": 1000
+                },
+                "frequency": {
+                  "type": [
+                    "number",
+                    "null"
+                  ],
+                  "minimum": 50,
+                  "maximum": 1400
+                },
+                "frequency_units": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "enum": [
+                    "MHz",
+                    "Hz"
+                  ],
+                  "default": "MHz"
+                },
+                "temperature": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "minimum": 200,
+                  "maximum": 400
+                },
+                "temperature_units": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "enum": [
+                    "K",
+                    "C",
+                    "F"
+                  ],
+                  "default": "K"
+                },
+                "peak_list_uuid": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "maxLength": 16
+                },
+                "linked_peak_list_uuids": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "minItems": 0,
+                  "maxItems": 10
+                },
+                "peak_list_embargo_release_ready": {
+                  "type": [
+                    "boolean",
+                    "null"
                   ]
-                },
-                "maxLength": 1000
-              },
-              "frequency": {
-                "type": [
-                  "number",
-                  "null"
-                ],
-                "minimum": 50,
-                "maximum": 1400
-              },
-              "frequency_units": {
-                "type": [
-                  "string",
-                  "null"
-                ],
-                "enum": [
-                  "MHz",
-                  "Hz"
-                ],
-                "default": "MHz"
-              },
-              "temperature": {
-                "type": [
-                  "integer",
-                  "null"
-                ],
-                "minimum": 200,
-                "maximum": 400
-              },
-              "temperature_units": {
-                "type": [
-                  "string",
-                  "null"
-                ],
-                "enum": [
-                  "K",
-                  "C",
-                  "F"
-                ],
-                "default": "K"
-              },
-              "peak_list_uuid": {
-                "type": [
-                  "string",
-                  "null"
-                ],
-                "maxLength": 16
-              },
-              "linked_peak_list_uuids": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                },
-                "minItems": 0,
-                "maxItems": 10
-              },
-              "peak_list_embargo_release_ready": {
-                "type": [
-                  "boolean",
-                  "null"
-                ]
-              }
-            }
-          }
-        },
-        "experimental_data": {
-          "type": "object",
-          "properties": {
-            "nmr_data_download_link": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "maxLength": 10000
-            },
-            "nmr_metadata": {
-              "type": "array",
-              "items": {
-                "type": "object",
-                "properties": {
-                  "vendor": {
-                    "type": [
-                      "string",
-                      "null"
-                    ],
-                    "enum": [
-                      "Varian",
-                      "Bruker",
-                      "JEOL",
-                      "Jcampdx",
-                      null
-                    ],
-                    "maxLength": 20
-                  },
-                  "filetype": {
-                    "type": [
-                      "string",
-                      "null"
-                    ],
-                    "enum": [
-                      "Varian_native",
-                      "Bruker_native",
-                      "JEOL_native",
-                      "Jcampdx",
-                      "Mnova",
-                      null
-                    ],
-                    "maxLength": 30
-                  },
-                  "solvent": {
-                    "type": [
-                      "string",
-                      "null"
-                    ],
-                    "maxLength": 100
-                  },
-                  "frequency": {
-                    "type": "array",
-                    "items": {
-                      "type": "number"
-                    },
-                    "minItems": 0,
-                    "maxItems": 2
-                  },
-                  "frequency_units": {
-                    "type": [
-                      "string",
-                      "null"
-                    ],
-                    "enum": [
-                      "MHz",
-                      "Hz",
-                      null
-                    ],
-                    "maxLength": 100,
-                    "default": "MHz"
-                  },
-                  "f1_nucleus": {
-                    "type": [
-                      "string",
-                      "null"
-                    ],
-                    "maxLength": 20
-                  },
-                  "f2_nucleus": {
-                    "type": [
-                      "string",
-                      "null"
-                    ],
-                    "maxLength": 20
-                  },
-                  "temperature": {
-                    "type": [
-                      "integer",
-                      "null"
-                    ],
-                    "minimum": 1,
-                    "maximum": 500
-                  },
-                  "temperature_units": {
-                    "type": [
-                      "string",
-                      "null"
-                    ],
-                    "enum": [
-                      "K",
-                      "C",
-                      "F"
-                    ],
-                    "maxLength": 10,
-                    "default": "K"
-                  },
-                  "experiment_type": {
-                    "type": [
-                      "string",
-                      "null"
-                    ],
-                    "maxLength": 100
-                  },
-                  "extracted_experiment_folder": {
-                    "type": [
-                      "string",
-                      "null"
-                    ],
-                    "maxLength": 10000
-                  },
-                  "extracted_data_path": {
-                    "type": [
-                      "string",
-                      "null"
-                    ],
-                    "maxLength": 10000
-                  },
-                  "spectrum_uuid": {
-                    "type": [
-                      "string",
-                      "null"
-                    ],
-                    "maxLength": 10000
-                  },
-                  "spectrum_embargo_release_ready": {
-                    "type": [
-                      "boolean",
-                      "null"
-                    ]
-                  }
                 }
               }
             }
-          }
-        },
-        "assignment_data": {
-            "type": "array",
-            "items": [
-                {
-                "type": "object",
-                "properties": {
-                    "assignment_uuid": {
-                        "type": [
-                            "string",
-                            "null"
-                        ],
-                        "minLength": 38,
-                        "maxLength": 38
+          },
+          "experimental_data": {
+            "type": "object",
+            "properties": {
+              "nmr_data_download_link": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "maxLength": 10000
+              },
+              "nmr_metadata": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "vendor": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "enum": [
+                        "Varian",
+                        "Bruker",
+                        "JEOL",
+                        "Jcampdx",
+                        null
+                      ],
+                      "maxLength": 20
                     },
-                    "curator_email_address": {
-                        "type": [
-                            "string",
-                            "null"
-                        ],
-                        "minLength": 0,
-                        "maxLength": 1000
-                    },
-                    "rdkit_version": {
-                        "type": [
-                            "string",
-                            "null"
-                        ],
-                        "minLength": 0,
-                        "maxLength": 100
-                    },
-                    "nucleus": {
-                        "type": [
-                        "string"
-                        ],
-                        "enum": [
-                            "C",
-                            "H"
-                        ],
-                        "maxLength": 1
+                    "filetype": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "enum": [
+                        "Varian_native",
+                        "Bruker_native",
+                        "JEOL_native",
+                        "Jcampdx",
+                        "Mnova",
+                        null
+                      ],
+                      "maxLength": 30
                     },
                     "solvent": {
-                    "type": [
+                      "type": [
                         "string",
                         "null"
-                    ],
-                    "maxLength": 10000
-                    },
-                    "temperature": {
-                    "type": [
-                        "integer",
-                        "null"
-                    ],
-                    "minimum": 1,
-                    "maximum": 500
-                    },
-                    "temperature_units": {
-                    "type": [
-                        "string",
-                        "null"
-                    ],
-                    "enum": [
-                        "K",
-                        "C",
-                        "F"
-                    ],
-                    "default": "K"
-                    },
-                    "reference": {
-                    "type": [
-                        "string",
-                        "null"
-                    ],
-                    "maxLength": 10000
+                      ],
+                      "maxLength": 100
                     },
                     "frequency": {
-                    "type": [
-                        "number",
-                        "null"
-                    ],
-                    "maxLength": 10000
+                      "type": "array",
+                      "items": {
+                        "type": "number"
+                      },
+                      "minItems": 0,
+                      "maxItems": 2
                     },
                     "frequency_units": {
-                    "type": [
+                      "type": [
                         "string",
                         "null"
-                    ],
-                    "enum": [
+                      ],
+                      "enum": [
                         "MHz",
                         "Hz",
                         null
-                    ]
+                      ],
+                      "maxLength": 100,
+                      "default": "MHz"
                     },
-                    "assignment_data_embargo_release_ready": {
-                        "type": [
-                        "boolean",
-                        "null"
-                        ]
-                    },
-                    "spectrum": {
-                    "type": "array",
-                    "items": {
-                        "type": "object",
-                        "properties": {
-                        "shift": {
-                            "type": [
-                            "number",
-                            "null"
-                            ],
-                            "maximum": 250,
-                            "minimum": -11
-                        },
-                        "integration": {
-                            "type": [
-                            "integer",
-                            "null"
-                            ]
-                        },
-                        "multiplicity": {
-                            "type": [
-                            "string",
-                            "null"
-                            ],
-                            "maxLength": 10000
-                        },
-                        "coupling": {
-                            "type": "array",
-                            "items": {
-                            "type": [
-                                "number",
-                                "null"
-                            ]
-                            },
-                            "default": []
-                        },
-                        "atom_index": {
-                            "type": [
-                            "string",
-                            "null"
-                            ]
-                        },
-                        "rdkit_index": {
-                            "type": "array",
-                            "items": {
-                            "type": [
-                                "integer",
-                                "null"
-                            ],
-                            "maximum": 2000,
-                            "minimum": 1
-                            }
-                        },
-                        "interchangeable_index": {
-                            "type": "array",
-                            "items": {
-                            "type": [
-                                "integer",
-                                "null"
-                            ]
-                            },
-                            "default": []
-                        }
-                        }
-                    }
-                    }
-                }
-                }
-            ]
-        },
-        "predicted_data": {
-          "type": "object",
-          "properties": {
-            "prediction_method": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "maxLength": 10000
-            },
-            "dft_protocol": {
-              "type": "object",
-              "properties": {
-                "molecular_dynamics": {
-                  "type": "object",
-                  "properties": {
-                    "md_software": {
+                    "f1_nucleus": {
                       "type": [
                         "string",
                         "null"
                       ],
-                      "maxLength": 10000
+                      "maxLength": 20
                     },
-                    "md_software_version": {
+                    "f2_nucleus": {
                       "type": [
                         "string",
                         "null"
                       ],
-                      "maxLength": 500
-                    },
-                    "forcefield": {
-                      "type": [
-                        "string",
-                        "null"
-                      ],
-                      "maxLength": 10000
-                    },
-                    "energy_window": {
-                      "type": [
-                        "string",
-                        "null"
-                      ],
-                      "maxLength": 10000
-                    },
-                    "downselection": {
-                      "type": [
-                        "string",
-                        "null"
-                      ],
-                      "maxLength": 10000
-                    }
-                  }
-                },
-                "quantum_mechanics": {
-                  "type": "object",
-                  "properties": {
-                    "qm_software": {
-                      "type": [
-                        "string",
-                        "null"
-                      ],
-                      "maxLength": 10000
-                    },
-                    "qm_software_version": {
-                      "type": [
-                        "string",
-                        "null"
-                      ],
-                      "maxLength": 10000
-                    },
-                    "tasks": {
-                      "type": "array",
-                      "items": {
-                        "type": [
-                          "string",
-                          "null"
-                        ],
-                        "maxLength": 10000
-                      }
-                    },
-                    "functionals": {
-                      "type": "array",
-                      "items": {
-                        "type": [
-                          "string",
-                          "null"
-                        ],
-                        "maxLength": 10000
-                      }
-                    },
-                    "basis_sets": {
-                      "type": "array",
-                      "items": {
-                        "type": [
-                          "string",
-                          "null"
-                        ],
-                        "maxLength": 10000
-                      }
-                    },
-                    "solvent": {
-                      "type": [
-                        "string",
-                        "null"
-                      ],
-                      "maxLength": 10000
-                    },
-                    "conversion_factors": {
-                      "type": "object",
-                      "properties": {
-                        "H": {
-                          "type": "object",
-                          "properties": {
-                            "m": {
-                              "type": [
-                                "number",
-                                "null"
-                              ]
-                            },
-                            "b": {
-                              "type": [
-                                "number",
-                                "null"
-                              ]
-                            }
-                          }
-                        },
-                        "C": {
-                          "type": "object",
-                          "properties": {
-                            "m": {
-                              "type": [
-                                "number",
-                                "null"
-                              ]
-                            },
-                            "b": {
-                              "type": [
-                                "number",
-                                "null"
-                              ]
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "ml_protocol": {
-              "type": "object",
-              "properties": {
-                "ml_model": {
-                  "type": [
-                    "string",
-                    "null"
-                  ],
-                  "maxLength": 500
-                },
-                "training_set": {
-                  "type": [
-                    "string",
-                    "null"
-                  ],
-                  "maxLength": 10000
-                },
-                "training_parameters": {
-                  "type": "object",
-                  "properties": {
-                    "parameter_1": {
-                      "type": [
-                        "string",
-                        "null"
-                      ],
-                      "maxLength": 10000
-                    },
-                    "parameter_2": {
-                      "type": [
-                        "string",
-                        "null"
-                      ],
-                      "maxLength": 10000
-                    }
-                  }
-                },
-                "chemical_shifts": {
-                  "type": "object",
-                  "properties": {
-                    "solvent": {
-                      "type": [
-                        "string",
-                        "null"
-                      ],
-                      "maxLength": 10000
+                      "maxLength": 20
                     },
                     "temperature": {
                       "type": [
                         "integer",
                         "null"
+                      ],
+                      "minimum": 1,
+                      "maximum": 500
+                    },
+                    "temperature_units": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "enum": [
+                        "K",
+                        "C",
+                        "F"
+                      ],
+                      "maxLength": 10,
+                      "default": "K"
+                    },
+                    "experiment_type": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "maxLength": 100
+                    },
+                    "extracted_experiment_folder": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "maxLength": 10000
+                    },
+                    "extracted_data_path": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "maxLength": 10000
+                    },
+                    "spectrum_uuid": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "maxLength": 10000
+                    },
+                    "spectrum_embargo_release_ready": {
+                      "type": [
+                        "boolean",
+                        "null"
                       ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "assignment_data": {
+            "type": "array",
+            "items": [{
+              "type": "object",
+              "properties": {
+                "curator_email_address": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "minLength": 0,
+                  "maxLength": 1000
+                },
+                "rdkit_version": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "minLength": 0,
+                  "maxLength": 100
+                },
+                "mol_block": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "c_nmr": {
+                  "type": "object",
+                  "properties": {
+                    "assignment_uuid": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "minLength": 38,
+                      "maxLength": 38
+                    },
+                    "solvent": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "maxLength": 10000
+                    },
+                    "nucleus": {
+                      "type": [
+                        "string"
+                      ],
+                      "enum": [
+                        "C"
+                      ],
+                      "maxLength": 1,
+                      "default": "C"
+                    },
+                    "temperature": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ],
+                      "minimum": 1,
+                      "maximum": 500
                     },
                     "temperature_units": {
                       "type": [
@@ -945,59 +634,478 @@
                       ],
                       "default": "K"
                     },
-                    "h_nmr": {
-                      "type": "object",
-                      "properties": {
-                        "shift": {
-                          "type": [
-                            "number",
-                            "null"
-                          ],
-                          "maximum": 21,
-                          "minimum": -3
-                        },
-                        "shielding_tensor": {
+                    "reference": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "maxLength": 10000
+                    },
+                    "frequency": {
+                      "type": [
+                        "number",
+                        "null"
+                      ],
+                      "maxLength": 10000
+                    },
+                    "frequency_units": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "enum": [
+                        "MHz",
+                        "Hz",
+                        null
+                      ]
+                    },
+                    "assignment_data_embargo_release_ready": {
+                      "type": [
+                        "boolean",
+                        "null"
+                      ]
+                    },
+                    "spectrum": {
+                      "type": "array",
+                      "items": [{
+                        "type": "object",
+                        "properties": {
+                          "shift": {
+                            "type": [
+                              "number",
+                              "null"
+                            ],
+                            "maximum": 250,
+                            "minimum": -11
+                          },
+                          "mol_block_index": {
+                            "type": "array",
+                            "items": {
+                              "type": [
+                                "integer",
+                                "null"
+                              ],
+                              "maximum": 2000,
+                              "minimum": 1
+                            }
+                          }
+                        }
+                      }]
+                    }
+                  }
+                },
+                "h_nmr": {
+                  "type": "object",
+                  "properties": {
+                    "assignment_uuid": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "minLength": 38,
+                      "maxLength": 38
+                    },
+                    "nucleus": {
+                      "type": [
+                        "string"
+                      ],
+                      "enum": [
+                        "C"
+                      ],
+                      "maxLength": 1,
+                      "default": "C"
+                    },
+                    "solvent": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "maxLength": 10000
+                    },
+                    "temperature": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ],
+                      "minimum": 1,
+                      "maximum": 500
+                    },
+                    "temperature_units": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "enum": [
+                        "K",
+                        "C",
+                        "F"
+                      ],
+                      "default": "K"
+                    },
+                    "reference": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "maxLength": 10000
+                    },
+                    "frequency": {
+                      "type": [
+                        "number",
+                        "null"
+                      ],
+                      "maxLength": 10000
+                    },
+                    "frequency_units": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "enum": [
+                        "MHz",
+                        "Hz",
+                        null
+                      ]
+                    },
+                    "assignment_data_embargo_release_ready": {
+                      "type": [
+                        "boolean",
+                        "null"
+                      ]
+                    },
+                    "spectrum": {
+                      "type": "array",
+                      "items": [{
+                        "type": "object",
+                        "properties": {
+                          "shift": {
+                            "type": [
+                              "number",
+                              "null"
+                            ],
+                            "maximum": 250,
+                            "minimum": -11
+                          },
+                          "integration": {
+                            "type": [
+                              "integer",
+                              "null"
+                            ]
+                          },
+                          "multiplicity": {
+                            "type": [
+                              "string",
+                              "null"
+                            ],
+                            "maxLength": 10000
+                          },
+                          "coupling": {
+                            "type": "array",
+                            "items": {
+                              "type": [
+                                "number",
+                                "null"
+                              ]
+                            },
+                            "default": []
+                          },
+                          "mol_block_index": {
+                            "type": "array",
+                            "items": {
+                              "type": [
+                                "integer",
+                                "null"
+                              ],
+                              "maximum": 2000,
+                              "minimum": 1
+                            }
+                          },
+                          "interchangeable_index": {
+                            "type": "array",
+                            "items": {
+                              "type": [
+                                "integer",
+                                "null"
+                              ]
+                            },
+                            "default": []
+                          }
+                        }
+                      }]
+                    }
+                  }
+                }
+              }
+            }]
+          },
+          "predicted_data": {
+            "type": "object",
+            "properties": {
+              "prediction_method": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "maxLength": 10000
+              },
+              "dft_protocol": {
+                "type": "object",
+                "properties": {
+                  "molecular_dynamics": {
+                    "type": "object",
+                    "properties": {
+                      "md_software": {
+                        "type": [
+                          "string",
+                          "null"
+                        ],
+                        "maxLength": 10000
+                      },
+                      "md_software_version": {
+                        "type": [
+                          "string",
+                          "null"
+                        ],
+                        "maxLength": 500
+                      },
+                      "forcefield": {
+                        "type": [
+                          "string",
+                          "null"
+                        ],
+                        "maxLength": 10000
+                      },
+                      "energy_window": {
+                        "type": [
+                          "string",
+                          "null"
+                        ],
+                        "maxLength": 10000
+                      },
+                      "downselection": {
+                        "type": [
+                          "string",
+                          "null"
+                        ],
+                        "maxLength": 10000
+                      }
+                    }
+                  },
+                  "quantum_mechanics": {
+                    "type": "object",
+                    "properties": {
+                      "qm_software": {
+                        "type": [
+                          "string",
+                          "null"
+                        ],
+                        "maxLength": 10000
+                      },
+                      "qm_software_version": {
+                        "type": [
+                          "string",
+                          "null"
+                        ],
+                        "maxLength": 10000
+                      },
+                      "tasks": {
+                        "type": "array",
+                        "items": {
                           "type": [
                             "string",
                             "null"
                           ],
                           "maxLength": 10000
-                        },
-                        "rdkit_index": {
+                        }
+                      },
+                      "functionals": {
+                        "type": "array",
+                        "items": {
                           "type": [
-                            "integer",
+                            "string",
                             "null"
                           ],
-                          "maximum": 2000,
-                          "minimum": 1
+                          "maxLength": 10000
+                        }
+                      },
+                      "basis_sets": {
+                        "type": "array",
+                        "items": {
+                          "type": [
+                            "string",
+                            "null"
+                          ],
+                          "maxLength": 10000
+                        }
+                      },
+                      "solvent": {
+                        "type": [
+                          "string",
+                          "null"
+                        ],
+                        "maxLength": 10000
+                      },
+                      "conversion_factors": {
+                        "type": "object",
+                        "properties": {
+                          "H": {
+                            "type": "object",
+                            "properties": {
+                              "m": {
+                                "type": [
+                                  "number",
+                                  "null"
+                                ]
+                              },
+                              "b": {
+                                "type": [
+                                  "number",
+                                  "null"
+                                ]
+                              }
+                            }
+                          },
+                          "C": {
+                            "type": "object",
+                            "properties": {
+                              "m": {
+                                "type": [
+                                  "number",
+                                  "null"
+                                ]
+                              },
+                              "b": {
+                                "type": [
+                                  "number",
+                                  "null"
+                                ]
+                              }
+                            }
+                          }
                         }
                       }
-                    },
-                    "c_nmr": {
-                      "type": "object",
-                      "properties": {
-                        "shift": {
-                          "type": [
-                            "number",
-                            "null"
-                          ],
-                          "maximum": 250,
-                          "minimum": -11
-                        },
-                        "shielding_tensor": {
-                          "type": [
-                            "string",
-                            "null"
-                          ],
-                          "maxLength": 10000
-                        },
-                        "rdkit_index": {
-                          "type": [
-                            "integer",
-                            "null"
-                          ],
-                          "maximum": 2000,
-                          "minimum": 1
+                    }
+                  }
+                }
+              },
+              "ml_protocol": {
+                "type": "object",
+                "properties": {
+                  "ml_model": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "maxLength": 500
+                  },
+                  "training_set": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "maxLength": 10000
+                  },
+                  "training_parameters": {
+                    "type": "object",
+                    "properties": {
+                      "parameter_1": {
+                        "type": [
+                          "string",
+                          "null"
+                        ],
+                        "maxLength": 10000
+                      },
+                      "parameter_2": {
+                        "type": [
+                          "string",
+                          "null"
+                        ],
+                        "maxLength": 10000
+                      }
+                    }
+                  },
+                  "chemical_shifts": {
+                    "type": "object",
+                    "properties": {
+                      "solvent": {
+                        "type": [
+                          "string",
+                          "null"
+                        ],
+                        "maxLength": 10000
+                      },
+                      "temperature": {
+                        "type": [
+                          "integer",
+                          "null"
+                        ]
+                      },
+                      "temperature_units": {
+                        "type": [
+                          "string",
+                          "null"
+                        ],
+                        "enum": [
+                          "K",
+                          "C",
+                          "F"
+                        ],
+                        "default": "K"
+                      },
+                      "h_nmr": {
+                        "type": "object",
+                        "properties": {
+                          "shift": {
+                            "type": [
+                              "number",
+                              "null"
+                            ],
+                            "maximum": 21,
+                            "minimum": -3
+                          },
+                          "shielding_tensor": {
+                            "type": [
+                              "string",
+                              "null"
+                            ],
+                            "maxLength": 10000
+                          },
+                          "rdkit_index": {
+                            "type": [
+                              "integer",
+                              "null"
+                            ],
+                            "maximum": 2000,
+                            "minimum": 1
+                          }
+                        }
+                      },
+                      "c_nmr": {
+                        "type": "object",
+                        "properties": {
+                          "shift": {
+                            "type": [
+                              "number",
+                              "null"
+                            ],
+                            "maximum": 250,
+                            "minimum": -11
+                          },
+                          "shielding_tensor": {
+                            "type": [
+                              "string",
+                              "null"
+                            ],
+                            "maxLength": 10000
+                          },
+                          "rdkit_index": {
+                            "type": [
+                              "integer",
+                              "null"
+                            ],
+                            "maximum": 2000,
+                            "minimum": 1
+                          }
                         }
                       }
                     }
@@ -1008,14 +1116,13 @@
           }
         }
       }
-    }
-  },
-  "required": [
-    "smiles",
-    "submission",
-    "citation",
-    "origin",
-    "depositor_info",
-    "nmr_data"
-  ]
-}
+    },
+    "required": [
+      "smiles",
+      "submission",
+      "citation",
+      "origin",
+      "depositor_info",
+      "nmr_data"
+    ]
+  }
