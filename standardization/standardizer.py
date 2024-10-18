@@ -303,9 +303,6 @@ if __name__ == "__main__":
             print(f"JSON not found: {json_dict}")
         except json.JSONDecodeError:
             print(f"Provided JSON is invalid: {json_dict}")
-        
-        print("json_dict is")
-        print(json_dict)
 
         standardizer = JSONStandardizer(json_dict)
         if standardizer.standardize():

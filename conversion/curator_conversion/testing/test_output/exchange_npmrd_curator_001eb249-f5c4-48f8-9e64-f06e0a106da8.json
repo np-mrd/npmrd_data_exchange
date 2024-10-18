@@ -64,7 +64,7 @@
                     "rdkit_version": "2021.9.2",
                     "mol_block": "\n     RDKit          3D\n\n 41 42  0  0  0  0  0  0  0  0999 V2000\n    3.5527    1.0582   -3.3157 O   0  0  0  0  0  0  0  0  0  1  0  0\n    3.9648    0.4098   -2.3244 C   0  0  0  0  0  0  0  0  0  2  0  0\n    5.3070    0.0642   -2.3147 O   0  0  0  0  0  0  0  0  0  3  0  0\n    3.0386    0.0413   -1.2250 C   0  0  0  0  0  0  0  0  0  4  0  0\n    3.4299   -0.6276   -0.1866 C   0  0  0  0  0  0  0  0  0  5  0  0\n    2.6579   -1.0637    0.9647 C   0  0  0  0  0  0  0  0  0  6  0  0\n    3.3670   -1.7769    1.9368 C   0  0  0  0  0  0  0  0  0  7  0  0\n    2.6986   -2.2178    3.0490 C   0  0  0  0  0  0  0  0  0  8  0  0\n    1.3627   -1.9680    3.2109 C   0  0  0  0  0  0  0  0  0  9  0  0\n    0.6623   -1.2768    2.2749 C   0  0  0  0  0  0  0  0  0 10  0  0\n    1.2967   -0.8116    1.1342 C   0  0  0  0  0  0  0  0  0 11  0  0\n    0.6211   -0.1182    0.1826 O   0  0  0  0  0  0  0  0  0 12  0  0\n   -0.7050    0.2681    0.0907 C   0  0  2  0  0  0  0  0  0 13  0  0\n   -1.3028   -0.3961   -1.0077 O   0  0  0  0  0  0  0  0  0 14  0  0\n   -2.6740   -0.2178   -0.8411 C   0  0  2  0  0  0  0  0  0 15  0  0\n   -3.4788   -1.2037   -1.6475 C   0  0  0  0  0  0  0  0  0 16  0  0\n   -3.1031   -2.4877   -1.1905 O   0  0  0  0  0  0  0  0  0 17  0  0\n   -2.9918    1.1877   -1.2577 C   0  0  1  0  0  0  0  0  0 18  0  0\n   -4.3743    1.3726   -1.0305 O   0  0  0  0  0  0  0  0  0 19  0  0\n   -2.1639    2.2090   -0.5768 C   0  0  2  0  0  0  0  0  0 20  0  0\n   -1.9778    3.2812   -1.4806 O   0  0  0  0  0  0  0  0  0 21  0  0\n   -0.8779    1.7585   -0.0196 C   0  0  1  0  0  0  0  0  0 22  0  0\n   -0.6564    2.2944    1.2630 O   0  0  0  0  0  0  0  0  0 23  0  0\n    6.0089    0.5461   -2.8817 H   0  0  0  0  0  0  0  0  0 24  0  0\n    2.0243    0.3480   -1.3153 H   0  0  0  0  0  0  0  0  0 25  0  0\n    4.5050   -0.8912   -0.2028 H   0  0  0  0  0  0  0  0  0 26  0  0\n    4.4426   -1.9847    1.8187 H   0  0  0  0  0  0  0  0  0 27  0  0\n    3.2616   -2.7812    3.8156 H   0  0  0  0  0  0  0  0  0 28  0  0\n    0.8258   -2.3186    4.0978 H   0  0  0  0  0  0  0  0  0 29  0  0\n   -0.4117   -1.0665    2.3877 H   0  0  0  0  0  0  0  0  0 30  0  0\n   -1.3029   -0.0591    0.9590 H   0  0  0  0  0  0  0  0  0 31  0  0\n   -2.9434   -0.3403    0.2233 H   0  0  0  0  0  0  0  0  0 32  0  0\n   -4.5574   -1.1176   -1.4059 H   0  0  0  0  0  0  0  0  0 33  0  0\n   -3.3665   -1.0955   -2.7292 H   0  0  0  0  0  0  0  0  0 34  0  0\n   -3.2268   -2.4332   -0.1897 H   0  0  0  0  0  0  0  0  0 35  0  0\n   -2.8701    1.2332   -2.3787 H   0  0  0  0  0  0  0  0  0 36  0  0\n   -4.4893    1.7443   -0.1013 H   0  0  0  0  0  0  0  0  0 37  0  0\n   -2.7867    2.6586    0.2519 H   0  0  0  0  0  0  0  0  0 38  0  0\n   -1.1799    3.0426   -2.0273 H   0  0  0  0  0  0  0  0  0 39  0  0\n   -0.0420    2.1363   -0.6508 H   0  0  0  0  0  0  0  0  0 40  0  0\n   -1.5452    2.5997    1.6221 H   0  0  0  0  0  0  0  0  0 41  0  0\n  1  2  2  0\n  2  3  1  0\n  2  4  1  0\n  4  5  2  0\n  5  6  1  0\n  6  7  2  0\n  7  8  1  0\n  8  9  2  0\n  9 10  1  0\n 10 11  2  0\n 11 12  1  0\n 12 13  1  0\n 13 14  1  0\n 14 15  1  0\n 15 16  1  0\n 16 17  1  0\n 15 18  1  0\n 18 19  1  0\n 18 20  1  0\n 20 21  1  0\n 20 22  1  0\n 22 23  1  0\n 11  6  1  0\n 22 13  1  0\n  3 24  1  0\n  4 25  1  0\n  5 26  1  0\n  7 27  1  0\n  8 28  1  0\n  9 29  1  0\n 10 30  1  0\n 13 31  1  1\n 15 32  1  1\n 16 33  1  0\n 16 34  1  0\n 17 35  1  0\n 18 36  1  6\n 19 37  1  0\n 20 38  1  1\n 21 39  1  0\n 22 40  1  6\n 23 41  1  0\nM  END\n",
                     "c_nmr": {
-                        "assignment_uuid": "4ca8aaea-0134-4671-8932-7aeab1813054",
+                        "assignment_uuid": "5d020a55-dff7-40ce-9d8e-b0bf6aa6677a",
                         "solvent": "Methanol-d4",
                         "nucleus": "C",
                         "temperature": null,
@@ -167,7 +167,7 @@
                         ]
                     },
                     "h_nmr": {
-                        "assignment_uuid": "85169b6c-2b43-4ddc-87f4-abebe8ee0efe",
+                        "assignment_uuid": "2a9714f2-a2aa-4f65-8882-ac0941f5fdb7",
                         "nucleus": "C",
                         "solvent": "Methanol-d4",
                         "temperature": 293,
@@ -186,13 +186,10 @@
                                     1.2
                                 ],
                                 "mol_block_index": [
-                                    null
+                                    30
                                 ],
                                 "interchangeable_index": [],
-                                "atom_index": "3",
-                                "rdkit_index": [
-                                    30
-                                ]
+                                "atom_index": "3"
                             },
                             {
                                 "shift": 7.32,
@@ -204,13 +201,10 @@
                                     1.7
                                 ],
                                 "mol_block_index": [
-                                    null
+                                    29
                                 ],
                                 "interchangeable_index": [],
-                                "atom_index": "4",
-                                "rdkit_index": [
-                                    29
-                                ]
+                                "atom_index": "4"
                             },
                             {
                                 "shift": 7.03,
@@ -222,13 +216,10 @@
                                     1.2
                                 ],
                                 "mol_block_index": [
-                                    null
+                                    28
                                 ],
                                 "interchangeable_index": [],
-                                "atom_index": "5",
-                                "rdkit_index": [
-                                    28
-                                ]
+                                "atom_index": "5"
                             },
                             {
                                 "shift": 7.59,
@@ -239,13 +230,10 @@
                                     1.7
                                 ],
                                 "mol_block_index": [
-                                    null
+                                    27
                                 ],
                                 "interchangeable_index": [],
-                                "atom_index": "6",
-                                "rdkit_index": [
-                                    27
-                                ]
+                                "atom_index": "6"
                             },
                             {
                                 "shift": 7.97,
@@ -255,13 +243,10 @@
                                     16.2
                                 ],
                                 "mol_block_index": [
-                                    null
+                                    26
                                 ],
                                 "interchangeable_index": [],
-                                "atom_index": "7",
-                                "rdkit_index": [
-                                    26
-                                ]
+                                "atom_index": "7"
                             },
                             {
                                 "shift": 6.52,
@@ -271,13 +256,10 @@
                                     16.2
                                 ],
                                 "mol_block_index": [
-                                    null
+                                    25
                                 ],
                                 "interchangeable_index": [],
-                                "atom_index": "8",
-                                "rdkit_index": [
-                                    25
-                                ]
+                                "atom_index": "8"
                             },
                             {
                                 "shift": 4.92,
@@ -287,13 +269,10 @@
                                     7.8
                                 ],
                                 "mol_block_index": [
-                                    null
+                                    31
                                 ],
                                 "interchangeable_index": [],
-                                "atom_index": "1'",
-                                "rdkit_index": [
-                                    31
-                                ]
+                                "atom_index": "1'"
                             },
                             {
                                 "shift": 3.43,
@@ -301,13 +280,10 @@
                                 "multiplicity": "m",
                                 "coupling": [],
                                 "mol_block_index": [
-                                    null
+                                    40
                                 ],
                                 "interchangeable_index": [],
-                                "atom_index": "2'",
-                                "rdkit_index": [
-                                    40
-                                ]
+                                "atom_index": "2'"
                             },
                             {
                                 "shift": 3.58,
@@ -315,13 +291,10 @@
                                 "multiplicity": "m",
                                 "coupling": [],
                                 "mol_block_index": [
-                                    null
+                                    38
                                 ],
                                 "interchangeable_index": [],
-                                "atom_index": "3'",
-                                "rdkit_index": [
-                                    38
-                                ]
+                                "atom_index": "3'"
                             },
                             {
                                 "shift": 3.44,
@@ -329,13 +302,10 @@
                                 "multiplicity": "m",
                                 "coupling": [],
                                 "mol_block_index": [
-                                    null
+                                    36
                                 ],
                                 "interchangeable_index": [],
-                                "atom_index": "4'",
-                                "rdkit_index": [
-                                    36
-                                ]
+                                "atom_index": "4'"
                             },
                             {
                                 "shift": 3.39,
@@ -343,13 +313,10 @@
                                 "multiplicity": "m",
                                 "coupling": [],
                                 "mol_block_index": [
-                                    null
+                                    32
                                 ],
                                 "interchangeable_index": [],
-                                "atom_index": "5'",
-                                "rdkit_index": [
-                                    32
-                                ]
+                                "atom_index": "5'"
                             },
                             {
                                 "shift": 3.71,
@@ -357,15 +324,12 @@
                                 "multiplicity": "m",
                                 "coupling": [],
                                 "mol_block_index": [
-                                    null
+                                    33
                                 ],
                                 "interchangeable_index": [
                                     34
                                 ],
-                                "atom_index": "6'",
-                                "rdkit_index": [
-                                    33
-                                ]
+                                "atom_index": "6'"
                             },
                             {
                                 "shift": 3.9,
@@ -373,15 +337,12 @@
                                 "multiplicity": "m",
                                 "coupling": [],
                                 "mol_block_index": [
-                                    null
+                                    34
                                 ],
                                 "interchangeable_index": [
                                     33
                                 ],
-                                "atom_index": "6'",
-                                "rdkit_index": [
-                                    34
-                                ]
+                                "atom_index": "6'"
                             }
                         ]
                     }
@@ -508,7 +469,7 @@
                     "rdkit_version": "2021.9.2",
                     "mol_block": "\n     RDKit          3D\n\n 41 42  0  0  0  0  0  0  0  0999 V2000\n    5.3503    0.0937    0.5707 O   0  0  0  0  0  0  0  0  0  1  0  0\n    5.2020    0.2651   -0.6530 C   0  0  0  0  0  0  0  0  0  2  0  0\n    6.3527    0.8368   -1.2639 O   0  0  0  0  0  0  0  0  0  3  0  0\n    4.0529   -0.0437   -1.4356 C   0  0  0  0  0  0  0  0  0  4  0  0\n    2.9338   -0.6068   -1.0993 C   0  0  0  0  0  0  0  0  0  5  0  0\n    2.5902   -1.0884    0.1963 C   0  0  0  0  0  0  0  0  0  6  0  0\n    3.4482   -1.6892    1.0561 C   0  0  0  0  0  0  0  0  0  7  0  0\n    3.0236   -2.0068    2.3403 C   0  0  0  0  0  0  0  0  0  8  0  0\n    1.7473   -1.7281    2.7599 C   0  0  0  0  0  0  0  0  0  9  0  0\n    0.8465   -1.1157    1.8963 C   0  0  0  0  0  0  0  0  0 10  0  0\n    1.2505   -0.7962    0.6318 C   0  0  0  0  0  0  0  0  0 11  0  0\n    0.4156   -0.1952   -0.2618 O   0  0  0  0  0  0  0  0  0 12  0  0\n   -0.8934    0.1926   -0.1214 C   0  0  2  0  0  0  0  0  0 13  0  0\n   -1.7645   -0.5202   -0.9887 O   0  0  0  0  0  0  0  0  0 14  0  0\n   -3.0417   -0.2554   -0.4988 C   0  0  2  0  0  0  0  0  0 15  0  0\n   -4.0141   -1.3572   -0.8390 C   0  0  0  0  0  0  0  0  0 16  0  0\n   -3.5148   -2.5328   -0.2506 O   0  0  0  0  0  0  0  0  0 17  0  0\n   -3.4711    1.0815   -1.0004 C   0  0  1  0  0  0  0  0  0 18  0  0\n   -4.3829    1.6057   -0.0587 O   0  0  0  0  0  0  0  0  0 19  0  0\n   -2.2913    1.9895   -1.1848 C   0  0  2  0  0  0  0  0  0 20  0  0\n   -1.9616    2.0684   -2.5534 O   0  0  0  0  0  0  0  0  0 21  0  0\n   -1.1253    1.6726   -0.3228 C   0  0  1  0  0  0  0  0  0 22  0  0\n   -1.1693    2.3558    0.8920 O   0  0  0  0  0  0  0  0  0 23  0  0\n    6.9132    1.4399   -0.6402 H   0  0  0  0  0  0  0  0  0 24  0  0\n    4.1265    0.2464   -2.5238 H   0  0  0  0  0  0  0  0  0 25  0  0\n    2.1606   -0.7260   -1.9087 H   0  0  0  0  0  0  0  0  0 26  0  0\n    4.4517   -2.0218    0.7898 H   0  0  0  0  0  0  0  0  0 27  0  0\n    3.7363   -2.4893    3.0181 H   0  0  0  0  0  0  0  0  0 28  0  0\n    1.3996   -1.9705    3.7623 H   0  0  0  0  0  0  0  0  0 29  0  0\n   -0.1615   -0.9029    2.2437 H   0  0  0  0  0  0  0  0  0 30  0  0\n   -1.2863   -0.0377    0.8844 H   0  0  0  0  0  0  0  0  0 31  0  0\n   -3.0074   -0.2021    0.6217 H   0  0  0  0  0  0  0  0  0 32  0  0\n   -4.1517   -1.5017   -1.9199 H   0  0  0  0  0  0  0  0  0 33  0  0\n   -4.9646   -1.1214   -0.3355 H   0  0  0  0  0  0  0  0  0 34  0  0\n   -3.5129   -2.3809    0.7266 H   0  0  0  0  0  0  0  0  0 35  0  0\n   -4.0404    1.0085   -1.9533 H   0  0  0  0  0  0  0  0  0 36  0  0\n   -5.0453    2.1897   -0.4696 H   0  0  0  0  0  0  0  0  0 37  0  0\n   -2.6460    3.0278   -0.9177 H   0  0  0  0  0  0  0  0  0 38  0  0\n   -1.2790    2.7831   -2.6500 H   0  0  0  0  0  0  0  0  0 39  0  0\n   -0.2028    2.0581   -0.8481 H   0  0  0  0  0  0  0  0  0 40  0  0\n   -2.0740    2.3748    1.2906 H   0  0  0  0  0  0  0  0  0 41  0  0\n  1  2  2  0\n  2  3  1  0\n  2  4  1  0\n  4  5  2  0\n  5  6  1  0\n  6  7  2  0\n  7  8  1  0\n  8  9  2  0\n  9 10  1  0\n 10 11  2  0\n 11 12  1  0\n 12 13  1  0\n 13 14  1  0\n 14 15  1  0\n 15 16  1  0\n 16 17  1  0\n 15 18  1  0\n 18 19  1  0\n 18 20  1  0\n 20 21  1  0\n 20 22  1  0\n 22 23  1  0\n 11  6  1  0\n 22 13  1  0\n  3 24  1  0\n  4 25  1  0\n  5 26  1  0\n  7 27  1  0\n  8 28  1  0\n  9 29  1  0\n 10 30  1  0\n 13 31  1  1\n 15 32  1  1\n 16 33  1  0\n 16 34  1  0\n 17 35  1  0\n 18 36  1  6\n 19 37  1  0\n 20 38  1  1\n 21 39  1  0\n 22 40  1  6\n 23 41  1  0\nM  END\n",
                     "c_nmr": {
-                        "assignment_uuid": "8bba5847-29f8-4b02-8a66-0cf58a0e3266",
+                        "assignment_uuid": "7ea15e4d-c1fb-481f-8fd6-dbee1d98116e",
                         "solvent": "Methanol-d4",
                         "nucleus": "C",
                         "temperature": null,
@@ -611,7 +572,7 @@
                         ]
                     },
                     "h_nmr": {
-                        "assignment_uuid": "cd4ca2e5-bf0f-409c-8441-aed568e95b66",
+                        "assignment_uuid": "cc2d99c5-e22b-473e-9184-254da1be0715",
                         "nucleus": "C",
                         "solvent": "Methanol-d4",
                         "temperature": 293,
@@ -630,13 +591,10 @@
                                     1.5
                                 ],
                                 "mol_block_index": [
-                                    null
+                                    30
                                 ],
                                 "interchangeable_index": [],
-                                "atom_index": "3",
-                                "rdkit_index": [
-                                    30
-                                ]
+                                "atom_index": "3"
                             },
                             {
                                 "shift": 7.22,
@@ -647,13 +605,10 @@
                                     1.5
                                 ],
                                 "mol_block_index": [
-                                    null
+                                    29
                                 ],
                                 "interchangeable_index": [],
-                                "atom_index": "4",
-                                "rdkit_index": [
-                                    29
-                                ]
+                                "atom_index": "4"
                             },
                             {
                                 "shift": 6.94,
@@ -661,13 +616,10 @@
                                 "multiplicity": "m",
                                 "coupling": [],
                                 "mol_block_index": [
-                                    null
+                                    28
                                 ],
                                 "interchangeable_index": [],
-                                "atom_index": "5",
-                                "rdkit_index": [
-                                    28
-                                ]
+                                "atom_index": "5"
                             },
                             {
                                 "shift": 7.58,
@@ -675,13 +627,10 @@
                                 "multiplicity": "m",
                                 "coupling": [],
                                 "mol_block_index": [
-                                    null
+                                    27
                                 ],
                                 "interchangeable_index": [],
-                                "atom_index": "6",
-                                "rdkit_index": [
-                                    27
-                                ]
+                                "atom_index": "6"
                             },
                             {
                                 "shift": 6.96,
@@ -691,13 +640,10 @@
                                     12.6
                                 ],
                                 "mol_block_index": [
-                                    null
+                                    26
                                 ],
                                 "interchangeable_index": [],
-                                "atom_index": "7",
-                                "rdkit_index": [
-                                    26
-                                ]
+                                "atom_index": "7"
                             },
                             {
                                 "shift": 6.02,
@@ -707,13 +653,10 @@
                                     12.6
                                 ],
                                 "mol_block_index": [
-                                    null
+                                    25
                                 ],
                                 "interchangeable_index": [],
-                                "atom_index": "8",
-                                "rdkit_index": [
-                                    25
-                                ]
+                                "atom_index": "8"
                             },
                             {
                                 "shift": 4.93,
@@ -723,13 +666,10 @@
                                     7.4
                                 ],
                                 "mol_block_index": [
-                                    null
+                                    31
                                 ],
                                 "interchangeable_index": [],
-                                "atom_index": "1'",
-                                "rdkit_index": [
-                                    31
-                                ]
+                                "atom_index": "1'"
                             },
                             {
                                 "shift": 3.43,
@@ -737,13 +677,10 @@
                                 "multiplicity": "m",
                                 "coupling": [],
                                 "mol_block_index": [
-                                    null
+                                    40
                                 ],
                                 "interchangeable_index": [],
-                                "atom_index": "2'",
-                                "rdkit_index": [
-                                    40
-                                ]
+                                "atom_index": "2'"
                             },
                             {
                                 "shift": 3.58,
@@ -751,13 +688,10 @@
                                 "multiplicity": "m",
                                 "coupling": [],
                                 "mol_block_index": [
-                                    null
+                                    38
                                 ],
                                 "interchangeable_index": [],
-                                "atom_index": "3'",
-                                "rdkit_index": [
-                                    38
-                                ]
+                                "atom_index": "3'"
                             },
                             {
                                 "shift": 3.44,
@@ -765,13 +699,10 @@
                                 "multiplicity": "m",
                                 "coupling": [],
                                 "mol_block_index": [
-                                    null
+                                    36
                                 ],
                                 "interchangeable_index": [],
-                                "atom_index": "4'",
-                                "rdkit_index": [
-                                    36
-                                ]
+                                "atom_index": "4'"
                             },
                             {
                                 "shift": 3.41,
@@ -779,13 +710,10 @@
                                 "multiplicity": "m",
                                 "coupling": [],
                                 "mol_block_index": [
-                                    null
+                                    32
                                 ],
                                 "interchangeable_index": [],
-                                "atom_index": "5'",
-                                "rdkit_index": [
-                                    32
-                                ]
+                                "atom_index": "5'"
                             },
                             {
                                 "shift": 3.71,
@@ -793,15 +721,12 @@
                                 "multiplicity": "m",
                                 "coupling": [],
                                 "mol_block_index": [
-                                    null
+                                    33
                                 ],
                                 "interchangeable_index": [
                                     34
                                 ],
-                                "atom_index": "6'",
-                                "rdkit_index": [
-                                    33
-                                ]
+                                "atom_index": "6'"
                             },
                             {
                                 "shift": 3.9,
@@ -809,15 +734,12 @@
                                 "multiplicity": "m",
                                 "coupling": [],
                                 "mol_block_index": [
-                                    null
+                                    34
                                 ],
                                 "interchangeable_index": [
                                     33
                                 ],
-                                "atom_index": "6'",
-                                "rdkit_index": [
-                                    34
-                                ]
+                                "atom_index": "6'"
                             }
                         ]
                     }

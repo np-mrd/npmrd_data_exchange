@@ -307,6 +307,7 @@
             "type": "array",
             "items": {
               "type": "object",
+              "default": [],
               "properties": {
                 "nucleus": {
                   "type": [
@@ -336,6 +337,7 @@
                 },
                 "values": {
                   "type": "array",
+                  "default": [],
                   "items": {
                     "oneOf": [{
                       "type": "number"
@@ -398,6 +400,7 @@
                 },
                 "linked_peak_list_uuids": {
                   "type": "array",
+                  "default": [],
                   "items": {
                     "type": "string"
                   },
@@ -425,6 +428,7 @@
               },
               "nmr_metadata": {
                 "type": "array",
+                "default": [],
                 "items": {
                   "type": "object",
                   "properties": {
@@ -466,6 +470,7 @@
                     },
                     "frequency": {
                       "type": "array",
+                      "default": [],
                       "items": {
                         "type": "number"
                       },
@@ -482,8 +487,8 @@
                         "Hz",
                         null
                       ],
-                      "maxLength": 100,
-                      "default": "MHz"
+                      "default": "MHz",
+                      "maxLength": 100
                     },
                     "f1_nucleus": {
                       "type": [
@@ -517,8 +522,8 @@
                         "C",
                         "F"
                       ],
-                      "maxLength": 10,
-                      "default": "K"
+                      "default": "K",
+                      "maxLength": 10
                     },
                     "experiment_type": {
                       "type": [
@@ -561,6 +566,7 @@
           },
           "assignment_data": {
             "type": "array",
+            "default": [],
             "items": [{
               "type": "object",
               "properties": {
@@ -580,7 +586,7 @@
                   "minLength": 0,
                   "maxLength": 100
                 },
-                "mol_block": {
+                "canonicalized_mol_block": {
                   "type": [
                     "string",
                     "null"
@@ -611,8 +617,8 @@
                       "enum": [
                         "C"
                       ],
-                      "maxLength": 1,
-                      "default": "C"
+                      "default": "C",
+                      "maxLength": 1
                     },
                     "temperature": {
                       "type": [
@@ -667,6 +673,7 @@
                     },
                     "spectrum": {
                       "type": "array",
+                      "default": [],
                       "items": [{
                         "type": "object",
                         "properties": {
@@ -680,6 +687,7 @@
                           },
                           "mol_block_index": {
                             "type": "array",
+                            "default": [],
                             "items": {
                               "type": [
                                 "integer",
@@ -712,8 +720,8 @@
                       "enum": [
                         "C"
                       ],
-                      "maxLength": 1,
-                      "default": "C"
+                      "default": "C",
+                      "maxLength": 1
                     },
                     "solvent": {
                       "type": [
@@ -740,7 +748,8 @@
                         "C",
                         "F"
                       ],
-                      "default": "K"
+                      "default": "K",
+                      "maxLength": 1
                     },
                     "reference": {
                       "type": [
@@ -775,6 +784,7 @@
                     },
                     "spectrum": {
                       "type": "array",
+                      "default": [],
                       "items": [{
                         "type": "object",
                         "properties": {
@@ -801,16 +811,17 @@
                           },
                           "coupling": {
                             "type": "array",
+                            "default": [],
                             "items": {
                               "type": [
                                 "number",
                                 "null"
                               ]
-                            },
-                            "default": []
+                            }
                           },
                           "mol_block_index": {
                             "type": "array",
+                            "default": [],
                             "items": {
                               "type": [
                                 "integer",
@@ -822,13 +833,13 @@
                           },
                           "interchangeable_index": {
                             "type": "array",
+                            "default": [],
                             "items": {
                               "type": [
                                 "integer",
                                 "null"
                               ]
-                            },
-                            "default": []
+                            }
                           }
                         }
                       }]
@@ -910,6 +921,7 @@
                       },
                       "tasks": {
                         "type": "array",
+                        "default": [],
                         "items": {
                           "type": [
                             "string",
@@ -920,6 +932,7 @@
                       },
                       "functionals": {
                         "type": "array",
+                        "default": [],
                         "items": {
                           "type": [
                             "string",
@@ -930,6 +943,7 @@
                       },
                       "basis_sets": {
                         "type": "array",
+                        "default": [],
                         "items": {
                           "type": [
                             "string",
