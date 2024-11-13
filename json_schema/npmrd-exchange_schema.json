@@ -662,7 +662,7 @@
                       "enum": [
                         "MHz",
                         "Hz",
-                        null
+                        "null"
                       ]
                     },
                     "assignment_data_embargo_release_ready": {
@@ -1065,64 +1065,116 @@
                       }
                     }
                   },
+                  "coordinate_files_link":{
+                        "type": [
+                          "string",
+                          "null"
+                        ],
+                        "maxLength": 10000
+                      },
                   "chemical_shifts": {
                     "type": "object",
                     "properties": {
                       "h_nmr": {
                         "type": "object",
                         "properties": {
-                          "shift": {
-                            "type": [
-                              "number",
-                              "null"
-                            ],
-                            "maximum": 21,
-                            "minimum": -3
-                          },
-                          "shielding_tensor": {
-                            "type": [
-                              "string",
-                              "null"
-                            ],
-                            "maxLength": 10000
-                          },
-                          "rdkit_index": {
-                            "type": [
-                              "integer",
-                              "null"
-                            ],
-                            "maximum": 2000,
-                            "minimum": 1
-                          }
+                          "spectrum": {
+                          "type": "array",
+                          "default": [],
+                          "items": [{
+                            "type": "object",
+                            "properties": {
+                              "shift": {
+                                "type": [
+                                  "number",
+                                  "null"
+                                ],
+                                "maximum": 250,
+                                "minimum": -11
+                              },
+                              "shielding_tensor": {
+                                "type": [
+                                  "string",
+                                  "null"
+                                ],
+                                "maxLength": 10000
+                              },
+                              "rdkit_index": {
+                                "type": [
+                                  "integer",
+                                  "null"
+                                ],
+                                "maximum": 2000,
+                                "minimum": 1
+                              },
+                              "mol_block_index": {
+                                "type": "array",
+                                "default": [],
+                                "items": {
+                                  "type": [
+                                    "integer",
+                                    "null"
+                                  ],
+                                  "maximum": 2000,
+                                  "minimum": 1
+                                }
+                              }
+                            }
+                          }]
                         }
+                       }
                       },
                       "c_nmr": {
                         "type": "object",
                         "properties": {
-                          "shift": {
-                            "type": [
-                              "number",
-                              "null"
-                            ],
-                            "maximum": 250,
-                            "minimum": -11
-                          },
-                          "shielding_tensor": {
-                            "type": [
-                              "string",
-                              "null"
-                            ],
-                            "maxLength": 10000
-                          },
-                          "rdkit_index": {
-                            "type": [
-                              "integer",
-                              "null"
-                            ],
-                            "maximum": 2000,
-                            "minimum": 1
-                          }
+                          "spectrum": {
+                          "type": "array",
+                          "default": [],
+                          "items": [{
+                            "type": "object",
+                            "properties": {
+                              "shift": {
+                                "type": [
+                                  "number",
+                                  "null"
+                                ],
+                                "maximum": 250,
+                                "minimum": -11
+                              },
+                              "shielding_tensor": {
+                                "type": [
+                                  "string",
+                                  "null"
+                                ],
+                                "maxLength": 10000
+                              },
+                              "rdkit_index": {
+                                "type": [
+                                  "integer",
+                                  "null"
+                                ],
+                                "maximum": 2000,
+                                "minimum": 1
+                              },
+                              "mol_block_index": {
+                                "type": "array",
+                                "default": [],
+                                "items": {
+                                  "type": [
+                                    "integer",
+                                    "null"
+                                  ],
+                                  "maximum": 2000,
+                                  "minimum": 1
+                                }
+                              }
+                            }
+                          }]
                         }
+                       }
+                      },
+                    }
+                  }
                 }
               },
               "ml_protocol": {
