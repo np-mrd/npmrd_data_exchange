@@ -718,7 +718,7 @@
                         "string"
                       ],
                       "enum": [
-                        "C"
+                        "H"
                       ],
                       "default": "C",
                       "maxLength": 1

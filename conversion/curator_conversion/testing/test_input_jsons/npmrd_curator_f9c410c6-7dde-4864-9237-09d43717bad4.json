@@ -1,0 +1,1097 @@
+[
+  {
+    "name": "3-acetylganodermadiol",
+    "smiles": "[H][C@@]1(CC[C@@]2(C)C3=CC[C@@]4([H])C(C)(C)[C@H](CC[C@]4(C)C3=CC[C@]12C)OC(C)=O)[C@H](C)CC\\C=C(/C)CO",
+    "original_isolation": true,
+    "origin_doi": "10.1016/j.phytol.2018.12.007",
+    "origin_type": "Mushroom",
+    "origin_genus": "Ganoderma",
+    "origin_species": " hainanense",
+    "c_nmr": {
+      "solvent": "Chloroform-d",
+      "temperature": null,
+      "reference": null,
+      "frequency": 125,
+      "spectrum": [
+        {
+          "rdkit_index": 7,
+          "shift": 35.4,
+          "atom_index": "1"
+        },
+        {
+          "rdkit_index": 6,
+          "shift": 24.3,
+          "atom_index": "2"
+        },
+        {
+          "rdkit_index": 5,
+          "shift": 80.9,
+          "atom_index": "3"
+        },
+        {
+          "rdkit_index": 33,
+          "shift": 37.6,
+          "atom_index": "4"
+        },
+        {
+          "rdkit_index": 32,
+          "shift": 49.3,
+          "atom_index": "5"
+        },
+        {
+          "rdkit_index": 31,
+          "shift": 22.8,
+          "atom_index": "6"
+        },
+        {
+          "rdkit_index": 30,
+          "shift": 119.9,
+          "atom_index": "7"
+        },
+        {
+          "rdkit_index": 29,
+          "shift": 142.8,
+          "atom_index": "8"
+        },
+        {
+          "rdkit_index": 10,
+          "shift": 145.7,
+          "atom_index": "9"
+        },
+        {
+          "rdkit_index": 8,
+          "shift": 37.2,
+          "atom_index": "10"
+        },
+        {
+          "rdkit_index": 11,
+          "shift": 116.6,
+          "atom_index": "11"
+        },
+        {
+          "rdkit_index": 12,
+          "shift": 37.9,
+          "atom_index": "12"
+        },
+        {
+          "rdkit_index": 13,
+          "shift": 43.8,
+          "atom_index": "13"
+        },
+        {
+          "rdkit_index": 27,
+          "shift": 50.4,
+          "atom_index": "14"
+        },
+        {
+          "rdkit_index": 26,
+          "shift": 31.5,
+          "atom_index": "15"
+        },
+        {
+          "rdkit_index": 25,
+          "shift": 27.9,
+          "atom_index": "16"
+        },
+        {
+          "rdkit_index": 15,
+          "shift": 50.9,
+          "atom_index": "17"
+        },
+        {
+          "rdkit_index": 14,
+          "shift": 15.7,
+          "atom_index": "18"
+        },
+        {
+          "rdkit_index": 9,
+          "shift": 22.8,
+          "atom_index": "19"
+        },
+        {
+          "rdkit_index": 16,
+          "shift": 36.1,
+          "atom_index": "20"
+        },
+        {
+          "rdkit_index": 17,
+          "shift": 18.4,
+          "atom_index": "21"
+        },
+        {
+          "rdkit_index": 18,
+          "shift": 35.9,
+          "atom_index": "22"
+        },
+        {
+          "rdkit_index": 19,
+          "shift": 24.6,
+          "atom_index": "23"
+        },
+        {
+          "rdkit_index": 20,
+          "shift": 127,
+          "atom_index": "24"
+        },
+        {
+          "rdkit_index": 21,
+          "shift": 134.4,
+          "atom_index": "25"
+        },
+        {
+          "rdkit_index": 22,
+          "shift": 69.1,
+          "atom_index": "26"
+        },
+        {
+          "rdkit_index": 23,
+          "shift": 13.7,
+          "atom_index": "27"
+        },
+        {
+          "rdkit_index": 35,
+          "shift": 16.9,
+          "atom_index": "28"
+        },
+        {
+          "rdkit_index": 34,
+          "shift": 28.1,
+          "atom_index": "29"
+        },
+        {
+          "rdkit_index": 28,
+          "shift": 25.5,
+          "atom_index": "30"
+        },
+        {
+          "rdkit_index": 2,
+          "shift": 171,
+          "atom_index": "1\u2032"
+        },
+        {
+          "rdkit_index": 1,
+          "shift": 21.3,
+          "atom_index": "2\u2032"
+        }
+      ],
+      "has_index_assignments": true
+    },
+    "h_nmr": {
+      "solvent": "Chloroform-d",
+      "temperature": null,
+      "reference": null,
+      "frequency": 500,
+      "spectrum": [
+        {
+          "shift": 1.52,
+          "multiplicity": "m",
+          "coupling": [],
+          "atom_index": "1",
+          "rdkit_index": [
+            42
+          ],
+          "interchangable_index": [
+            43
+          ]
+        },
+        {
+          "shift": 1.98,
+          "multiplicity": "m",
+          "coupling": [],
+          "atom_index": "1",
+          "rdkit_index": [
+            43
+          ],
+          "interchangable_index": [
+            42
+          ]
+        },
+        {
+          "shift": 1.76,
+          "multiplicity": "m",
+          "coupling": [],
+          "atom_index": "2",
+          "rdkit_index": [
+            40,
+            41
+          ],
+          "interchangable_index": []
+        },
+        {
+          "shift": 4.51,
+          "multiplicity": "dd",
+          "coupling": [
+            5,
+            11
+          ],
+          "atom_index": "3",
+          "rdkit_index": [
+            39
+          ],
+          "interchangable_index": []
+        },
+        {
+          "shift": 1.19,
+          "multiplicity": "m",
+          "coupling": [],
+          "atom_index": "5",
+          "rdkit_index": [
+            79
+          ],
+          "interchangable_index": []
+        },
+        {
+          "shift": 2.08,
+          "multiplicity": "m",
+          "coupling": [],
+          "atom_index": "6",
+          "rdkit_index": [
+            77,
+            78
+          ],
+          "interchangable_index": []
+        },
+        {
+          "shift": 5.46,
+          "multiplicity": "brs",
+          "coupling": [],
+          "atom_index": "7",
+          "rdkit_index": [
+            76
+          ],
+          "interchangable_index": []
+        },
+        {
+          "shift": 5.32,
+          "multiplicity": "d",
+          "coupling": [
+            6
+          ],
+          "atom_index": "11",
+          "rdkit_index": [
+            47
+          ],
+          "interchangable_index": []
+        },
+        {
+          "shift": 2.09,
+          "multiplicity": "m",
+          "coupling": [],
+          "atom_index": "12",
+          "rdkit_index": [
+            48
+          ],
+          "interchangable_index": [
+            49
+          ]
+        },
+        {
+          "shift": 2.22,
+          "multiplicity": "m",
+          "coupling": [],
+          "atom_index": "12",
+          "rdkit_index": [
+            49
+          ],
+          "interchangable_index": [
+            48
+          ]
+        },
+        {
+          "shift": 1.42,
+          "multiplicity": "m",
+          "coupling": [],
+          "atom_index": "15",
+          "rdkit_index": [
+            71
+          ],
+          "interchangable_index": [
+            72
+          ]
+        },
+        {
+          "shift": 1.62,
+          "multiplicity": "m",
+          "coupling": [],
+          "atom_index": "15",
+          "rdkit_index": [
+            72
+          ],
+          "interchangable_index": [
+            71
+          ]
+        },
+        {
+          "shift": 1.32,
+          "multiplicity": "m",
+          "coupling": [],
+          "atom_index": "16",
+          "rdkit_index": [
+            69
+          ],
+          "interchangable_index": [
+            70
+          ]
+        },
+        {
+          "shift": 1.98,
+          "multiplicity": "m",
+          "coupling": [],
+          "atom_index": "16",
+          "rdkit_index": [
+            70
+          ],
+          "interchangable_index": [
+            69
+          ]
+        },
+        {
+          "shift": 1.6,
+          "multiplicity": "m",
+          "coupling": [],
+          "atom_index": "17",
+          "rdkit_index": [
+            53
+          ],
+          "interchangable_index": []
+        },
+        {
+          "shift": 0.57,
+          "multiplicity": "s",
+          "coupling": [],
+          "atom_index": "18",
+          "rdkit_index": [
+            50,
+            51,
+            52
+          ],
+          "interchangable_index": []
+        },
+        {
+          "shift": 1.01,
+          "multiplicity": "s",
+          "coupling": [],
+          "atom_index": "19",
+          "rdkit_index": [
+            44,
+            45,
+            46
+          ],
+          "interchangable_index": []
+        },
+        {
+          "shift": 1.4,
+          "multiplicity": "m",
+          "coupling": [],
+          "atom_index": "20",
+          "rdkit_index": [
+            54
+          ],
+          "interchangable_index": []
+        },
+        {
+          "shift": 0.91,
+          "multiplicity": "d",
+          "coupling": [
+            6.5
+          ],
+          "atom_index": "21",
+          "rdkit_index": [
+            55,
+            56,
+            57
+          ],
+          "interchangable_index": []
+        },
+        {
+          "shift": 1.44,
+          "multiplicity": "m",
+          "coupling": [],
+          "atom_index": "22",
+          "rdkit_index": [
+            58
+          ],
+          "interchangable_index": [
+            59
+          ]
+        },
+        {
+          "shift": 1.65,
+          "multiplicity": "m",
+          "coupling": [],
+          "atom_index": "22",
+          "rdkit_index": [
+            59
+          ],
+          "interchangable_index": [
+            58
+          ]
+        },
+        {
+          "shift": 1.95,
+          "multiplicity": "m",
+          "coupling": [],
+          "atom_index": "23",
+          "rdkit_index": [
+            60
+          ],
+          "interchangable_index": [
+            61
+          ]
+        },
+        {
+          "shift": 2.12,
+          "multiplicity": "m",
+          "coupling": [],
+          "atom_index": "23",
+          "rdkit_index": [
+            61
+          ],
+          "interchangable_index": [
+            60
+          ]
+        },
+        {
+          "shift": 5.4,
+          "multiplicity": "dd",
+          "coupling": [
+            7,
+            7
+          ],
+          "atom_index": "24",
+          "rdkit_index": [
+            62
+          ],
+          "interchangable_index": []
+        },
+        {
+          "shift": 4,
+          "multiplicity": "s",
+          "coupling": [],
+          "atom_index": "26",
+          "rdkit_index": [
+            63,
+            64,
+            65
+          ],
+          "interchangable_index": []
+        },
+        {
+          "shift": 1.67,
+          "multiplicity": "s",
+          "coupling": [],
+          "atom_index": "27",
+          "rdkit_index": [
+            66,
+            67
+          ],
+          "interchangable_index": []
+        },
+        {
+          "shift": 0.96,
+          "multiplicity": "s",
+          "coupling": [],
+          "atom_index": "28",
+          "rdkit_index": [
+            83,
+            84,
+            85
+          ],
+          "interchangable_index": []
+        },
+        {
+          "shift": 0.89,
+          "multiplicity": "s",
+          "coupling": [],
+          "atom_index": "29",
+          "rdkit_index": [
+            80,
+            81,
+            82
+          ],
+          "interchangable_index": []
+        },
+        {
+          "shift": 0.88,
+          "multiplicity": "s",
+          "coupling": [],
+          "atom_index": "30",
+          "rdkit_index": [
+            73,
+            74,
+            75
+          ],
+          "interchangable_index": []
+        },
+        {
+          "shift": 2.05,
+          "multiplicity": "s",
+          "coupling": [],
+          "atom_index": "2\u2032",
+          "rdkit_index": [
+            36,
+            37,
+            38
+          ],
+          "interchangable_index": []
+        }
+      ],
+      "has_index_assignments": true
+    },
+    "contains_unassigned_stereochemistry": [],
+    "canonicalized_mol_block_dimensionality": "3D",
+    "canonicalized_mol_block": "\n     RDKit          3D\n\n 85 88  0  0  0  0  0  0  0  0999 V2000\n    9.3482    0.3068   -0.5515 C   0  0  0  0  0  0  0  0  0  1  0  0\n    7.9967    0.8934   -0.7476 C   0  0  0  0  0  0  0  0  0  2  0  0\n    7.9343    2.0490   -1.1984 O   0  0  0  0  0  0  0  0  0  3  0  0\n    6.8391    0.2422   -0.4641 O   0  0  0  0  0  0  0  0  0  4  0  0\n    5.5161    0.7629   -0.6352 C   0  0  1  0  0  0  0  0  0  5  0  0\n    4.7767    0.0595   -1.7203 C   0  0  0  0  0  0  0  0  0  6  0  0\n    3.3089    0.4179   -1.6920 C   0  0  0  0  0  0  0  0  0  7  0  0\n    2.7773   -0.1597   -0.4024 C   0  0  2  0  0  0  0  0  0  8  0  0\n    3.0625   -1.6282   -0.3226 C   0  0  0  0  0  0  0  0  0  9  0  0\n    1.2968   -0.0138   -0.2945 C   0  0  0  0  0  0  0  0  0 10  0  0\n    0.5547    0.3350   -1.3413 C   0  0  0  0  0  0  0  0  0 11  0  0\n   -0.9536    0.4666   -1.1825 C   0  0  0  0  0  0  0  0  0 12  0  0\n   -1.3354   -0.6561   -0.3045 C   0  0  2  0  0  0  0  0  0 13  0  0\n   -0.7886   -1.9375   -0.9129 C   0  0  0  0  0  0  0  0  0 14  0  0\n   -2.7540   -0.8317    0.0958 C   0  0  1  0  0  0  0  0  0 15  0  0\n   -3.7588   -1.1629   -0.9109 C   0  0  2  0  0  0  0  0  0 16  0  0\n   -3.9436   -0.1500   -1.9879 C   0  0  0  0  0  0  0  0  0 17  0  0\n   -5.0849   -1.6172   -0.4009 C   0  0  0  0  0  0  0  0  0 18  0  0\n   -5.8473   -0.6985    0.4605 C   0  0  0  0  0  0  0  0  0 19  0  0\n   -6.2306    0.5991   -0.0881 C   0  0  0  0  0  0  0  0  0 20  0  0\n   -7.5001    0.9511   -0.2172 C   0  0  0  0  0  0  0  0  0 21  0  0\n   -8.5790    0.0248    0.1972 C   0  0  0  0  0  0  0  0  0 22  0  0\n   -7.8743    2.2956   -0.7856 C   0  0  0  0  0  0  0  0  0 23  0  0\n   -6.7230    3.0116   -1.1106 O   0  0  0  0  0  0  0  0  0 24  0  0\n   -2.6241   -1.8735    1.2018 C   0  0  0  0  0  0  0  0  0 25  0  0\n   -1.1664   -1.8114    1.6787 C   0  0  0  0  0  0  0  0  0 26  0  0\n   -0.7403   -0.5034    1.1048 C   0  0  2  0  0  0  0  0  0 27  0  0\n   -1.4660    0.5812    1.8744 C   0  0  0  0  0  0  0  0  0 28  0  0\n    0.6956   -0.2584    1.0081 C   0  0  0  0  0  0  0  0  0 29  0  0\n    1.4902   -0.2216    2.0711 C   0  0  0  0  0  0  0  0  0 30  0  0\n    2.9423    0.0484    2.0587 C   0  0  0  0  0  0  0  0  0 31  0  0\n    3.3786    0.6407    0.7206 C   0  0  1  0  0  0  0  0  0 32  0  0\n    4.8293    0.9020    0.6649 C   0  0  0  0  0  0  0  0  0 33  0  0\n    5.6228    0.0782    1.6941 C   0  0  0  0  0  0  0  0  0 34  0  0\n    5.0460    2.3368    1.2071 C   0  0  0  0  0  0  0  0  0 35  0  0\n    9.5011    0.1084    0.5498 H   0  0  0  0  0  0  0  0  0 36  0  0\n    9.2915   -0.7255   -1.0071 H   0  0  0  0  0  0  0  0  0 37  0  0\n   10.1421    0.9051   -0.9960 H   0  0  0  0  0  0  0  0  0 38  0  0\n    5.7111    1.7855   -1.0395 H   0  0  0  0  0  0  0  0  0 39  0  0\n    4.8514   -1.0183   -1.7431 H   0  0  0  0  0  0  0  0  0 40  0  0\n    5.1513    0.4136   -2.7272 H   0  0  0  0  0  0  0  0  0 41  0  0\n    3.1154    1.4895   -1.7661 H   0  0  0  0  0  0  0  0  0 42  0  0\n    2.8445   -0.1289   -2.5467 H   0  0  0  0  0  0  0  0  0 43  0  0\n    2.8167   -2.0633   -1.3256 H   0  0  0  0  0  0  0  0  0 44  0  0\n    2.3979   -2.1482    0.4000 H   0  0  0  0  0  0  0  0  0 45  0  0\n    4.0818   -1.9143   -0.0901 H   0  0  0  0  0  0  0  0  0 46  0  0\n    0.9788    0.5322   -2.3004 H   0  0  0  0  0  0  0  0  0 47  0  0\n   -1.3761    0.2536   -2.2107 H   0  0  0  0  0  0  0  0  0 48  0  0\n   -1.2339    1.4730   -0.8443 H   0  0  0  0  0  0  0  0  0 49  0  0\n    0.2219   -2.1898   -0.6049 H   0  0  0  0  0  0  0  0  0 50  0  0\n   -0.7798   -1.8056   -2.0280 H   0  0  0  0  0  0  0  0  0 51  0  0\n   -1.4844   -2.7971   -0.7418 H   0  0  0  0  0  0  0  0  0 52  0  0\n   -3.0567    0.1478    0.5820 H   0  0  0  0  0  0  0  0  0 53  0  0\n   -3.3521   -2.0897   -1.4624 H   0  0  0  0  0  0  0  0  0 54  0  0\n   -3.4547   -0.4191   -2.9621 H   0  0  0  0  0  0  0  0  0 55  0  0\n   -3.5466    0.8317   -1.6818 H   0  0  0  0  0  0  0  0  0 56  0  0\n   -5.0322   -0.0593   -2.2894 H   0  0  0  0  0  0  0  0  0 57  0  0\n   -5.7164   -1.8382   -1.3139 H   0  0  0  0  0  0  0  0  0 58  0  0\n   -5.0165   -2.6193    0.1075 H   0  0  0  0  0  0  0  0  0 59  0  0\n   -6.7565   -1.2666    0.8351 H   0  0  0  0  0  0  0  0  0 60  0  0\n   -5.2565   -0.5717    1.4201 H   0  0  0  0  0  0  0  0  0 61  0  0\n   -5.4828    1.3047   -0.3946 H   0  0  0  0  0  0  0  0  0 62  0  0\n   -8.5047   -0.9276   -0.3744 H   0  0  0  0  0  0  0  0  0 63  0  0\n   -9.5730    0.4521   -0.0250 H   0  0  0  0  0  0  0  0  0 64  0  0\n   -8.5652   -0.1609    1.2991 H   0  0  0  0  0  0  0  0  0 65  0  0\n   -8.4429    2.8586   -0.0241 H   0  0  0  0  0  0  0  0  0 66  0  0\n   -8.5303    2.1619   -1.6601 H   0  0  0  0  0  0  0  0  0 67  0  0\n   -6.7562    3.9430   -0.7594 H   0  0  0  0  0  0  0  0  0 68  0  0\n   -2.7922   -2.8847    0.8361 H   0  0  0  0  0  0  0  0  0 69  0  0\n   -3.2254   -1.6129    2.0949 H   0  0  0  0  0  0  0  0  0 70  0  0\n   -0.5574   -2.6176    1.2222 H   0  0  0  0  0  0  0  0  0 71  0  0\n   -1.0972   -1.8577    2.7844 H   0  0  0  0  0  0  0  0  0 72  0  0\n   -1.7059    1.4701    1.2943 H   0  0  0  0  0  0  0  0  0 73  0  0\n   -0.7326    0.9342    2.6595 H   0  0  0  0  0  0  0  0  0 74  0  0\n   -2.3082    0.1658    2.4603 H   0  0  0  0  0  0  0  0  0 75  0  0\n    1.0228   -0.4068    3.0240 H   0  0  0  0  0  0  0  0  0 76  0  0\n    3.1335    0.7857    2.8854 H   0  0  0  0  0  0  0  0  0 77  0  0\n    3.4704   -0.8622    2.3240 H   0  0  0  0  0  0  0  0  0 78  0  0\n    2.8312    1.6106    0.6663 H   0  0  0  0  0  0  0  0  0 79  0  0\n    6.6604    0.4744    1.6792 H   0  0  0  0  0  0  0  0  0 80  0  0\n    5.5435   -0.9880    1.5591 H   0  0  0  0  0  0  0  0  0 81  0  0\n    5.2452    0.3085    2.7322 H   0  0  0  0  0  0  0  0  0 82  0  0\n    4.6917    3.0458    0.4180 H   0  0  0  0  0  0  0  0  0 83  0  0\n    6.1247    2.5441    1.3332 H   0  0  0  0  0  0  0  0  0 84  0  0\n    4.4616    2.4941    2.1272 H   0  0  0  0  0  0  0  0  0 85  0  0\n  1  2  1  0\n  2  3  2  0\n  2  4  1  0\n  4  5  1  0\n  5  6  1  0\n  6  7  1  0\n  7  8  1  0\n  8  9  1  1\n  8 10  1  0\n 10 11  2  0\n 11 12  1  0\n 12 13  1  0\n 13 14  1  6\n 13 15  1  0\n 15 16  1  0\n 16 17  1  0\n 16 18  1  0\n 18 19  1  0\n 19 20  1  0\n 20 21  2  0\n 21 22  1  0\n 21 23  1  0\n 23 24  1  0\n 15 25  1  0\n 25 26  1  0\n 26 27  1  0\n 27 28  1  1\n 27 29  1  0\n 29 30  2  0\n 30 31  1  0\n 31 32  1  0\n 32 33  1  0\n 33 34  1  0\n 33 35  1  0\n 33  5  1  0\n 32  8  1  0\n 29 10  1  0\n 27 13  1  0\n  1 36  1  0\n  1 37  1  0\n  1 38  1  0\n  5 39  1  6\n  6 40  1  0\n  6 41  1  0\n  7 42  1  0\n  7 43  1  0\n  9 44  1  0\n  9 45  1  0\n  9 46  1  0\n 11 47  1  0\n 12 48  1  0\n 12 49  1  0\n 14 50  1  0\n 14 51  1  0\n 14 52  1  0\n 15 53  1  1\n 16 54  1  6\n 17 55  1  0\n 17 56  1  0\n 17 57  1  0\n 18 58  1  0\n 18 59  1  0\n 19 60  1  0\n 19 61  1  0\n 20 62  1  0\n 22 63  1  0\n 22 64  1  0\n 22 65  1  0\n 23 66  1  0\n 23 67  1  0\n 24 68  1  0\n 25 69  1  0\n 25 70  1  0\n 26 71  1  0\n 26 72  1  0\n 28 73  1  0\n 28 74  1  0\n 28 75  1  0\n 30 76  1  0\n 31 77  1  0\n 31 78  1  0\n 32 79  1  1\n 34 80  1  0\n 34 81  1  0\n 34 82  1  0\n 35 83  1  0\n 35 84  1  0\n 35 85  1  0\nM  END\n",
+    "curator_email_address": "pegah_tavangar@sfu.ca",
+    "session_uuid": "f9c410c6-7dde-4864-9237-09d43717bad4",
+    "rdkit_version": "2021.9.2",
+    "created_date": "2021-06-08T21:24:36.410178"
+  },
+  {
+    "name": "3-acetyllucidumol B",
+    "smiles": "[H][C@@]1(CC[C@@]2(C)C3=CC[C@@]4([H])C(C)(C)[C@H](CC[C@]4(C)C3=CC[C@]12C)OC(C)=O)[C@H](C)CC[C@H](O)C(C)(C)O",
+    "original_isolation": true,
+    "origin_doi": "10.1016/j.phytol.2018.12.007",
+    "origin_type": "Mushroom",
+    "origin_genus": "Ganoderma",
+    "origin_species": "hainanense",
+    "c_nmr": {
+      "solvent": "Chloroform-d",
+      "temperature": null,
+      "reference": null,
+      "frequency": 125,
+      "spectrum": [
+        {
+          "rdkit_index": 7,
+          "shift": 35.4,
+          "atom_index": "1"
+        },
+        {
+          "rdkit_index": 6,
+          "shift": 24.3,
+          "atom_index": "2"
+        },
+        {
+          "rdkit_index": 5,
+          "shift": 80.9,
+          "atom_index": "3"
+        },
+        {
+          "rdkit_index": 34,
+          "shift": 37.6,
+          "atom_index": "4"
+        },
+        {
+          "rdkit_index": 33,
+          "shift": 49.3,
+          "atom_index": "5"
+        },
+        {
+          "rdkit_index": 32,
+          "shift": 22.9,
+          "atom_index": "6"
+        },
+        {
+          "rdkit_index": 31,
+          "shift": 120,
+          "atom_index": "7"
+        },
+        {
+          "rdkit_index": 30,
+          "shift": 142.8,
+          "atom_index": "8"
+        },
+        {
+          "rdkit_index": 10,
+          "shift": 145.7,
+          "atom_index": "9"
+        },
+        {
+          "rdkit_index": 8,
+          "shift": 37.3,
+          "atom_index": "10"
+        },
+        {
+          "rdkit_index": 11,
+          "shift": 116.5,
+          "atom_index": "11"
+        },
+        {
+          "rdkit_index": 12,
+          "shift": 37.9,
+          "atom_index": "12"
+        },
+        {
+          "rdkit_index": 13,
+          "shift": 43.8,
+          "atom_index": "13"
+        },
+        {
+          "rdkit_index": 28,
+          "shift": 50.4,
+          "atom_index": "14"
+        },
+        {
+          "rdkit_index": 27,
+          "shift": 31.5,
+          "atom_index": "15"
+        },
+        {
+          "rdkit_index": 26,
+          "shift": 27.9,
+          "atom_index": "16"
+        },
+        {
+          "rdkit_index": 15,
+          "shift": 51,
+          "atom_index": "17"
+        },
+        {
+          "rdkit_index": 14,
+          "shift": 15.7,
+          "atom_index": "18"
+        },
+        {
+          "rdkit_index": 9,
+          "shift": 22.8,
+          "atom_index": "19"
+        },
+        {
+          "rdkit_index": 16,
+          "shift": 36.6,
+          "atom_index": "20"
+        },
+        {
+          "rdkit_index": 17,
+          "shift": 18.7,
+          "atom_index": "21"
+        },
+        {
+          "rdkit_index": 18,
+          "shift": 33.5,
+          "atom_index": "22"
+        },
+        {
+          "rdkit_index": 19,
+          "shift": 28.8,
+          "atom_index": "23"
+        },
+        {
+          "rdkit_index": 20,
+          "shift": 79.6,
+          "atom_index": "24"
+        },
+        {
+          "rdkit_index": 22,
+          "shift": 73.2,
+          "atom_index": "25"
+        },
+        {
+          "rdkit_index": 23,
+          "shift": 23.3,
+          "atom_index": "26"
+        },
+        {
+          "rdkit_index": 24,
+          "shift": 26.6,
+          "atom_index": "27"
+        },
+        {
+          "rdkit_index": 35,
+          "shift": 16.9,
+          "atom_index": "28"
+        },
+        {
+          "rdkit_index": 36,
+          "shift": 28.1,
+          "atom_index": "29"
+        },
+        {
+          "rdkit_index": 29,
+          "shift": 25.6,
+          "atom_index": "30"
+        },
+        {
+          "rdkit_index": 2,
+          "shift": 171,
+          "atom_index": "1\u2032"
+        },
+        {
+          "rdkit_index": 1,
+          "shift": 21.3,
+          "atom_index": "2\u2032"
+        }
+      ],
+      "has_index_assignments": true
+    },
+    "h_nmr": {
+      "solvent": "Chloroform-d",
+      "temperature": null,
+      "reference": null,
+      "frequency": 500,
+      "spectrum": [
+        {
+          "shift": 1.52,
+          "multiplicity": "m",
+          "coupling": [],
+          "atom_index": "1",
+          "rdkit_index": [
+            43
+          ],
+          "interchangable_index": [
+            44
+          ]
+        },
+        {
+          "shift": 1.98,
+          "multiplicity": "m",
+          "coupling": [],
+          "atom_index": "1",
+          "rdkit_index": [
+            44
+          ],
+          "interchangable_index": [
+            43
+          ]
+        },
+        {
+          "shift": 1.73,
+          "multiplicity": "m",
+          "coupling": [],
+          "atom_index": "2",
+          "rdkit_index": [
+            41,
+            42
+          ],
+          "interchangable_index": []
+        },
+        {
+          "shift": 4.51,
+          "multiplicity": "dd",
+          "coupling": [
+            4.5,
+            11.5
+          ],
+          "atom_index": "3",
+          "rdkit_index": [
+            40
+          ],
+          "interchangable_index": []
+        },
+        {
+          "shift": 1.18,
+          "multiplicity": "m",
+          "coupling": [],
+          "atom_index": "5",
+          "rdkit_index": [
+            82
+          ],
+          "interchangable_index": []
+        },
+        {
+          "shift": 2.08,
+          "multiplicity": "m",
+          "coupling": [],
+          "atom_index": "6",
+          "rdkit_index": [
+            80,
+            81
+          ],
+          "interchangable_index": []
+        },
+        {
+          "shift": 5.46,
+          "multiplicity": "brs",
+          "coupling": [],
+          "atom_index": "7",
+          "rdkit_index": [
+            79
+          ],
+          "interchangable_index": []
+        },
+        {
+          "shift": 5.32,
+          "multiplicity": "d",
+          "coupling": [
+            6
+          ],
+          "atom_index": "11",
+          "rdkit_index": [
+            48
+          ],
+          "interchangable_index": []
+        },
+        {
+          "shift": 2.08,
+          "multiplicity": "m",
+          "coupling": [],
+          "atom_index": "12",
+          "rdkit_index": [
+            49
+          ],
+          "interchangable_index": [
+            50
+          ]
+        },
+        {
+          "shift": 2.23,
+          "multiplicity": "m",
+          "coupling": [],
+          "atom_index": "12",
+          "rdkit_index": [
+            50
+          ],
+          "interchangable_index": [
+            49
+          ]
+        },
+        {
+          "shift": 1.4,
+          "multiplicity": "m",
+          "coupling": [],
+          "atom_index": "15",
+          "rdkit_index": [
+            74
+          ],
+          "interchangable_index": [
+            75
+          ]
+        },
+        {
+          "shift": 1.62,
+          "multiplicity": "m",
+          "coupling": [],
+          "atom_index": "15",
+          "rdkit_index": [
+            75
+          ],
+          "interchangable_index": [
+            74
+          ]
+        },
+        {
+          "shift": 1.36,
+          "multiplicity": "m",
+          "coupling": [],
+          "atom_index": "16",
+          "rdkit_index": [
+            72
+          ],
+          "interchangable_index": [
+            73
+          ]
+        },
+        {
+          "shift": 2,
+          "multiplicity": "m",
+          "coupling": [],
+          "atom_index": "16",
+          "rdkit_index": [
+            73
+          ],
+          "interchangable_index": [
+            72
+          ]
+        },
+        {
+          "shift": 1.59,
+          "multiplicity": "m",
+          "coupling": [],
+          "atom_index": "17",
+          "rdkit_index": [
+            54
+          ],
+          "interchangable_index": []
+        },
+        {
+          "shift": 0.57,
+          "multiplicity": "s",
+          "coupling": [],
+          "atom_index": "18",
+          "rdkit_index": [
+            51,
+            52,
+            53
+          ],
+          "interchangable_index": []
+        },
+        {
+          "shift": 1,
+          "multiplicity": "s",
+          "coupling": [],
+          "atom_index": "19",
+          "rdkit_index": [
+            45,
+            46,
+            47
+          ],
+          "interchangable_index": []
+        },
+        {
+          "shift": 1.41,
+          "multiplicity": "m",
+          "coupling": [],
+          "atom_index": "20",
+          "rdkit_index": [
+            55
+          ],
+          "interchangable_index": []
+        },
+        {
+          "shift": 0.91,
+          "multiplicity": "d",
+          "coupling": [
+            6.5
+          ],
+          "atom_index": "21",
+          "rdkit_index": [
+            56,
+            57,
+            58
+          ],
+          "interchangable_index": []
+        },
+        {
+          "shift": 1.02,
+          "multiplicity": "m",
+          "coupling": [],
+          "atom_index": "22",
+          "rdkit_index": [
+            59
+          ],
+          "interchangable_index": [
+            60
+          ]
+        },
+        {
+          "shift": 1.75,
+          "multiplicity": "m",
+          "coupling": [],
+          "atom_index": "22",
+          "rdkit_index": [
+            60
+          ],
+          "interchangable_index": [
+            59
+          ]
+        },
+        {
+          "shift": 1.14,
+          "multiplicity": "m",
+          "coupling": [],
+          "atom_index": "23",
+          "rdkit_index": [
+            61
+          ],
+          "interchangable_index": [
+            62
+          ]
+        },
+        {
+          "shift": 1.58,
+          "multiplicity": "m",
+          "coupling": [],
+          "atom_index": "23",
+          "rdkit_index": [
+            62
+          ],
+          "interchangable_index": [
+            61
+          ]
+        },
+        {
+          "shift": 3.3,
+          "multiplicity": "dd",
+          "coupling": [
+            1,
+            10
+          ],
+          "atom_index": "24",
+          "rdkit_index": [
+            63
+          ],
+          "interchangable_index": []
+        },
+        {
+          "shift": 1.17,
+          "multiplicity": "s",
+          "coupling": [],
+          "atom_index": "26",
+          "rdkit_index": [
+            65,
+            66,
+            67
+          ],
+          "interchangable_index": []
+        },
+        {
+          "shift": 1.22,
+          "multiplicity": "s",
+          "coupling": [],
+          "atom_index": "27",
+          "rdkit_index": [
+            68,
+            69,
+            70
+          ],
+          "interchangable_index": []
+        },
+        {
+          "shift": 0.96,
+          "multiplicity": "s",
+          "coupling": [],
+          "atom_index": "28",
+          "rdkit_index": [
+            83,
+            84,
+            85
+          ],
+          "interchangable_index": []
+        },
+        {
+          "shift": 0.89,
+          "multiplicity": "s",
+          "coupling": [],
+          "atom_index": "29",
+          "rdkit_index": [
+            86,
+            87,
+            88
+          ],
+          "interchangable_index": []
+        },
+        {
+          "shift": 0.88,
+          "multiplicity": "s",
+          "coupling": [],
+          "atom_index": "30",
+          "rdkit_index": [
+            76,
+            77,
+            78
+          ],
+          "interchangable_index": []
+        },
+        {
+          "shift": 2.05,
+          "multiplicity": "s",
+          "coupling": [],
+          "atom_index": "2\u2032",
+          "rdkit_index": [
+            37,
+            38,
+            39
+          ],
+          "interchangable_index": []
+        }
+      ],
+      "has_index_assignments": true
+    },
+    "contains_unassigned_stereochemistry": [],
+    "canonicalized_mol_block_dimensionality": "3D",
+    "canonicalized_mol_block": "\n     RDKit          3D\n\n 88 91  0  0  0  0  0  0  0  0999 V2000\n    9.2758   -0.2199    1.5872 C   0  0  0  0  0  0  0  0  0  1  0  0\n    7.9448   -0.8515    1.4056 C   0  0  0  0  0  0  0  0  0  2  0  0\n    7.8542   -2.0837    1.6451 O   0  0  0  0  0  0  0  0  0  3  0  0\n    6.8248   -0.1811    0.9982 O   0  0  0  0  0  0  0  0  0  4  0  0\n    5.5447   -0.7980    0.8255 C   0  0  1  0  0  0  0  0  0  5  0  0\n    4.5467   -0.2599    1.8151 C   0  0  0  0  0  0  0  0  0  6  0  0\n    3.8269    0.9623    1.3196 C   0  0  0  0  0  0  0  0  0  7  0  0\n    3.0940    0.6660    0.0708 C   0  0  2  0  0  0  0  0  0  8  0  0\n    3.1208    1.9547   -0.7682 C   0  0  0  0  0  0  0  0  0  9  0  0\n    1.6650    0.2962    0.2186 C   0  0  0  0  0  0  0  0  0 10  0  0\n    1.0685    0.1869    1.3917 C   0  0  0  0  0  0  0  0  0 11  0  0\n   -0.3996   -0.1972    1.3947 C   0  0  0  0  0  0  0  0  0 12  0  0\n   -1.0022    0.6131    0.3287 C   0  0  2  0  0  0  0  0  0 13  0  0\n   -0.5864    2.0536    0.4906 C   0  0  0  0  0  0  0  0  0 14  0  0\n   -2.4531    0.5703    0.0804 C   0  0  1  0  0  0  0  0  0 15  0  0\n   -3.3800    1.1086    1.0695 C   0  0  2  0  0  0  0  0  0 16  0  0\n   -3.3250    0.4333    2.4099 C   0  0  0  0  0  0  0  0  0 17  0  0\n   -4.8152    1.2152    0.6384 C   0  0  0  0  0  0  0  0  0 18  0  0\n   -5.4158   -0.1217    0.2591 C   0  0  0  0  0  0  0  0  0 19  0  0\n   -6.8469    0.1380   -0.1490 C   0  0  2  0  0  0  0  0  0 20  0  0\n   -7.5389    0.6993    0.9071 O   0  0  0  0  0  0  0  0  0 21  0  0\n   -7.5572   -1.1103   -0.5904 C   0  0  0  0  0  0  0  0  0 22  0  0\n   -6.9213   -1.7196   -1.8229 C   0  0  0  0  0  0  0  0  0 23  0  0\n   -7.7274   -2.1243    0.4960 C   0  0  0  0  0  0  0  0  0 24  0  0\n   -8.8540   -0.7108   -0.9825 O   0  0  0  0  0  0  0  0  0 25  0  0\n   -2.5460    1.2064   -1.2946 C   0  0  0  0  0  0  0  0  0 26  0  0\n   -1.1474    1.1279   -1.9064 C   0  0  0  0  0  0  0  0  0 27  0  0\n   -0.5164    0.0913   -1.0377 C   0  0  2  0  0  0  0  0  0 28  0  0\n   -1.1606   -1.2362   -1.3526 C   0  0  0  0  0  0  0  0  0 29  0  0\n    0.9451    0.0443   -1.0303 C   0  0  0  0  0  0  0  0  0 30  0  0\n    1.6714   -0.2344   -2.1100 C   0  0  0  0  0  0  0  0  0 31  0  0\n    3.1608   -0.3072   -2.1290 C   0  0  0  0  0  0  0  0  0 32  0  0\n    3.7044   -0.4687   -0.7278 C   0  0  1  0  0  0  0  0  0 33  0  0\n    5.1590   -0.6197   -0.6128 C   0  0  0  0  0  0  0  0  0 34  0  0\n    5.5249   -1.9435   -1.3112 C   0  0  0  0  0  0  0  0  0 35  0  0\n    6.0047    0.4243   -1.2729 C   0  0  0  0  0  0  0  0  0 36  0  0\n   10.1022   -0.9562    1.4602 H   0  0  0  0  0  0  0  0  0 37  0  0\n    9.4229    0.6638    0.9354 H   0  0  0  0  0  0  0  0  0 38  0  0\n    9.3228    0.1274    2.6370 H   0  0  0  0  0  0  0  0  0 39  0  0\n    5.7000   -1.8660    1.0881 H   0  0  0  0  0  0  0  0  0 40  0  0\n    5.1206    0.0452    2.7239 H   0  0  0  0  0  0  0  0  0 41  0  0\n    3.8579   -1.0624    2.1434 H   0  0  0  0  0  0  0  0  0 42  0  0\n    3.2708    1.4091    2.1427 H   0  0  0  0  0  0  0  0  0 43  0  0\n    4.6448    1.7143    1.0943 H   0  0  0  0  0  0  0  0  0 44  0  0\n    4.0248    2.0647   -1.3603 H   0  0  0  0  0  0  0  0  0 45  0  0\n    2.2523    2.0529   -1.4243 H   0  0  0  0  0  0  0  0  0 46  0  0\n    3.0840    2.8469   -0.0775 H   0  0  0  0  0  0  0  0  0 47  0  0\n    1.5816    0.3546    2.2880 H   0  0  0  0  0  0  0  0  0 48  0  0\n   -0.7974   -0.0030    2.3871 H   0  0  0  0  0  0  0  0  0 49  0  0\n   -0.3998   -1.2921    1.2400 H   0  0  0  0  0  0  0  0  0 50  0  0\n   -0.4906    2.2392    1.5832 H   0  0  0  0  0  0  0  0  0 51  0  0\n    0.3135    2.3380   -0.0493 H   0  0  0  0  0  0  0  0  0 52  0  0\n   -1.3990    2.7562    0.1429 H   0  0  0  0  0  0  0  0  0 53  0  0\n   -2.7195   -0.5191   -0.0941 H   0  0  0  0  0  0  0  0  0 54  0  0\n   -3.0677    2.1822    1.2772 H   0  0  0  0  0  0  0  0  0 55  0  0\n   -2.7577    1.0046    3.1748 H   0  0  0  0  0  0  0  0  0 56  0  0\n   -3.0561   -0.6455    2.3625 H   0  0  0  0  0  0  0  0  0 57  0  0\n   -4.3853    0.4042    2.8276 H   0  0  0  0  0  0  0  0  0 58  0  0\n   -5.3840    1.5557    1.5462 H   0  0  0  0  0  0  0  0  0 59  0  0\n   -4.9997    1.9761   -0.1318 H   0  0  0  0  0  0  0  0  0 60  0  0\n   -4.8775   -0.5958   -0.5890 H   0  0  0  0  0  0  0  0  0 61  0  0\n   -5.4393   -0.7636    1.1525 H   0  0  0  0  0  0  0  0  0 62  0  0\n   -6.8393    0.8380   -1.0099 H   0  0  0  0  0  0  0  0  0 63  0  0\n   -7.3411    1.6672    0.9754 H   0  0  0  0  0  0  0  0  0 64  0  0\n   -6.1388   -2.4214   -1.4855 H   0  0  0  0  0  0  0  0  0 65  0  0\n   -7.7164   -2.2475   -2.3862 H   0  0  0  0  0  0  0  0  0 66  0  0\n   -6.5304   -0.8979   -2.4534 H   0  0  0  0  0  0  0  0  0 67  0  0\n   -8.7772   -2.1254    0.9119 H   0  0  0  0  0  0  0  0  0 68  0  0\n   -7.5966   -3.1454    0.0652 H   0  0  0  0  0  0  0  0  0 69  0  0\n   -7.0697   -1.9745    1.3630 H   0  0  0  0  0  0  0  0  0 70  0  0\n   -9.1598    0.0781   -0.4505 H   0  0  0  0  0  0  0  0  0 71  0  0\n   -2.8113    2.2699   -1.2535 H   0  0  0  0  0  0  0  0  0 72  0  0\n   -3.2089    0.6237   -1.9598 H   0  0  0  0  0  0  0  0  0 73  0  0\n   -0.6095    2.0796   -1.8485 H   0  0  0  0  0  0  0  0  0 74  0  0\n   -1.2022    0.8342   -2.9747 H   0  0  0  0  0  0  0  0  0 75  0  0\n   -1.2737   -1.8998   -0.4984 H   0  0  0  0  0  0  0  0  0 76  0  0\n   -2.1027   -1.1284   -1.9404 H   0  0  0  0  0  0  0  0  0 77  0  0\n   -0.4523   -1.7578   -2.0618 H   0  0  0  0  0  0  0  0  0 78  0  0\n    1.1569   -0.4204   -3.0333 H   0  0  0  0  0  0  0  0  0 79  0  0\n    3.4080   -1.2649   -2.6712 H   0  0  0  0  0  0  0  0  0 80  0  0\n    3.6262    0.4983   -2.6968 H   0  0  0  0  0  0  0  0  0 81  0  0\n    3.2452   -1.4175   -0.3209 H   0  0  0  0  0  0  0  0  0 82  0  0\n    5.3932   -1.8324   -2.3885 H   0  0  0  0  0  0  0  0  0 83  0  0\n    6.5799   -2.1668   -1.0238 H   0  0  0  0  0  0  0  0  0 84  0  0\n    4.8713   -2.7059   -0.8410 H   0  0  0  0  0  0  0  0  0 85  0  0\n    7.0237   -0.0503   -1.4124 H   0  0  0  0  0  0  0  0  0 86  0  0\n    6.1945    1.3226   -0.6887 H   0  0  0  0  0  0  0  0  0 87  0  0\n    5.6631    0.6092   -2.3143 H   0  0  0  0  0  0  0  0  0 88  0  0\n  1  2  1  0\n  2  3  2  0\n  2  4  1  0\n  4  5  1  0\n  5  6  1  0\n  6  7  1  0\n  7  8  1  0\n  8  9  1  6\n  8 10  1  0\n 10 11  2  0\n 11 12  1  0\n 12 13  1  0\n 13 14  1  1\n 13 15  1  0\n 15 16  1  0\n 16 17  1  0\n 16 18  1  0\n 18 19  1  0\n 19 20  1  0\n 20 21  1  0\n 20 22  1  0\n 22 23  1  0\n 22 24  1  0\n 22 25  1  0\n 15 26  1  0\n 26 27  1  0\n 27 28  1  0\n 28 29  1  6\n 28 30  1  0\n 30 31  2  0\n 31 32  1  0\n 32 33  1  0\n 33 34  1  0\n 34 35  1  0\n 34 36  1  0\n 34  5  1  0\n 33  8  1  0\n 30 10  1  0\n 28 13  1  0\n  1 37  1  0\n  1 38  1  0\n  1 39  1  0\n  5 40  1  1\n  6 41  1  0\n  6 42  1  0\n  7 43  1  0\n  7 44  1  0\n  9 45  1  0\n  9 46  1  0\n  9 47  1  0\n 11 48  1  0\n 12 49  1  0\n 12 50  1  0\n 14 51  1  0\n 14 52  1  0\n 14 53  1  0\n 15 54  1  6\n 16 55  1  1\n 17 56  1  0\n 17 57  1  0\n 17 58  1  0\n 18 59  1  0\n 18 60  1  0\n 19 61  1  0\n 19 62  1  0\n 20 63  1  6\n 21 64  1  0\n 23 65  1  0\n 23 66  1  0\n 23 67  1  0\n 24 68  1  0\n 24 69  1  0\n 24 70  1  0\n 25 71  1  0\n 26 72  1  0\n 26 73  1  0\n 27 74  1  0\n 27 75  1  0\n 29 76  1  0\n 29 77  1  0\n 29 78  1  0\n 31 79  1  0\n 32 80  1  0\n 32 81  1  0\n 33 82  1  1\n 35 83  1  0\n 35 84  1  0\n 35 85  1  0\n 36 86  1  0\n 36 87  1  0\n 36 88  1  0\nM  END\n",
+    "curator_email_address": "pegah_tavangar@sfu.ca",
+    "session_uuid": "f9c410c6-7dde-4864-9237-09d43717bad4",
+    "rdkit_version": "2021.9.2",
+    "created_date": "2021-06-08T21:24:36.410178"
+  }
+]

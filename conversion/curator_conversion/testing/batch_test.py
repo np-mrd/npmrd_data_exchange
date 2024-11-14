@@ -18,8 +18,8 @@ script_dir = os.path.dirname(os.path.abspath(__file__))
 input_dir = os.path.join(script_dir, "test_input_jsons")
 output_dir = os.path.join(script_dir, "test_output")
 
-input_dir = "~/Documents/SFU/lingingtonlab/submission_portal/stats/curator_backup/curator_jsons"
-output_dir = "~/Documents/SFU/lingingtonlab/submission_portal/stats/curator_backup/test_exchange_jsons"
+# input_dir = "~/Documents/SFU/lingingtonlab/submission_portal/stats/curator_backup/curator_jsons"
+# output_dir = "~/Documents/SFU/lingingtonlab/submission_portal/stats/curator_backup/test_exchange_jsons"
 
 input_dir = os.path.expanduser(input_dir)
 output_dir = os.path.expanduser(output_dir)

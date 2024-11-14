@@ -195,6 +195,7 @@ class CuratorConverter:
             
             new_assignment_entry['curator_email_address'] = self.strip_white_space(curator_entry['curator_email_address'])
             new_assignment_entry['rdkit_version'] = curator_entry['rdkit_version']
+            
             new_assignment_entry['canonicalized_mol_block'] = curator_entry['canonicalized_mol_block']
             
             new_assignment_uuid_c = str(uuid.uuid4())
