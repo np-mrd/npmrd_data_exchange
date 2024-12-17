@@ -1038,7 +1038,19 @@
                           "H": {
                             "type": "object",
                             "properties": {
-                              "m": {
+                              "slope": {
+                                "type": [
+                                  "number",
+                                  "null"
+                                ]
+                              },
+                              "intercept": {
+                                "type": [
+                                  "number",
+                                  "null"
+                                ]
+                              },
+                              "a": {
                                 "type": [
                                   "number",
                                   "null"
@@ -1049,13 +1061,38 @@
                                   "number",
                                   "null"
                                 ]
-                              }
+                              },
+                              "c": {
+                                "type": [
+                                  "number",
+                                  "null"
+                                ]
+                              },
+                              "DOI": {
+                                "type": [
+                                  "string",
+                                  "null"
+                                ],
+                                "maxLength": 10000
+                              },
                             }
                           },
                           "C": {
                             "type": "object",
                             "properties": {
-                              "m": {
+                              "slope": {
+                                "type": [
+                                  "number",
+                                  "null"
+                                ]
+                              },
+                              "intercept": {
+                                "type": [
+                                  "number",
+                                  "null"
+                                ]
+                              },
+                              "a": {
                                 "type": [
                                   "number",
                                   "null"
@@ -1066,9 +1103,190 @@
                                   "number",
                                   "null"
                                 ]
-                              }
+                              },
+                              "c": {
+                                "type": [
+                                  "number",
+                                  "null"
+                                ]
+                              },
+                              "DOI": {
+                                "type": [
+                                  "string",
+                                  "null"
+                                ],
+                                "maxLength": 10000
+                              },
                             }
-                          }
+                          },
+                          "B": {
+                            "type": "object",
+                            "properties": {
+                              "slope": {
+                                "type": [
+                                  "number",
+                                  "null"
+                                ]
+                              },
+                              "intercept": {
+                                "type": [
+                                  "number",
+                                  "null"
+                                ]
+                              },
+                              "a": {
+                                "type": [
+                                  "number",
+                                  "null"
+                                ]
+                              },
+                              "b": {
+                                "type": [
+                                  "number",
+                                  "null"
+                                ]
+                              },
+                              "c": {
+                                "type": [
+                                  "number",
+                                  "null"
+                                ]
+                              },
+                              "DOI": {
+                                "type": [
+                                  "string",
+                                  "null"
+                                ],
+                                "maxLength": 10000
+                              },
+                            }
+                          },
+                          "N": {
+                            "type": "object",
+                            "properties": {
+                              "slope": {
+                                "type": [
+                                  "number",
+                                  "null"
+                                ]
+                              },
+                              "intercept": {
+                                "type": [
+                                  "number",
+                                  "null"
+                                ]
+                              },
+                              "a": {
+                                "type": [
+                                  "number",
+                                  "null"
+                                ]
+                              },
+                              "b": {
+                                "type": [
+                                  "number",
+                                  "null"
+                                ]
+                              },
+                              "c": {
+                                "type": [
+                                  "number",
+                                  "null"
+                                ]
+                              },
+                              "DOI": {
+                                "type": [
+                                  "string",
+                                  "null"
+                                ],
+                                "maxLength": 10000
+                              },
+                            }
+                          },
+                          "P": {
+                            "type": "object",
+                            "properties": {
+                              "slope": {
+                                "type": [
+                                  "number",
+                                  "null"
+                                ]
+                              },
+                              "intercept": {
+                                "type": [
+                                  "number",
+                                  "null"
+                                ]
+                              },
+                              "a": {
+                                "type": [
+                                  "number",
+                                  "null"
+                                ]
+                              },
+                              "b": {
+                                "type": [
+                                  "number",
+                                  "null"
+                                ]
+                              },
+                              "c": {
+                                "type": [
+                                  "number",
+                                  "null"
+                                ]
+                              },
+                              "DOI": {
+                                "type": [
+                                  "string",
+                                  "null"
+                                ],
+                                "maxLength": 10000
+                              },
+                            }
+                          },
+                          "F": {
+                            "type": "object",
+                            "properties": {
+                              "slope": {
+                                "type": [
+                                  "number",
+                                  "null"
+                                ]
+                              },
+                              "intercept": {
+                                "type": [
+                                  "number",
+                                  "null"
+                                ]
+                              },
+                              "a": {
+                                "type": [
+                                  "number",
+                                  "null"
+                                ]
+                              },
+                              "b": {
+                                "type": [
+                                  "number",
+                                  "null"
+                                ]
+                              },
+                              "c": {
+                                "type": [
+                                  "number",
+                                  "null"
+                                ]
+                              },
+                              "DOI": {
+                                "type": [
+                                  "string",
+                                  "null"
+                                ],
+                                "maxLength": 10000
+                              },
+                            }
+                          },
                         }
                       }
                     }
