@@ -862,6 +862,14 @@
               "simulation_protocol": {
                 "type": "object",
                 "properties": {
+                  "simulation_uuid": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "minLength": 36,
+                    "maxLength": 36
+                  },
                   "embed_coordinates": {
                     "type": "object",
                     "properties": {
