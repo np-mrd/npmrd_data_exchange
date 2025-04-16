@@ -1,5 +1,6 @@
 import sys
 import json
+from datetime import datetime, date, time
 from dateutil import parser
 import traceback
 import os
@@ -197,9 +198,20 @@ class JSONStandardizer:
 
         elif rule == "standardize_date":
             # Convert date to standardized format and remove time (retain only date)
-            midnight_date = val.replace(hour=0, minute=0, second=0, microsecond=0)
-            new_val = parser.parse(val).strftime("%Y-%m-%dT%H:%M:%S.%f+00:00")
-            if val != new_val:
+            if isinstance(val, datetime):
+                midnight_date = val.replace(hour=0, minute=0, second=0, microsecond=0)
+            elif isinstance(val, date):
+                midnight_date = datetime.combine(val, time.min)
+            else:
+                try:
+                    parsed_val = parser.parse(str(val))
+                    midnight_date = parsed_val.replace(hour=0, minute=0, second=0, microsecond=0)
+                except Exception as e:
+                    self.notes.append(f"'{field_path}': failed to parse date from '{val}' ({type(val)}): {e}")
+                    return val  # or return None if failure should null it out
+
+            new_val = midnight_date.strftime("%Y-%m-%dT%H:%M:%S.%f+00:00")
+            if str(val) != new_val:
                 self.notes.append(
                     f"'{field_path}': standardized date format '{val}' = {type(val)} -> '{new_val}' = {type(new_val)}"
                 )
