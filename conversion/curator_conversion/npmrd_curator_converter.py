@@ -191,12 +191,12 @@ class CuratorConverter:
             
             # Entries to fill out the "assignment_data" list of the exchange json with.
             # Typically one for C and one for H
-            new_assignment_entry = self.get_empty_assignment_data_from_schema()
+            new_assignment_curation = self.get_empty_assignment_data_from_schema()
             
-            new_assignment_entry['curator_email_address'] = self.strip_white_space(curator_entry['curator_email_address'])
-            new_assignment_entry['rdkit_version'] = curator_entry['rdkit_version']
+            new_assignment_curation['curator_email_address'] = self.strip_white_space(curator_entry['curator_email_address'])
+            new_assignment_curation['rdkit_version'] = curator_entry['rdkit_version']
             
-            new_assignment_entry['canonicalized_mol_block'] = curator_entry['canonicalized_mol_block']
+            new_assignment_curation['canonicalized_mol_block'] = curator_entry['canonicalized_mol_block']
             
             new_assignment_uuid_c = str(uuid.uuid4())
             new_assignment_uuid_h = str(uuid.uuid4())
@@ -210,15 +210,15 @@ class CuratorConverter:
                     final_status_dict['entries_with_peak_list_only'] = True
                     continue
                 
-                new_assignment_entry['c_nmr']['assignment_uuid'] = new_assignment_uuid_c
-                new_assignment_entry['c_nmr']['solvent'] = curator_entry['c_nmr']['solvent']
+                new_assignment_curation['c_nmr']['assignment_uuid'] = new_assignment_uuid_c
+                new_assignment_curation['c_nmr']['solvent'] = curator_entry['c_nmr']['solvent']
                 if curator_entry['c_nmr']['temperature']: # Temperature can be empty string (not accepted) so make sure there's a value
-                    new_assignment_entry['c_nmr']['temperature'] = int(curator_entry['c_nmr']['temperature'])
-                new_assignment_entry['c_nmr']['temperature_units'] = "K"
-                new_assignment_entry['c_nmr']['reference'] = curator_entry['c_nmr']['reference']
-                new_assignment_entry['c_nmr']['frequency'] = curator_entry['c_nmr']['frequency']
-                new_assignment_entry['c_nmr']['frequency_units'] = "MHz"
-                new_assignment_entry['c_nmr']['assignment_data_embargo_release_ready'] = None
+                    new_assignment_curation['c_nmr']['temperature'] = int(curator_entry['c_nmr']['temperature'])
+                new_assignment_curation['c_nmr']['temperature_units'] = "K"
+                new_assignment_curation['c_nmr']['reference'] = curator_entry['c_nmr']['reference']
+                new_assignment_curation['c_nmr']['frequency'] = curator_entry['c_nmr']['frequency']
+                new_assignment_curation['c_nmr']['frequency_units'] = "MHz"
+                new_assignment_curation['c_nmr']['assignment_data_embargo_release_ready'] = None
                 
                 new_spectrum_list = []
                 
@@ -228,7 +228,7 @@ class CuratorConverter:
                     new_c_spectrum_entry['mol_block_index'] = [curator_c_spectrum['rdkit_index']]
                     new_spectrum_list.append(new_c_spectrum_entry)
 
-                new_assignment_entry['c_nmr']['spectrum'] = new_spectrum_list
+                new_assignment_curation['c_nmr']['spectrum'] = new_spectrum_list
             else:
                 final_status_dict['entries_with_no_c_nmr'] = True
 
@@ -242,15 +242,15 @@ class CuratorConverter:
                     final_status_dict['entries_with_peak_list_only'] = True
                     continue
                 
-                new_assignment_entry['h_nmr']['assignment_uuid'] = new_assignment_uuid_h
-                new_assignment_entry['h_nmr']['solvent'] = curator_entry['h_nmr']['solvent']
+                new_assignment_curation['h_nmr']['assignment_uuid'] = new_assignment_uuid_h
+                new_assignment_curation['h_nmr']['solvent'] = curator_entry['h_nmr']['solvent']
                 if curator_entry['h_nmr']['temperature']: # Temperature can be empty string (not accepted) so make sure there's a value
-                    new_assignment_entry['h_nmr']['temperature'] = int(curator_entry['h_nmr']['temperature'])
-                new_assignment_entry['h_nmr']['temperature_units'] = "K"
-                new_assignment_entry['h_nmr']['reference'] = curator_entry['h_nmr']['reference']
-                new_assignment_entry['h_nmr']['frequency'] = curator_entry['h_nmr']['frequency']
-                new_assignment_entry['h_nmr']['frequency_units'] = "MHz"
-                new_assignment_entry['h_nmr']['assignment_data_embargo_release_ready'] = None
+                    new_assignment_curation['h_nmr']['temperature'] = int(curator_entry['h_nmr']['temperature'])
+                new_assignment_curation['h_nmr']['temperature_units'] = "K"
+                new_assignment_curation['h_nmr']['reference'] = curator_entry['h_nmr']['reference']
+                new_assignment_curation['h_nmr']['frequency'] = curator_entry['h_nmr']['frequency']
+                new_assignment_curation['h_nmr']['frequency_units'] = "MHz"
+                new_assignment_curation['h_nmr']['assignment_data_embargo_release_ready'] = None
                 
                 new_spectrum_list = []
                 for curator_h_spectrum in curator_entry['h_nmr']['spectrum']:
@@ -263,11 +263,11 @@ class CuratorConverter:
                     new_h_spectrum_entry['interchangeable_index'] = curator_h_spectrum['interchangable_index']
                     new_spectrum_list.append(new_h_spectrum_entry)
 
-                new_assignment_entry['h_nmr']['spectrum'] = new_spectrum_list
+                new_assignment_curation['h_nmr']['spectrum'] = new_spectrum_list
             else:
                 final_status_dict['entries_with_no_h_nmr'] = True
             
-            new_json['nmr_data']['assignment_data'].append(new_assignment_entry)
+            new_json['nmr_data']['assignment_data'].append(new_assignment_curation)
         
             # Validate json against schema
             try:
